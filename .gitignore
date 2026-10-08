@@ -1,0 +1,5 @@
+.DS_Store
+*.py
+*.json
+!game_data_rich.json
+template*.html

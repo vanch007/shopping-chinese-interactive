@@ -1,0 +1,1100 @@
+{
+  "shangchang": {
+    "id": "shangchang",
+    "name": "豪华商场",
+    "title": "王府井 / 西单 · 豪华名牌商场",
+    "pinyin": "Wángfǔjǐng / Xīdān · Háohuá Shāngchǎng",
+    "vn": "Trung tâm thương mại cao cấp (Vương Phủ Tỉnh / Tây Đơn)",
+    "bgKey": "shangchang",
+    "icon": "🏬",
+    "desc": "高档现代购物中心，专卖各种名牌商品，环境优雅，款式新颖，做工精细。",
+    "items": [
+      {
+        "id": "item_shangchang_1",
+        "name": "名牌羊毛大衣",
+        "pinyin": "míngpái yángmáo dàyī",
+        "vn": "Áo khoác dạ hàng hiệu",
+        "icon": "🧥",
+        "price": 680,
+        "pos": {
+          "x": 25,
+          "y": 40
+        },
+        "vocabCategory": "商品特点 · 质量与款式",
+        "vocabTags": [
+          {
+            "word": "商品",
+            "py": "shāngpǐn",
+            "vn": "hàng hóa"
+          },
+          {
+            "word": "名牌",
+            "py": "míngpái",
+            "vn": "thương hiệu nổi tiếng"
+          },
+          {
+            "word": "款式",
+            "py": "kuǎnshì",
+            "vn": "kiểu dáng"
+          },
+          {
+            "word": "新颖",
+            "py": "xīnyǐng",
+            "vn": "mới mẻ"
+          },
+          {
+            "word": "料子",
+            "py": "liàozi",
+            "vn": "chất liệu"
+          },
+          {
+            "word": "讲究",
+            "py": "jiǎngjiu",
+            "vn": "chú trọng, tinh tế"
+          },
+          {
+            "word": "做工",
+            "py": "zuògōng",
+            "vn": "đường may"
+          },
+          {
+            "word": "精细",
+            "py": "jīngxì",
+            "vn": "tinh xảo"
+          }
+        ],
+        "sentence": "这件名牌大衣虽然价格较贵，但是料子非常讲究，做工特别精细，款式也很新颖。",
+        "sentencePy": "Zhè jiàn míngpái dàyī suīrán jiàgé jiàoguì, dànshì liàozi fēicháng jiǎngjiu, zuògōng tèbié jīngxì, kuǎnshì yě hěn xīnyǐng.",
+        "sentenceVn": "Chiếc áo khoác hàng hiệu này tuy giá khá đắt, nhưng chất liệu rất tinh tế, đường may vô cùng tinh xảo, kiểu dáng cũng rất mới mẻ.",
+        "audioKey": "sent_shangchang_coat"
+      },
+      {
+        "id": "item_shangchang_2",
+        "name": "高档纯棉床上用品",
+        "pinyin": "gāodàng chúnmián chuángshang yòngpǐn",
+        "vn": "Vật dụng trên giường cao cấp (Chăn ga gối)",
+        "icon": "🛏️",
+        "price": 320,
+        "pos": {
+          "x": 75,
+          "y": 38
+        },
+        "vocabCategory": "商品种类 · 床上用品",
+        "vocabTags": [
+          {
+            "word": "床上用品",
+            "py": "chuángshang yòngpǐn",
+            "vn": "vật dụng trên giường"
+          },
+          {
+            "word": "用品",
+            "py": "yòngpǐn",
+            "vn": "đồ dùng"
+          },
+          {
+            "word": "质量",
+            "py": "zhìliàng",
+            "vn": "chất lượng"
+          },
+          {
+            "word": "可靠",
+            "py": "kěkào",
+            "vn": "uy tín, đáng tin"
+          }
+        ],
+        "sentence": "商场的床上用品是纯棉料子，质量非常可靠，让人买得安心。",
+        "sentencePy": "Shāngchǎng de chuángshang yòngpǐn shì chúnmián liàozi, zhìliàng fēicháng kěkào, ràng rén mǎi de ānxīn.",
+        "sentenceVn": "Đồ dùng phòng ngủ ở trung tâm thương mại là chất liệu cotton, chất lượng vô cùng đáng tin, mua rất an tâm.",
+        "audioKey": "sent_shangchang_bed"
+      },
+      {
+        "id": "item_shangchang_3",
+        "name": "专业体育运动鞋",
+        "pinyin": "zhuānyè tǐyù yùndòngxié",
+        "vn": "Giày thể thao chuyên nghiệp (Đồ thể thao)",
+        "icon": "👟",
+        "price": 450,
+        "pos": {
+          "x": 50,
+          "y": 48
+        },
+        "vocabCategory": "商品种类 · 体育用品",
+        "vocabTags": [
+          {
+            "word": "体育用品",
+            "py": "tǐyù yòngpǐn",
+            "vn": "đồ thể thao"
+          },
+          {
+            "word": "体育",
+            "py": "tǐyù",
+            "vn": "thể dục, thể thao"
+          },
+          {
+            "word": "牌子",
+            "py": "páizi",
+            "vn": "thương hiệu"
+          },
+          {
+            "word": "款式",
+            "py": "kuǎnshì",
+            "vn": "kiểu dáng"
+          }
+        ],
+        "sentence": "这双运动鞋是知名牌子的体育用品，款式新颖，透气减震。",
+        "sentencePy": "Zhè shuāng yùndòngxié shì zhīmíng páizi de tǐyù yòngpǐn, kuǎnshì xīnyǐng, tòuqì jiǎnzhèn.",
+        "sentenceVn": "Đôi giày này là đồ thể thao của thương hiệu nổi tiếng, kiểu dáng mới mẻ, thoáng khí êm chân.",
+        "audioKey": "sent_shangchang_shoes"
+      }
+    ],
+    "npc": {
+      "name": "商场高级导购员",
+      "avatar": "👩‍💼",
+      "text": "您好！欢迎来到商场！我们专卖各种名牌商品，这季刚到了许多新款，料子特别讲究，做工也很精细，想看看大衣、床上用品还是体育运动鞋？",
+      "choices": [
+        {
+          "zh": "这件名牌大衣虽然价格贵，但是做工确实很精细，款式也很新颖。",
+          "py": "Zhè jiàn míngpái dàyī suīrán jiàgé guì, dànshì zuògōng quèshí hěn jīngxì, kuǎnshì yě hěn xīnyǐng.",
+          "vn": "Chiếc áo khoác hàng hiệu này tuy giá đắt, nhưng đường may quả thực rất tinh xảo, kiểu dáng cũng mới mẻ.",
+          "reply": "您太懂行了！我们大牌子都是纯羊毛用料，剪裁特别显档次！"
+        },
+        {
+          "zh": "路边摊的衣服虽然便宜，但是质量和料子不如你们商场的好。",
+          "py": "Lùbiān tān de yīfu suīrán piányi, dànshì zhìliàng hé liàozi bùrú nǐmen shāngchǎng de hǎo.",
+          "vn": "Quần áo ở sạp vỉa hè tuy rẻ, nhưng chất lượng và chất liệu không bằng ở trung tâm thương mại của các bạn.",
+          "reply": "那当然啦！一分钱一分货，商场的品质绝对可靠放心！"
+        },
+        {
+          "zh": "周末我们先去雅秀市场转转，然后再逛商场，好吗？",
+          "py": "Nà zhōumò wǒmen xiān qù Yǎxiù shìchǎng zhuànzhuan, ránhòu zài guàng shāngchǎng, hǎo ma?",
+          "vn": "Vậy cuối tuần chúng mình trước tiên đi chợ Nhã Tú dạo một vòng, sau đó dạo TTTM, được không?",
+          "reply": "好主意！先去市场淘淘小玩意，再来商场买精细名牌，行程安排真好！"
+        }
+      ]
+    }
+  },
+  "chaoshi": {
+    "id": "chaoshi",
+    "name": "便民生活超市",
+    "title": "家润多 · 便民生活日用品超市",
+    "pinyin": "Jiārùnduō · Biànmín Shēnghuó Rìyòng Chāoshì",
+    "vn": "Siêu thị cuộc sống tiện ích",
+    "bgKey": "chaoshi",
+    "icon": "🛒",
+    "desc": "大型连锁综合超市，推着购物车挑选食品、日用品与家用电器，明码实价，优惠活动多。",
+    "items": [
+      {
+        "id": "item_chaoshi_1",
+        "name": "家庭生活日用品组合",
+        "pinyin": "jiātíng shēnghuó rìyòngpǐn zǔhé",
+        "vn": "Combo đồ dùng sinh hoạt / Đồ dùng hằng ngày",
+        "icon": "🧴",
+        "price": 65,
+        "pos": {
+          "x": 22,
+          "y": 40
+        },
+        "vocabCategory": "商品种类 · 生活用品/日用品",
+        "vocabTags": [
+          {
+            "word": "生活用品",
+            "py": "shēnghuó yòngpǐn",
+            "vn": "đồ dùng sinh hoạt"
+          },
+          {
+            "word": "日用品",
+            "py": "rìyòngpǐn",
+            "vn": "đồ dùng hằng ngày"
+          },
+          {
+            "word": "生活",
+            "py": "shēnghuó",
+            "vn": "cuộc sống, sinh hoạt"
+          },
+          {
+            "word": "用品",
+            "py": "yòngpǐn",
+            "vn": "vật dụng, đồ dùng"
+          },
+          {
+            "word": "优惠",
+            "py": "yōuhuì",
+            "vn": "ưu đãi"
+          },
+          {
+            "word": "划算",
+            "py": "huásuàn",
+            "vn": "tiết kiệm, hời"
+          }
+        ],
+        "sentence": "超市里的生活日用品正在做优惠活动，买一套非常划算。",
+        "sentencePy": "Chāoshì lǐ de shēnghuó rìyòngpǐn zhèngzài zuò yōuhuì huódòng, mǎi yí tào fēicháng huásuàn.",
+        "sentenceVn": "Đồ dùng sinh hoạt hàng ngày trong siêu thị đang có chương trình ưu đãi, mua một bộ rất hời.",
+        "audioKey": "sent_chaoshi_daily"
+      },
+      {
+        "id": "item_chaoshi_2",
+        "name": "鲜牛奶与新鲜食品",
+        "pinyin": "xiān niúnǎi yǔ xīnxiān shípǐn",
+        "vn": "Sữa tươi & Thực phẩm tươi",
+        "icon": "🥛",
+        "price": 38,
+        "pos": {
+          "x": 80,
+          "y": 44
+        },
+        "vocabCategory": "商品种类 · 食品",
+        "vocabTags": [
+          {
+            "word": "食品",
+            "py": "shípǐn",
+            "vn": "thực phẩm, đồ ăn"
+          },
+          {
+            "word": "质量",
+            "py": "zhìliàng",
+            "vn": "chất lượng"
+          },
+          {
+            "word": "可靠",
+            "py": "kěkào",
+            "vn": "uy tín, đáng tin"
+          }
+        ],
+        "sentence": "超市冷柜的食品天天检验，质量可靠，让人吃得安心。",
+        "sentencePy": "Chāoshì lěngguì de shípǐn tiāntiān jiǎnyàn, zhìliàng kěkào, ràng rén chī de ānxīn.",
+        "sentenceVn": "Thực phẩm quầy lạnh trong siêu thị được kiểm định hằng ngày, chất lượng uy tín, ăn uống an tâm.",
+        "audioKey": "sent_chaoshi_food"
+      },
+      {
+        "id": "item_chaoshi_3",
+        "name": "家用电器多功能电热锅",
+        "pinyin": "jiāyòng diànqì duōgōngnéng diànrèguō",
+        "vn": "Đồ điện gia dụng nồi điện đa năng",
+        "icon": "🍳",
+        "price": 120,
+        "pos": {
+          "x": 52,
+          "y": 40
+        },
+        "vocabCategory": "商品种类 · 家用电器",
+        "vocabTags": [
+          {
+            "word": "家用电器",
+            "py": "jiāyòng diànqì",
+            "vn": "đồ điện gia dụng"
+          },
+          {
+            "word": "价格",
+            "py": "jiàgé",
+            "vn": "giá cả"
+          },
+          {
+            "word": "质量",
+            "py": "zhìliàng",
+            "vn": "chất lượng"
+          }
+        ],
+        "sentence": "超市二楼专卖各种家用电器，价格优惠，质量有保证。",
+        "sentencePy": "Chāoshì èrlóu zhuānmài gèzhǒng jiāyòng diànqì, jiàgé yōuhuì, zhìliàng yǒu bǎozhèng.",
+        "sentenceVn": "Tầng 2 siêu thị chuyên bán các loại đồ điện gia dụng, giá cả ưu đãi, chất lượng có bảo hành.",
+        "audioKey": "sent_chaoshi_pot"
+      }
+    ],
+    "npc": {
+      "name": "超市值班服务员",
+      "avatar": "🧑‍🍳",
+      "text": "欢迎光临超市！今天日用品专区全场满减优惠，食品区刚上架了新鲜乳品，请推着购物车慢慢挑选！",
+      "choices": [
+        {
+          "zh": "小卖部的商品种类虽然不如超市齐全，但是下楼买很方便。",
+          "py": "Xiǎomàibù de shāngpǐn zhǒnglèi suīrán bùrú chāoshì qíquán, dànshì xiàlóu mǎi hěn fāngbiàn.",
+          "vn": "Chủng loại hàng ở tiệm tạp hóa tuy không phong phú bằng siêu thị, nhưng xuống lầu mua rất tiện.",
+          "reply": "确实！急用买小卖部，周末大采购还是来超市，货品齐全又优惠！"
+        },
+        {
+          "zh": "超市的食品虽然价格固定，但是质量比路边摊可靠得多。",
+          "py": "Chāoshì de shípǐn suīrán jiàgé gùdìng, dànshì zhìliàng bǐ lùbiān tān kěkào de duō.",
+          "vn": "Thực phẩm ở siêu thị tuy giá cố định, nhưng chất lượng uy tín hơn sạp vỉa hè nhiều.",
+          "reply": "是的，食品安全最重要，超市的所有食品都经过严格检疫认证！"
+        },
+        {
+          "zh": "那我们先挑生活日用品，然后再选点新鲜食品，行吗？",
+          "py": "Nà wǒmen xiān tiāo shēnghuó rìyòngpǐn, ránhòu zài xuǎn diǎn xīnxiān shípǐn, xíng ma?",
+          "vn": "Vậy tụi mình trước tiên chọn đồ dùng sinh hoạt hằng ngày, sau đó chọn chút thực phẩm tươi, được chứ?",
+          "reply": "好的，日用品在二楼，食品在一楼，祝您购物愉快！"
+        }
+      ]
+    }
+  },
+  "yeshi": {
+    "id": "yeshi",
+    "name": "夜市与货摊",
+    "title": "雅秀市场街 · 热闹夜市与路边货摊",
+    "pinyin": "Yǎxiù Shìchǎng · Yèshì & Huòtān",
+    "vn": "Chợ đêm & sạp hàng vỉa hè (Chợ Nhã Tú)",
+    "bgKey": "yeshi",
+    "icon": "🏮",
+    "desc": "灯火通明、烟火气十足的夜市街，各种地道小吃和货摊琳琅满目，价格实惠又划算。",
+    "items": [
+      {
+        "id": "item_yeshi_1",
+        "name": "夜市货摊特色食品小吃",
+        "pinyin": "yèshì huòtān tèsè shípǐn xiǎochī",
+        "vn": "Đồ ăn vặt đặc sản sạp hàng chợ đêm",
+        "icon": "🍢",
+        "price": 25,
+        "pos": {
+          "x": 26,
+          "y": 45
+        },
+        "vocabCategory": "商品种类 · 食品与货摊",
+        "vocabTags": [
+          {
+            "word": "夜市",
+            "py": "yèshì",
+            "vn": "chợ đêm"
+          },
+          {
+            "word": "货摊",
+            "py": "huòtān",
+            "vn": "sạp hàng, quầy hàng"
+          },
+          {
+            "word": "食品",
+            "py": "shípǐn",
+            "vn": "thực phẩm, đồ ăn"
+          },
+          {
+            "word": "划算",
+            "py": "huásuàn",
+            "vn": "tiết kiệm, hời"
+          }
+        ],
+        "sentence": "夜市路边货摊上的特色食品香味扑鼻，吃起来很过瘾，价格也特别划算。",
+        "sentencePy": "Yèshì lùbiān huòtān shang de tèsè shípǐn xiāngwèi pūbí, chī qǐlái hěn guòyǐn, jiàgé yě tèbié huásuàn.",
+        "sentenceVn": "Món ăn đặc sản ở sạp hàng ven đường chợ đêm thơm nức mũi, ăn rất đã, giá cả lại đặc biệt hời.",
+        "audioKey": "sent_yeshi_food"
+      },
+      {
+        "id": "item_yeshi_2",
+        "name": "货摊平价潮流衣服",
+        "pinyin": "huòtān píngjià cháoliú yīfu",
+        "vn": "Quần áo thời trang giá bình dân sạp hàng",
+        "icon": "👕",
+        "price": 48,
+        "pos": {
+          "x": 74,
+          "y": 44
+        },
+        "vocabCategory": "商品特点 · 款式与做工",
+        "vocabTags": [
+          {
+            "word": "货摊",
+            "py": "huòtān",
+            "vn": "sạp hàng"
+          },
+          {
+            "word": "款式",
+            "py": "kuǎnshì",
+            "vn": "kiểu dáng"
+          },
+          {
+            "word": "新颖",
+            "py": "xīnyǐng",
+            "vn": "mới mẻ"
+          },
+          {
+            "word": "做工",
+            "py": "zuògōng",
+            "vn": "đường may"
+          },
+          {
+            "word": "不如",
+            "py": "bùrú",
+            "vn": "không bằng"
+          },
+          {
+            "word": "一般",
+            "py": "yībān",
+            "vn": "bình thường"
+          }
+        ],
+        "sentence": "货摊上的衣服款式虽然挺新颖，但是做工不如商场的精细，料子也比较一般。",
+        "sentencePy": "Huòtān shang de yīfu kuǎnshì suīrán tǐng xīnyǐng, dànshì zuògōng bùrú shāngchǎng de jīngxì, liàozi yě bǐjiào yībān.",
+        "sentenceVn": "Quần áo ở sạp hàng kiểu dáng tuy khá mới mẻ, nhưng đường may không tinh xảo bằng TTTM, chất liệu cũng bình thường.",
+        "audioKey": "sent_yeshi_hoodie"
+      },
+      {
+        "id": "item_yeshi_3",
+        "name": "货摊手工小饰品",
+        "pinyin": "huòtān shǒugōng xiǎo shìpǐn",
+        "vn": "Đồ trang sức / Đồ thủ công nhỏ sạp hàng",
+        "icon": "🎎",
+        "price": 30,
+        "pos": {
+          "x": 50,
+          "y": 38
+        },
+        "vocabCategory": "购物行为 · 优惠与转转",
+        "vocabTags": [
+          {
+            "word": "逛",
+            "py": "guàng",
+            "vn": "dạo phố"
+          },
+          {
+            "word": "转",
+            "py": "zhuàn",
+            "vn": "đi dạo một vòng"
+          },
+          {
+            "word": "优惠",
+            "py": "yōuhuì",
+            "vn": "ưu đãi"
+          },
+          {
+            "word": "划算",
+            "py": "huásuàn",
+            "vn": "hợp lý, hời"
+          }
+        ],
+        "sentence": "在夜市里转转，买几个手工艺品，跟老板讲讲价还能拿到优惠。",
+        "sentencePy": "Zài yèshì lǐ zhuànzhuan, mǎi jǐ ge shǒugōngyìpǐn, gēn lǎobǎn jiǎngjiangjià hái néng nádào yōuhuì.",
+        "sentenceVn": "Đi dạo một vòng chợ đêm, mua vài món thủ công mỹ nghệ, mặc cả với chủ quán còn được ưu đãi.",
+        "audioKey": "sent_yeshi_trinket"
+      }
+    ],
+    "npc": {
+      "name": "热情夜市摊主大叔",
+      "avatar": "👨‍🍳",
+      "text": "帅哥美女晚上好！快来看看！现烤的热气腾腾小吃，还有外贸货摊衣服，保准全街价格最划算，多买还有优惠！",
+      "choices": [
+        {
+          "zh": "老板，虽然货摊的东西便宜得多，但是质量能让人放心吗？",
+          "py": "Lǎobǎn, suīrán huòtān de dōngxi piányi de duō, dànshì zhìliàng néng ràng rén fàngxīn ma?",
+          "vn": "Ông chủ ơi, tuy đồ ở sạp rẻ hơn nhiều, nhưng chất lượng có yên tâm được không?",
+          "reply": "放心吧！我在这儿摆摊好几年了，老顾客特别多，讲的就是质量可靠、实惠公道！"
+        },
+        {
+          "zh": "这件卫衣的料子虽然不如专柜的讲究，但日常穿很划算。",
+          "py": "Zhè jiàn wèiyī de liàozi suīrán bùrú zhuānguì de jiǎngjiu, dàn rìcháng chuān hěn huásuàn.",
+          "vn": "Chất liệu áo này tuy không tinh xảo bằng quầy hàng hiệu, nhưng mặc thường ngày rất hời.",
+          "reply": "懂行！纯棉舒服耐磨，穿脏了也不心疼，年轻人最喜欢买！"
+        },
+        {
+          "zh": "我们先吃点特色小吃，然后再逛其他货摊转转，好吗？",
+          "py": "Wǒmen xiān chī diǎn tèsè xiǎochī, ránhòu zài guàng qítā huòtān zhuànzhuan, hǎo ma?",
+          "vn": "Tụi mình trước tiên ăn đồ ăn đặc sản, sau đó đi dạo xem các sạp khác, được không?",
+          "reply": "好嘞！尝尝刚出炉的烤串，趁热吃最香！"
+        }
+      ]
+    }
+  },
+  "dianzi": {
+    "id": "dianzi",
+    "name": "电子科技中心",
+    "title": "中关村 · 飞龙电子数码科技中心",
+    "pinyin": "Zhōngguāncūn · Fēilóng Diànzǐ Kējì Zhōngxīn",
+    "vn": "Trung tâm điện tử công nghệ số Trung Quan Thôn",
+    "bgKey": "dianzi",
+    "icon": "💻",
+    "desc": "汇聚高新技术产业的数码市场，专卖笔记本电脑、智能手机、相机与电子配件。",
+    "items": [
+      {
+        "id": "item_dianzi_1",
+        "name": "高性能数码笔记本电脑",
+        "pinyin": "gāoxìngnéng shùmǎ bǐjìběn diànnǎo",
+        "vn": "Máy tính xách tay kỹ thuật số hiệu năng cao",
+        "icon": "💻",
+        "price": 950,
+        "pos": {
+          "x": 28,
+          "y": 42
+        },
+        "vocabCategory": "商品种类 · 电子与科技",
+        "vocabTags": [
+          {
+            "word": "电子",
+            "py": "diànzǐ",
+            "vn": "điện tử"
+          },
+          {
+            "word": "科技",
+            "py": "kējì",
+            "vn": "khoa học kỹ thuật"
+          },
+          {
+            "word": "评价",
+            "py": "píngjià",
+            "vn": "đánh giá"
+          },
+          {
+            "word": "款式",
+            "py": "kuǎnshì",
+            "vn": "kiểu dáng"
+          },
+          {
+            "word": "新颖",
+            "py": "xīnyǐng",
+            "vn": "mới mẻ"
+          }
+        ],
+        "sentence": "这款电脑采用最新科技芯片，网上的评价非常好，款式也很新颖轻便。",
+        "sentencePy": "Zhè kuǎn diànnǎo cǎiyòng zuìxīn kējì xīnpiàn, wǎngshang de píngjià fēicháng hǎo, kuǎnshì yě hěn xīnyǐng qīngbiàn.",
+        "sentenceVn": "Dòng máy tính này dùng chip công nghệ mới nhất, đánh giá trên mạng rất tốt, kiểu dáng cũng mới mẻ gọn nhẹ.",
+        "audioKey": "sent_dianzi_laptop"
+      },
+      {
+        "id": "item_dianzi_2",
+        "name": "5G 旗舰智能手机",
+        "pinyin": "5G qíjiàn zhìnéng shǒujī",
+        "vn": "Điện thoại thông minh 5G flagship",
+        "icon": "📱",
+        "price": 780,
+        "pos": {
+          "x": 72,
+          "y": 40
+        },
+        "vocabCategory": "商品种类 · 电子与名牌",
+        "vocabTags": [
+          {
+            "word": "电子",
+            "py": "diànzǐ",
+            "vn": "điện tử"
+          },
+          {
+            "word": "科技",
+            "py": "kējì",
+            "vn": "công nghệ"
+          },
+          {
+            "word": "专门",
+            "py": "zhuānmén",
+            "vn": "chuyên"
+          },
+          {
+            "word": "名牌",
+            "py": "míngpái",
+            "vn": "hàng hiệu"
+          }
+        ],
+        "sentence": "飞龙电子中心专门批发各种知名牌子的电子数码科技产品。",
+        "sentencePy": "Fēilóng diànzǐ zhōngxīn zhuānmén pīfā gèzhǒng zhīmíng páizi de diànzǐ shùmǎ kējì chǎnpǐn.",
+        "sentenceVn": "Trung tâm điện tử Phi Long chuyên phân phối sỉ các sản phẩm công nghệ kỹ thuật số thương hiệu nổi tiếng.",
+        "audioKey": "sent_dianzi_phone"
+      },
+      {
+        "id": "item_dianzi_3",
+        "name": "无线降噪运动耳机与家用电器",
+        "pinyin": "wúxiàn jiàngzào yùndòng ěrjī yǔ jiāyòng diànqì",
+        "vn": "Tai nghe chống ồn & thiết bị điện tử gia dụng",
+        "icon": "🎧",
+        "price": 160,
+        "pos": {
+          "x": 50,
+          "y": 50
+        },
+        "vocabCategory": "商品种类 · 家用电器/电子配件",
+        "vocabTags": [
+          {
+            "word": "家用电器",
+            "py": "jiāyòng diànqì",
+            "vn": "đồ điện gia dụng"
+          },
+          {
+            "word": "电子",
+            "py": "diànzǐ",
+            "vn": "điện tử"
+          },
+          {
+            "word": "质量",
+            "py": "zhìliàng",
+            "vn": "chất lượng"
+          },
+          {
+            "word": "可靠",
+            "py": "kěkào",
+            "vn": "uy tín, đáng tin"
+          }
+        ],
+        "sentence": "这里的电子配件和小型家用电器质量可靠，还有学生优惠。",
+        "sentencePy": "Zhèlǐ de diànzǐ pèijiàn hé xiǎoxíng jiāyòng diànqì zhìliàng kěkào, hái yǒu xuésheng yōuhuì.",
+        "sentenceVn": "Phụ kiện điện tử và đồ điện gia dụng nhỏ ở đây chất lượng đáng tin, lại có ưu đãi cho học sinh sinh viên.",
+        "audioKey": "sent_dianzi_headphone"
+      }
+    ],
+    "npc": {
+      "name": "中关村数码顾问",
+      "avatar": "👨‍💻",
+      "text": "你好！欢迎来到中关村飞龙电子中心！我们专门经营正品电子科技产品，买电脑、手机还是耳机？现场随时可以测试性能！",
+      "choices": [
+        {
+          "zh": "买电脑前，我想先在科技网站上看看大家的评价，怎么样？",
+          "py": "Mǎi diànnǎo qián, wǒ xiǎng xiān zài kējì wǎngzhàn shang kànkan dàjiā de píngjià, zěnmeyàng?",
+          "vn": "Trước khi mua máy tính, tôi muốn lên trang web công nghệ xem đánh giá của mọi người, thế nào?",
+          "reply": "太理智了！网上评价最高的就是这款，售后全国联保，质量绝对可靠！"
+        },
+        {
+          "zh": "普通的牌子虽然便宜，但是科技性能可能不如名牌的好。",
+          "py": "Pǔtōng de páizi suīrán piányi, dànshì kējì xìngnéng kěnéng bùrú míngpái de hǎo.",
+          "vn": "Nhãn hiệu thông thường tuy rẻ, nhưng hiệu năng công nghệ có thể không bằng hàng hiệu.",
+          "reply": "非常内行！数码产品一定要认准正规牌子，不仅料子讲究，而且用着稳定！"
+        },
+        {
+          "zh": "那周末我们先去雅秀市场转转，然后再逛中关村，好吗？",
+          "py": "Nà zhōumò wǒmen xiān qù Yǎxiù shìchǎng zhuànzhuan, ránhòu zài guàng Zhōngguāncūn, hǎo ma?",
+          "vn": "Vậy cuối tuần chúng mình trước tiên đi chợ Nhã Tú dạo một vòng, sau đó dạo Trung Quan Thôn, được không?",
+          "reply": "随时恭候！周末我们科技体验区还会有新品发布会，欢迎带朋友来玩！"
+        }
+      ]
+    }
+  },
+  "shichang": {
+    "id": "shichang",
+    "name": "传统早市与生鲜市场",
+    "title": "晨光生鲜 · 传统早市与农贸市场",
+    "pinyin": "Chénguāng Shēngxiān · Chuántǒng Zǎoshì & Shìchǎng",
+    "vn": "Chợ sáng & Chợ nông sản truyền thống",
+    "bgKey": "shichang",
+    "icon": "🥬",
+    "desc": "清晨热闹的早市，新鲜水灵的蔬菜瓜果，热气腾腾的早餐包子，市井人情味十足。",
+    "items": [
+      {
+        "id": "item_shichang_1",
+        "name": "早市新鲜脆嫩青菜食品",
+        "pinyin": "zǎoshì xīnxiān cuìnèn qīngcài shípǐn",
+        "vn": "Rau xanh tươi ngon chợ sáng (Thực phẩm)",
+        "icon": "🥬",
+        "price": 15,
+        "pos": {
+          "x": 25,
+          "y": 44
+        },
+        "vocabCategory": "商品种类 · 早市食品",
+        "vocabTags": [
+          {
+            "word": "早市",
+            "py": "zǎoshì",
+            "vn": "chợ mai, chợ sáng"
+          },
+          {
+            "word": "市场",
+            "py": "shìchǎng",
+            "vn": "chợ"
+          },
+          {
+            "word": "食品",
+            "py": "shípǐn",
+            "vn": "thực phẩm, đồ ăn"
+          },
+          {
+            "word": "生活",
+            "py": "shēnghuó",
+            "vn": "cuộc sống, sinh hoạt"
+          }
+        ],
+        "sentence": "早市上的蔬菜不仅新鲜，而且价格比超市还便宜呢！",
+        "sentencePy": "Zǎoshì shang de shūcài bùjǐn xīnxiān, érqiě jiàgé bǐ chāoshì hái piányi ne!",
+        "sentenceVn": "Rau củ ở chợ sáng không những tươi mà giá cả còn rẻ hơn cả siêu thị nữa đấy!",
+        "audioKey": "sent_shichang_veg"
+      },
+      {
+        "id": "item_shichang_2",
+        "name": "早市甘甜多汁的水果食品",
+        "pinyin": "zǎoshì gāntián duōzhī de shuǐguǒ shípǐn",
+        "vn": "Trái cây ngọt mọng nước chợ sáng",
+        "icon": "🍎",
+        "price": 28,
+        "pos": {
+          "x": 75,
+          "y": 45
+        },
+        "vocabCategory": "商品种类 · 市场生鲜食品",
+        "vocabTags": [
+          {
+            "word": "市场",
+            "py": "shìchǎng",
+            "vn": "chợ"
+          },
+          {
+            "word": "早市",
+            "py": "zǎoshì",
+            "vn": "chợ sáng"
+          },
+          {
+            "word": "食品",
+            "py": "shípǐn",
+            "vn": "thực phẩm"
+          },
+          {
+            "word": "不如",
+            "py": "bùrú",
+            "vn": "không bằng"
+          }
+        ],
+        "sentence": "超市里的包装虽然整齐，但新鲜程度不如早市的好。",
+        "sentencePy": "Chāoshì lǐ de bāozhuāng suīrán zhěngqí, dàn xīnxiān chéngdù bùrú zǎoshì de hǎo.",
+        "sentenceVn": "Đóng gói trong siêu thị tuy gọn gàng, nhưng độ tươi không bằng ở chợ sáng.",
+        "audioKey": "sent_shichang_fruit"
+      },
+      {
+        "id": "item_shichang_3",
+        "name": "传统手工热包子早餐",
+        "pinyin": "chuántǒng shǒugōng rè bāozi zǎocān",
+        "vn": "Bánh bao nóng làm thủ công bữa sáng",
+        "icon": "🥟",
+        "price": 12,
+        "pos": {
+          "x": 50,
+          "y": 38
+        },
+        "vocabCategory": "商品种类 · 传统早餐食品",
+        "vocabTags": [
+          {
+            "word": "食品",
+            "py": "shípǐn",
+            "vn": "thực phẩm, đồ ăn"
+          },
+          {
+            "word": "早市",
+            "py": "zǎoshì",
+            "vn": "chợ sáng"
+          },
+          {
+            "word": "划算",
+            "py": "huásuàn",
+            "vn": "tiết kiệm, hời"
+          }
+        ],
+        "sentence": "清晨去早市买刚出锅的热包子，暖胃又划算。",
+        "sentencePy": "Qīngchén qù zǎoshì mǎi gāng chūguō de rè bāozi, nuǎnwèi yòu huásuàn.",
+        "sentenceVn": "Sáng sớm đi chợ sáng mua bánh bao nóng vừa ra lò, ấm bụng lại rất hời.",
+        "audioKey": "sent_shichang_breakfast"
+      }
+    ],
+    "npc": {
+      "name": "卖菜热情阿姨",
+      "avatar": "👵",
+      "text": "大清早来逛早市呀！我这菜是半夜刚从地里拔上来的，水灵灵的，价格比超市还便宜！要来两把新鲜青菜吗？",
+      "choices": [
+        {
+          "zh": "阿姨，早市的环境虽然不如超市干净，但是菜新鲜得多！",
+          "py": "Āyí, zǎoshì de huánjìng suīrán bùrú chāoshì gānjìng, dànshì cài xīnxiān de duō!",
+          "vn": "Cô ơi, môi trường chợ sáng tuy không sạch bằng siêu thị, nhưng rau tươi hơn nhiều!",
+          "reply": "哈哈可不是嘛！早市图的就是个新鲜水灵、便宜又有人情味！"
+        },
+        {
+          "zh": "超市里的包装虽然好看，但是新鲜度不如早市的。",
+          "py": "Chāoshì lǐ de bāozhuāng suīrán hǎokàn, dànshì xīnxiāndù bùrú zǎoshì de.",
+          "vn": "Đóng gói trong siêu thị tuy đẹp, nhưng độ tươi không bằng ở chợ sáng.",
+          "reply": "小伙子懂生活！阿姨再送你一把小葱和香菜，拿回去煮汤香！"
+        },
+        {
+          "zh": "那我们先买蔬菜和早餐，然后再去商场转转，行吗？",
+          "py": "Nà wǒmen xiān mǎi shūcài hé zǎocān, ránhòu zài qù shāngchǎng zhuànzhuan, xíng ma?",
+          "vn": "Vậy tụi mình trước tiên mua rau và ăn sáng, sau đó đến TTTM dạo một vòng, được chứ?",
+          "reply": "行啊，吃饱了早饭再去逛街，浑身都有劲儿！"
+        }
+      ]
+    }
+  },
+  "xiaomaibu": {
+    "id": "xiaomaibu",
+    "name": "街角便民小卖部",
+    "title": "红星 · 街角便民小卖部",
+    "pinyin": "Hóngxīng · Jiējiǎo Biànmín Xiǎomàibù",
+    "vn": "Quầy bán hàng / Tạp hóa nhỏ góc phố",
+    "bgKey": "xiaomaibu",
+    "icon": "🏪",
+    "desc": "居民楼下转角处的小卖部，方便街坊四邻购买饮料、零食、急用杂货和学习用品。",
+    "items": [
+      {
+        "id": "item_xiaomaibu_1",
+        "name": "笔记本与圆珠笔学习用品",
+        "pinyin": "bǐjìběn yǔ yuánzhūbǐ xuéxí yòngpǐn",
+        "vn": "Cuốn vở & bút bi đồ dùng học tập",
+        "icon": "📓",
+        "price": 10,
+        "pos": {
+          "x": 72,
+          "y": 42
+        },
+        "vocabCategory": "商品种类 · 学习用品",
+        "vocabTags": [
+          {
+            "word": "学习用品",
+            "py": "xuéxí yòngpǐn",
+            "vn": "đồ dùng học tập"
+          },
+          {
+            "word": "用品",
+            "py": "yòngpǐn",
+            "vn": "đồ dùng"
+          },
+          {
+            "word": "小卖部",
+            "py": "xiǎomàibù",
+            "vn": "quầy bán hàng, tạp hóa"
+          }
+        ],
+        "sentence": "学校门口的小卖部准备了各种笔记本和圆珠笔等学习用品。",
+        "sentencePy": "Xuéxiào ménkǒu de xiǎomàibù zhǔnbèi le gèzhǒng bǐjìběn hé yuánzhūbǐ děng xuéxí yòngpǐn.",
+        "sentenceVn": "Quầy tạp hóa trước cổng trường chuẩn bị rất nhiều cuốn vở và bút bi cùng các đồ dùng học tập.",
+        "audioKey": "sent_xiaomaibu_stationery"
+      },
+      {
+        "id": "item_xiaomaibu_2",
+        "name": "冰镇解渴矿泉水生活用品",
+        "pinyin": "bīngzhèn jiěkě kuàngquánshuǐ shēnghuó yòngpǐn",
+        "vn": "Nước khoáng lạnh giải khát đồ dùng sinh hoạt",
+        "icon": "🥤",
+        "price": 3,
+        "pos": {
+          "x": 26,
+          "y": 42
+        },
+        "vocabCategory": "商品种类 · 生活用品",
+        "vocabTags": [
+          {
+            "word": "小卖部",
+            "py": "xiǎomàibù",
+            "vn": "quầy bán hàng"
+          },
+          {
+            "word": "生活用品",
+            "py": "shēnghuó yòngpǐn",
+            "vn": "đồ dùng sinh hoạt"
+          },
+          {
+            "word": "不如",
+            "py": "bùrú",
+            "vn": "không bằng"
+          }
+        ],
+        "sentence": "小卖部的商品种类虽然不如超市齐全，但是下楼买瓶水特别方便。",
+        "sentencePy": "Xiǎomàibù de shāngpǐn zhǒnglèi suīrán bùrú chāoshì qíquán, dànshì xiàlóu mǎi píng shuǐ tèbié fāngbiàn.",
+        "sentenceVn": "Chủng loại hàng ở tiệm tạp hóa tuy không đầy đủ bằng siêu thị, nhưng xuống lầu mua chai nước rất tiện.",
+        "audioKey": "sent_xiaomaibu_water"
+      },
+      {
+        "id": "item_xiaomaibu_3",
+        "name": "香脆袋装小零食食品",
+        "pinyin": "xiāngcuì dàizhuāng xiǎo língshí shípǐn",
+        "vn": "Gói đồ ăn vặt giòn thơm (Thực phẩm)",
+        "icon": "🍪",
+        "price": 6,
+        "pos": {
+          "x": 48,
+          "y": 35
+        },
+        "vocabCategory": "商品种类 · 食品",
+        "vocabTags": [
+          {
+            "word": "食品",
+            "py": "shípǐn",
+            "vn": "thực phẩm, đồ ăn"
+          },
+          {
+            "word": "小卖部",
+            "py": "xiǎomàibù",
+            "vn": "quầy bán hàng"
+          },
+          {
+            "word": "划算",
+            "py": "huásuàn",
+            "vn": "tiết kiệm, hợp lý"
+          }
+        ],
+        "sentence": "小卖部里的零食食品物美价廉，买几包特别划算。",
+        "sentencePy": "Xiǎomàibù lǐ de língshí shípǐn wùměijiàlián, mǎi jǐ bāo tèbié huásuàn.",
+        "sentenceVn": "Đồ ăn vặt ở tiệm tạp hóa vừa ngon vừa rẻ, mua vài gói rất hời.",
+        "audioKey": "sent_xiaomaibu_snack"
+      }
+    ],
+    "npc": {
+      "name": "慈祥小卖部爷爷",
+      "avatar": "👴",
+      "text": "同学们买水还是买学习用品呀？店面虽然不大，但学习用品、冰镇水随时齐全，走累了进来吹吹风扇！",
+      "choices": [
+        {
+          "zh": "小卖部的商品虽然不如大商场丰富，但就在门口特别方便。",
+          "py": "Xiǎomàibù de shāngpǐn suīrán bùrú dà shāngchǎng fēngfù, dàn jiù zài ménkǒu tèbié fāngbiàn.",
+          "vn": "Hàng ở tiệm tuy không phong phú bằng TTTM lớn, nhưng ở ngay cửa nhà rất tiện.",
+          "reply": "哈哈对！缺瓶酱油、孩子缺支笔，跑下楼一分钟就解决了！"
+        },
+        {
+          "zh": "虽然东西种类少了一点，但价格很公道划算。",
+          "py": "Suīrán dōngxi zhǒnglèi shǎo le yìdiǎn, dàn jiàgé hěn gōngdào huásuàn.",
+          "vn": "Tuy chủng loại đồ có ít hơn một chút, nhưng giá cả rất phải chăng hợp lý.",
+          "reply": "邻里街坊互相照顾嘛，赚个辛苦钱，大家开心就好！"
+        },
+        {
+          "zh": "我们先买两瓶水，然后再继续去逛街，好吗？",
+          "py": "Wǒmen xiān mǎi liǎng píng shuǐ, ránhòu zài jìxù qù guàngjiē, hǎo ma?",
+          "vn": "Tụi mình trước tiên mua hai chai nước, sau đó tiếp tục đi dạo phố, được không?",
+          "reply": "好嘞！冰镇水拿好，天热多喝水，祝你们逛得开心！"
+        }
+      ]
+    }
+  },
+  "wangzhan": {
+    "id": "wangzhan",
+    "name": "手机网购与电商网站",
+    "title": "手机电商 · 线上购物网站 App",
+    "pinyin": "Shǒujī Diànshāng · Gòuwù Wǎngzhàn App",
+    "vn": "Ứng dụng mua sắm trực tuyến / Trang web thương mại điện tử",
+    "bgKey": "wangzhan",
+    "icon": "📱",
+    "desc": "掌上数字购物中心，实时查看万千买家评价，抢大额优惠券，足不出户送货到家。",
+    "items": [
+      {
+        "id": "item_wangzhan_1",
+        "name": "网站满减大额优惠券",
+        "pinyin": "wǎngzhàn mǎnjiǎn dà’é yōuhuìquàn",
+        "vn": "Phiếu giảm giá ưu đãi lớn trên trang web",
+        "icon": "🎟️",
+        "price": 50,
+        "pos": {
+          "x": 28,
+          "y": 38
+        },
+        "vocabCategory": "购物方式 · 网站与优惠",
+        "vocabTags": [
+          {
+            "word": "网站",
+            "py": "wǎngzhàn",
+            "vn": "trang web"
+          },
+          {
+            "word": "优惠",
+            "py": "yōuhuì",
+            "vn": "ưu đãi"
+          },
+          {
+            "word": "价格",
+            "py": "jiàgé",
+            "vn": "giá cả"
+          },
+          {
+            "word": "划算",
+            "py": "huásuàn",
+            "vn": "tiết kiệm, hời"
+          }
+        ],
+        "sentence": "在购物网站上买东西经常有满减优惠活动，折算下来价格非常划算。",
+        "sentencePy": "Zài gòuwù wǎngzhàn shang mǎi dōngxi jīngcháng yǒu mǎnjiǎn yōuhuì huódòng, zhésuàn xiàlái jiàgé fēicháng huásuàn.",
+        "sentenceVn": "Mua sắm trên trang web thường có ưu đãi giảm giá, tính ra giá cả rất hời.",
+        "audioKey": "sent_wangzhan_deal"
+      },
+      {
+        "id": "item_wangzhan_2",
+        "name": "带图评价精选热门商品",
+        "pinyin": "dàitú píngjià jīngxuǎn rèmén shāngpǐn",
+        "vn": "Hàng hóa tuyển chọn đánh giá tốt kèm ảnh thật",
+        "icon": "⭐",
+        "price": 120,
+        "pos": {
+          "x": 72,
+          "y": 38
+        },
+        "vocabCategory": "商品特点 · 评价与质量",
+        "vocabTags": [
+          {
+            "word": "网站",
+            "py": "wǎngzhàn",
+            "vn": "trang web"
+          },
+          {
+            "word": "商品",
+            "py": "shāngpǐn",
+            "vn": "hàng hóa"
+          },
+          {
+            "word": "评价",
+            "py": "píngjià",
+            "vn": "đánh giá"
+          },
+          {
+            "word": "专门",
+            "py": "zhuānmén",
+            "vn": "chuyên"
+          },
+          {
+            "word": "质量",
+            "py": "zhìliàng",
+            "vn": "chất lượng"
+          },
+          {
+            "word": "可靠",
+            "py": "kěkào",
+            "vn": "uy tín, đáng tin"
+          }
+        ],
+        "sentence": "在网站上买商品时，一定要专门看看其他买家的真实评价，质量才可靠。",
+        "sentencePy": "Zài wǎngzhàn shang mǎi shāngpǐn shí, yídìng yào zhuānmén kànkan qítā mǎijiā de zhēnshí píngjià, zhìliàng cái kěkào.",
+        "sentenceVn": "Khi mua hàng trên trang web, nhất định phải chuyên xem đánh giá thật của người mua khác thì chất lượng mới đáng tin.",
+        "audioKey": "sent_wangzhan_review"
+      },
+      {
+        "id": "item_wangzhan_3",
+        "name": "送货上门极速快递包裹",
+        "pinyin": "sònghuò shàngmén jísù kuàidì bāoguǒ",
+        "vn": "Gói hàng chuyển phát nhanh giao tận cửa",
+        "icon": "📦",
+        "price": 80,
+        "pos": {
+          "x": 50,
+          "y": 50
+        },
+        "vocabCategory": "购物体验 · 网站对比",
+        "vocabTags": [
+          {
+            "word": "网站",
+            "py": "wǎngzhàn",
+            "vn": "trang web"
+          },
+          {
+            "word": "不如",
+            "py": "bùrú",
+            "vn": "không bằng"
+          },
+          {
+            "word": "生活",
+            "py": "shēnghuó",
+            "vn": "cuộc sống"
+          }
+        ],
+        "sentence": "在网站上购物虽然送货到家很方便，但是体验不如去商场亲自试穿。",
+        "sentencePy": "Zài wǎngzhàn shang gòuwù suīrán sònghuò dàojiā hěn fāngbiàn, dànshì tǐyàn bùrú qù shāngchǎng qīnzì shìchuān.",
+        "sentenceVn": "Mua sắm trên web tuy giao tận nhà rất tiện, nhưng trải nghiệm không bằng đích thân ra TTTM thử đồ.",
+        "audioKey": "sent_wangzhan_express"
+      }
+    ],
+    "npc": {
+      "name": "智能网购小助手",
+      "avatar": "🤖",
+      "text": "欢迎进入线上购物网站！正在为您实时比对全网优惠！您想先查看商品的用户评价，还是直接领取今日专属折扣券？",
+      "choices": [
+        {
+          "zh": "在网站上买虽然优惠多，但是不如在实体商场亲自试穿放心。",
+          "py": "Zài wǎngzhàn shang mǎi suīrán yōuhuì duō, dànshì bùrú zài shítǐ shāngchǎng qīnzì shìchuān fàngxīn.",
+          "vn": "Mua trên web tuy nhiều ưu đãi, nhưng không yên tâm bằng đích thân đến TTTM thử đồ.",
+          "reply": "非常客观！建议您买衣服时多看带图买家秀评价，参考尺寸更稳妥！"
+        },
+        {
+          "zh": "网购虽然便宜，但是质量好坏一定要专门看看大家的真实评价。",
+          "py": "Wǎnggòu suīrán piányi, dànshì zhìliàng hǎohuài yídìng yào zhuānmén kànkan dàjiā de zhēnshí píngjià.",
+          "vn": "Mua online tuy rẻ, nhưng chất lượng tốt xấu nhất định phải chuyên xem đánh giá thực tế của mọi người.",
+          "reply": "帮您筛选出评分 4.9 分以上、质量可靠的金牌商家商品！"
+        },
+        {
+          "zh": "我们先在网站上比比价格，然后再去商场买，好吗？",
+          "py": "Wǒmen xiān zài wǎngzhàn shang bǐbi jiàgé, ránhòu zài qù shāngchǎng mǎi, hǎo ma?",
+          "vn": "Tụi mình trước tiên so sánh giá trên mạng, sau đó mới ra TTTM mua, được không?",
+          "reply": "太聪明了！线上看评价比参数，线下体验做工质感，搭配得当！"
+        }
+      ]
+    }
+  }
+}
