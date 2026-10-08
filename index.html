@@ -447,22 +447,170 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     }
     #toastNotice.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  
+    /* ========================================================
+       RESPONSIVE & MOBILE DESIGN (自适应手机/平板/横竖屏)
+       ======================================================== */
+    @media (max-width: 768px) {
+      .game-hud {
+        height: 52px;
+        padding: 0 8px;
+        padding-top: env(safe-area-inset-top, 0);
+      }
+      .hud-left, .hud-right { gap: 5px; }
+      .hud-title { font-size: 13px; }
+      .hud-badge {
+        padding: 4px 7px;
+        font-size: 11px;
+      }
+      .hud-badge-label { display: none; }
+      .hud-btn {
+        padding: 4px 7px;
+        font-size: 11px;
+        border-radius: 8px;
+      }
+      .btn-text { font-size: 10px; }
+
+      /* Map Pins Mobile Overrides */
+      .landmark-bubble {
+        padding: 4px 8px;
+        border-radius: 12px;
+        gap: 5px;
+      }
+      .landmark-icon { font-size: 18px; }
+      .landmark-title { font-size: 11px; }
+      .landmark-py { font-size: 9px; }
+      .landmark-vn { display: none !important; }
+      .pulse-effect { width: 20px; height: 10px; }
+
+      /* Venue Interior Stage Mobile Overrides */
+      .venue-back-btn {
+        top: 58px;
+        left: 8px;
+        padding: 5px 12px;
+        font-size: 12px;
+      }
+      .venue-title-banner {
+        top: 58px;
+        right: 8px;
+        padding: 5px 10px;
+      }
+      .venue-title-banner h2 { font-size: 13px; }
+      .venue-title-banner p { display: none; }
+
+      /* Product Hotspots Mobile Overrides */
+      .hotspot-tag {
+        padding: 3px 8px;
+        border-radius: 20px;
+        gap: 4px;
+      }
+      .hotspot-icon { font-size: 16px; }
+      .hotspot-name {
+        font-size: 11px;
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .hotspot-price {
+        font-size: 9px;
+        padding: 1px 4px;
+      }
+
+      /* Collapsible Dialogue Dock Mobile Overrides */
+      .dialogue-box-wrapper {
+        width: calc(100% - 16px);
+        bottom: 8px;
+        bottom: max(8px, env(safe-area-inset-bottom, 8px));
+        padding: 8px 12px;
+        border-radius: 16px;
+      }
+      .dialogue-box-wrapper.collapsed {
+        padding: 6px 10px !important;
+      }
+      .dialogue-box-wrapper.collapsed .npc-avatar {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 15px !important;
+      }
+      .dialogue-box-wrapper.collapsed .npc-line {
+        font-size: 11px !important;
+        max-width: 200px !important;
+      }
+      .npc-avatar { width: 36px; height: 36px; font-size: 18px; }
+      .npc-name { font-size: 12px; }
+      .npc-line { font-size: 12px; line-height: 1.35; }
+      .choices-container {
+        max-height: 130px;
+        gap: 5px;
+      }
+      .choice-btn {
+        padding: 6px 8px;
+        border-radius: 8px;
+      }
+      .choice-zh { font-size: 12px; }
+      .choice-py { font-size: 10px; }
+      .choice-vn { font-size: 10px; }
+
+      /* Modals Mobile Overrides */
+      .modal-card {
+        padding: 18px 14px;
+        border-radius: 20px;
+        max-height: 88vh;
+        width: 95vw;
+      }
+      .item-header { gap: 10px; margin-bottom: 12px; }
+      .item-icon-box {
+        width: 46px;
+        height: 46px;
+        font-size: 24px;
+        border-radius: 12px;
+      }
+      .vocab-tag {
+        font-size: 11px;
+        padding: 3px 7px;
+      }
+      .buy-action-btn {
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 12px;
+        margin-top: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hud-title-text { display: none; }
+      .btn-text { display: none; }
+      .hud-fullscreen-btn { display: none; }
+      .hud-btn { padding: 4px 6px; }
+      .hotspot-name { max-width: 80px; }
+      .dialogue-box-wrapper.collapsed .npc-line { max-width: 150px !important; }
+    }
+
+    @media (max-height: 520px) and (orientation: landscape) {
+      .game-hud { height: 42px; }
+      .venue-back-btn, .venue-title-banner { top: 46px; }
+      .dialogue-box-wrapper { bottom: 4px; padding: 6px 12px; }
+      .choices-container { max-height: 85px; }
+      .modal-card { max-height: 94vh; padding: 12px; }
+    }
+
   </style>
 </head>
 <body>
   <div id="app">
     <header class="game-hud">
       <div class="hud-left">
-        <div class="hud-title"><span>🛍️</span><span>逛街中文大冒险</span></div>
-        <div class="hud-badge" onclick="openInventoryModal()"><span>🎒</span><span>购物袋 (<span id="cartCount">0</span>)</span></div>
-        <div class="hud-badge"><span>💰</span><span>余额: ￥<span id="budgetAmount">2000</span></span></div>
+        <div class="hud-title"><span>🛍️</span><span class="hud-title-text">逛街大冒险</span></div>
+        <div class="hud-badge" onclick="openInventoryModal()"><span>🎒</span><span class="hud-badge-label">购物袋</span>(<span id="cartCount">0</span>)</div>
+        <div class="hud-badge"><span>💰</span><span class="hud-badge-label">余额:</span>￥<span id="budgetAmount">2000</span></div>
       </div>
       <div class="hud-right">
-        <button id="pinyinToggleBtn" class="hud-btn active" onclick="togglePinyin()">🔤 拼音: 开</button>
-        <button id="vnToggleBtn" class="hud-btn active" onclick="toggleVn()">🇻🇳 越语: 开</button>
-        <button class="hud-btn" onclick="openTopicModal()">🎲 话题</button>
-        <button class="hud-btn" onclick="openQuestModal()">📜 任务</button>
-        <button class="hud-btn" onclick="toggleFullscreen()">⛶ 全屏</button>
+        <button id="pinyinToggleBtn" class="hud-btn active" onclick="togglePinyin()">🔤 <span class="btn-text">拼音</span></button>
+        <button id="vnToggleBtn" class="hud-btn active" onclick="toggleVn()">🇻🇳 <span class="btn-text">越语</span></button>
+        <button class="hud-btn" onclick="openTopicModal()">🎲 <span class="btn-text">话题</span></button>
+        <button class="hud-btn" onclick="openQuestModal()">📜 <span class="btn-text">任务</span></button>
+        <button class="hud-btn hud-fullscreen-btn" onclick="toggleFullscreen()">⛶ <span class="btn-text">全屏</span></button>
       </div>
     </header>
     <div id="toastNotice">🎉 成功将商品放入购物袋！</div>
