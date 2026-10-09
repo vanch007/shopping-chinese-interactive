@@ -89,7 +89,8 @@ function play(key,options={}){
 audio.addEventListener('error',()=>{currentAudioKey=null;syncPlayback();toast('语音播放失败，请再点一次')});
 function sound(key,label='朗读'){return `<button class="sound" data-action="play" data-audio="${esc(key)}" aria-label="${esc(label)}" aria-pressed="false">♫</button>`}
 function py(text){return text?`<p class="py" lang="zh-Latn">${esc(text)}</p>`:''}
-function vi(text){return text?`<p class="vi" lang="vi">${esc(text)}</p>`:''}
+function tr(viText, enText){ return (state.settings && state.settings.targetLang === 'en') ? (enText || viText || '') : (viText || ''); }
+function vi(text, enText){ const txt = tr(text, enText); return txt ? `<p class="vi">${esc(txt)}</p>` : ''; }
 function explanation(text){return `<details class="explanation"><summary>Giải thích · 越南语解释 ＋</summary><p lang="vi">${esc(text)}</p></details>`}
 function backButton(page='map',venue=''){return `<button class="icon-btn" data-action="go" data-page="${page}" data-venue="${venue}" aria-label="返回">←</button>`}
 function head(title,sub='',back='map',venue=''){return `<div class="page-head">${backButton(back,venue)}<div class="heading"><h2>${esc(title)}</h2>${vi(sub)}</div></div>`}
