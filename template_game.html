@@ -147,7 +147,7 @@ document.addEventListener('click',event=>{const button=event.target.closest('but
  if(a==='buy'){buy(d.item);return}if(a==='fullscreen'){if(document.fullscreenElement)document.exitFullscreen?.();else if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>toast('可以在浏览器菜单里隐藏工具栏'));else toast('Safari 可以添加到主屏幕，获得更完整的画面');return}
  if(a==='restart-preview'){button.outerHTML='<button class="btn terra" data-action="restart">确认清空进度，重新开始</button>';return}if(a==='restart'){const settings=state.settings;state=initial();state.settings=settings;save();navigate({page:'intro'});return}
 });
-document.addEventListener('change',event=>{const key=event.target.dataset.setting;if(!key)return;state.settings[key]=key==='rate'?Number(event.target.value):event.target.checked;audio.playbackRate=state.settings.rate;save();render()});
+document.addEventListener('change',event=>{const key=event.target.dataset.setting;if(!key)return;state.settings[key]=event.target.type==='checkbox'?event.target.checked:(key==='rate'?Number(event.target.value):event.target.value);audio.playbackRate=state.settings.rate;save();render()});
 document.addEventListener('input',event=>{if(event.target.id!=='word-search')return;const q=event.target.value,start=event.target.selectionStart;view={...view,query:q,pageIndex:0};history.replaceState(view,'',location.href);render();const input=document.querySelector('#word-search');input.focus();try{input.setSelectionRange(start,start)}catch{}});
 window.addEventListener('popstate',event=>{stopAudio();view=event.state||{page:state.started?'map':'intro'};render()});
 let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>render(),100)});
