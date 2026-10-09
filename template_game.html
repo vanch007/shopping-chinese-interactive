@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="icon" href="data:,">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>沉浸式逛街冒险 · 汉语第6课《购物》- Bàn về Mua Sắm</title>
+  <style>
+    :root {
+      --primary: #f97316;
+      --primary-dark: #ea580c;
+      --primary-light: #ffedd5;
+      --accent: #8b5cf6;
+      --success: #22c55e;
+      --bg-dark: #0f172a;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --radius: 16px;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      overflow: hidden;
+      background: #000;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      user-select: none;
+    }
+    #app {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      overflow: hidden;
+      background: #1e293b;
+    }
+    .game-hud {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 64px;
+      z-index: 50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px;
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.4) 75%, transparent 100%);
+      backdrop-filter: blur(8px);
+      color: white;
+    }
+    .hud-left, .hud-right { display: flex; align-items: center; gap: 10px; }
+    .hud-title {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    .hud-badge {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .hud-badge:hover { background: rgba(255, 255, 255, 0.3); transform: scale(1.04); }
+    .hud-btn {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s;
+    }
+    .hud-btn.active {
+      background: #f97316;
+      border-color: #ea580c;
+      color: white;
+      box-shadow: 0 0 12px rgba(249, 115, 22, 0.5);
+    }
+    .screen-view {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.98);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .screen-view:not(.active) { visibility: hidden; }
+    .screen-view.active { visibility: visible; opacity: 1; pointer-events: auto; transform: scale(1); }
+    .map-pins-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .map-landmark-pin {
+      position: absolute;
+      transform: translate(-50%, -100%);
+      cursor: pointer;
+      z-index: 20;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .map-landmark-pin:hover, .map-landmark-pin:active {
+      transform: translate(-50%, -110%) scale(1.15);
+      z-index: 30;
+    }
+    .landmark-bubble {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 8px 14px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      border: 2px solid var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+      position: relative;
+    }
+    .landmark-bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 8px 6px 0 6px;
+      border-style: solid;
+      border-color: var(--primary) transparent transparent transparent;
+    }
+    .landmark-icon { font-size: 26px; }
+    .landmark-info { display: flex; flex-direction: column; line-height: 1.25; }
+    .landmark-title { font-size: 14px; font-weight: 800; color: #0f172a; }
+    .landmark-py { font-size: 11px; font-weight: 700; color: #ea580c; }
+    .landmark-vn { font-size: 11px; color: #0284c7; font-style: italic; }
+    .pulse-effect {
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 28px;
+      height: 14px;
+      background: rgba(234, 88, 12, 0.45);
+      border-radius: 50%;
+      animation: pulseAnim 2s infinite;
+      z-index: -1;
+    }
+    @keyframes pulseAnim {
+      0% { transform: translateX(-50%) scale(0.6); opacity: 0.9; }
+      100% { transform: translateX(-50%) scale(2.4); opacity: 0; }
+    }
+    .venue-back-btn {
+      position: absolute;
+      top: 76px;
+      left: 20px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      z-index: 40;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: all 0.2s;
+    }
+    .venue-back-btn:hover { background: var(--primary); transform: scale(1.05); }
+    .venue-title-banner {
+      position: absolute;
+      top: 76px;
+      right: 20px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 8px 18px;
+      border-radius: 16px;
+      z-index: 40;
+      text-align: right;
+    }
+    .venue-title-banner h2 { font-size: 18px; font-weight: 800; }
+    .venue-title-banner p { font-size: 12px; color: #cbd5e1; }
+    .product-hotspot {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      z-index: 30;
+      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .product-hotspot:hover, .product-hotspot:active {
+      transform: translate(-50%, -50%) scale(1.15);
+      z-index: 35;
+    }
+    .hotspot-tag {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      border-radius: 999px;
+      padding: 6px 14px;
+      border: 2px solid #ea580c;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      animation: floatTag 3s ease-in-out infinite;
+    }
+    @keyframes floatTag {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    .hotspot-icon { font-size: 22px; }
+    .hotspot-name { font-size: 13px; font-weight: 800; color: #0f172a; }
+    .hotspot-price {
+      background: #ea580c;
+      color: white;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    .dialogue-box-wrapper {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 32px);
+      max-width: 980px;
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(16px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 24px;
+      padding: 16px 20px;
+      z-index: 45;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .npc-header { display: flex; align-items: center; gap: 12px; }
+    .npc-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ea580c, #f97316);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      flex-shrink: 0;
+    }
+    .npc-info { flex: 1; }
+    .npc-name { font-size: 14px; font-weight: 800; color: #fdba74; }
+    .npc-line { font-size: 15px; font-weight: 700; line-height: 1.45; color: #f8fafc; margin-top: 2px; }
+
+    .dialogue-box-wrapper.collapsed {
+      padding: 8px 16px !important;
+      gap: 0 !important;
+      background: rgba(15, 23, 42, 0.85) !important;
+    }
+    .dialogue-box-wrapper.collapsed .choices-container {
+      display: none !important;
+    }
+    .dialogue-box-wrapper.collapsed .npc-avatar {
+      width: 34px !important;
+      height: 34px !important;
+      font-size: 18px !important;
+    }
+    .dialogue-box-wrapper.collapsed .npc-name {
+      font-size: 12px !important;
+    }
+    .dialogue-box-wrapper.collapsed .npc-line {
+      font-size: 12px !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      max-width: 440px !important;
+    }
+    .choices-container {
+      max-height: 160px !important;
+      overflow-y: auto !important;
+    }
+
+    .choices-container { display: grid; grid-template-columns: 1fr; gap: 6px; }
+    .choice-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 10px 14px;
+      text-align: left;
+      color: white;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .choice-btn:hover, .choice-btn:active {
+      background: rgba(234, 88, 12, 0.35);
+      border-color: #ea580c;
+      transform: translateX(4px);
+    }
+    .choice-zh { font-size: 14px; font-weight: 700; color: #fff; }
+    .choice-py { font-size: 11px; font-weight: 600; color: #fdba74; margin-top: 2px; }
+    .choice-vn { font-size: 11px; color: #38bdf8; font-style: italic; margin-top: 1px; }
+    .modal-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      z-index: 80;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.active { display: flex; animation: modalFadeIn 0.25s ease-out; }
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .modal-card {
+      background: white;
+      border-radius: 24px;
+      padding: 24px;
+      max-width: 600px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      color: #0f172a;
+      position: relative;
+    }
+    .modal-close-btn {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      background: #f1f5f9;
+      color: #64748b;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+    }
+    .modal-close-btn:hover { background: #e2e8f0; color: #0f172a; }
+    .item-header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+    .item-icon-box {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: #ffedd5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+    .vocab-badge-group { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; }
+    .vocab-tag {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #334155;
+      cursor: pointer;
+    }
+    .vocab-tag.highlight { background: #ffedd5; border-color: #fdba74; color: #c2410c; }
+    .buy-action-btn {
+      width: 100%;
+      padding: 14px;
+      border-radius: 14px;
+      border: none;
+      background: linear-gradient(135deg, #ea580c, #f97316);
+      color: white;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 6px 16px rgba(234, 88, 12, 0.35);
+      transition: all 0.2s;
+    }
+    .buy-action-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(234, 88, 12, 0.45); }
+    .inventory-list { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+    .inventory-item-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+    }
+    body.hide-pinyin .pinyin, body.hide-pinyin .choice-py, body.hide-pinyin .landmark-py { display: none !important; }
+    body.hide-vn .vietnamese, body.hide-vn .choice-vn, body.hide-vn .landmark-vn { display: none !important; }
+    #toastNotice {
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-20px);
+      background: rgba(15, 23, 42, 0.95);
+      color: white;
+      border: 1px solid #ea580c;
+      padding: 10px 22px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      z-index: 100;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+    #toastNotice.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ========================================================
+       RESPONSIVE & MOBILE DESIGN (自适应手机/平板/横竖屏)
+       ======================================================== */
+    @media (max-width: 768px) {
+      .game-hud {
+        height: 52px;
+        padding: 0 8px;
+        padding-top: env(safe-area-inset-top, 0);
+      }
+      .hud-left, .hud-right { gap: 5px; }
+      .hud-title { font-size: 13px; }
+      .hud-badge {
+        padding: 4px 7px;
+        font-size: 11px;
+      }
+      .hud-badge-label { display: none; }
+      .hud-btn {
+        padding: 4px 7px;
+        font-size: 11px;
+        border-radius: 8px;
+      }
+      .btn-text { font-size: 10px; }
+
+      /* Map Pins Mobile Overrides */
+      .landmark-bubble {
+        padding: 4px 8px;
+        border-radius: 12px;
+        gap: 5px;
+      }
+      .landmark-icon { font-size: 18px; }
+      .landmark-title { font-size: 11px; }
+      .landmark-py { font-size: 9px; }
+      .landmark-vn { display: none !important; }
+      .pulse-effect { width: 20px; height: 10px; }
+
+      /* Venue Interior Stage Mobile Overrides */
+      .venue-back-btn {
+        top: 58px;
+        left: 8px;
+        padding: 5px 12px;
+        font-size: 12px;
+      }
+      .venue-title-banner {
+        top: 58px;
+        right: 8px;
+        padding: 5px 10px;
+      }
+      .venue-title-banner h2 { font-size: 13px; }
+      .venue-title-banner p { display: none; }
+
+      /* Product Hotspots Mobile Overrides */
+      .hotspot-tag {
+        padding: 3px 8px;
+        border-radius: 20px;
+        gap: 4px;
+      }
+      .hotspot-icon { font-size: 16px; }
+      .hotspot-name {
+        font-size: 11px;
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .hotspot-price {
+        font-size: 9px;
+        padding: 1px 4px;
+      }
+
+      /* Collapsible Dialogue Dock Mobile Overrides */
+      .dialogue-box-wrapper {
+        width: calc(100% - 16px);
+        bottom: 8px;
+        bottom: max(8px, env(safe-area-inset-bottom, 8px));
+        padding: 8px 12px;
+        border-radius: 16px;
+      }
+      .dialogue-box-wrapper.collapsed {
+        padding: 6px 10px !important;
+      }
+      .dialogue-box-wrapper.collapsed .npc-avatar {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 15px !important;
+      }
+      .dialogue-box-wrapper.collapsed .npc-line {
+        font-size: 11px !important;
+        max-width: 200px !important;
+      }
+      .npc-avatar { width: 36px; height: 36px; font-size: 18px; }
+      .npc-name { font-size: 12px; }
+      .npc-line { font-size: 12px; line-height: 1.35; }
+      .choices-container {
+        max-height: 130px;
+        gap: 5px;
+      }
+      .choice-btn {
+        padding: 6px 8px;
+        border-radius: 8px;
+      }
+      .choice-zh { font-size: 12px; }
+      .choice-py { font-size: 10px; }
+      .choice-vn { font-size: 10px; }
+
+      /* Modals Mobile Overrides */
+      .modal-card {
+        padding: 18px 14px;
+        border-radius: 20px;
+        max-height: 88vh;
+        width: 95vw;
+      }
+      .item-header { gap: 10px; margin-bottom: 12px; }
+      .item-icon-box {
+        width: 46px;
+        height: 46px;
+        font-size: 24px;
+        border-radius: 12px;
+      }
+      .vocab-tag {
+        font-size: 11px;
+        padding: 3px 7px;
+      }
+      .buy-action-btn {
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 12px;
+        margin-top: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hud-title-text { display: none; }
+      .btn-text { display: none; }
+      .hud-fullscreen-btn { display: none; }
+      .hud-btn { padding: 4px 6px; }
+      .hotspot-name { max-width: 80px; }
+      .dialogue-box-wrapper.collapsed .npc-line { max-width: 150px !important; }
+    }
+
+    @media (max-height: 520px) and (orientation: landscape) {
+      .game-hud { height: 42px; }
+      .venue-back-btn, .venue-title-banner { top: 46px; }
+      .dialogue-box-wrapper { bottom: 4px; padding: 6px 12px; }
+      .choices-container { max-height: 85px; }
+      .modal-card { max-height: 94vh; padding: 12px; }
+    }
+
+
+    /* Translation stays with its utterance; explanations are optional. */
+    .dialogue-box-wrapper { max-height: min(68dvh, 620px); overflow-y: auto; overscroll-behavior: contain; }
+    .npc-header { flex-wrap: nowrap; gap: 8px; }
+    .npc-info { min-width: 0; }
+    .npc-header .hud-btn { min-height: 44px; flex-shrink: 0; }
+    .voice-button { min-width: 44px; justify-content: center; }
+    .dialogue-content { flex: 0 0 auto; }
+    .npc-line { font-size: 18px; font-weight: 600; line-height: 1.65; }
+    .npc-vn { color: #b5e2f6; font-size: 15px; line-height: 1.6; margin-top: 6px; }
+    .dialogue-box-wrapper.collapsed .dialogue-content { display: none; }
+    .dialogue-box-wrapper.collapsed { overflow: hidden; }
+    .learner-help { font-size: 14px; line-height: 1.65; margin-top: 8px; border-top: 1px solid rgba(148,163,184,.25); }
+    .learner-help summary { cursor: pointer; min-height: 44px; padding: 10px 0; color: #fdba74; font-weight: 600; }
+    .learner-help p { padding: 0 0 10px; color: #e2e8f0; overflow-wrap: anywhere; }
+    .choices-container { max-height: none !important; overflow: visible !important; flex: 0 0 auto; gap: 12px; }
+    .choice-row { display: grid; grid-template-columns: minmax(0,1fr) 44px; gap: 4px 6px; align-items: start; }
+    .choice-btn { min-width: 0; font: inherit; padding: 12px; min-height: 48px; }
+    .choice-btn span { display: block; }
+    .choice-zh { font-size: 16px; line-height: 1.55; font-weight: 600; }
+    .choice-py { font-size: 12px; line-height: 1.5; }
+    .choice-vn { font-size: 14px; font-style: normal; line-height: 1.6; color: #b5e2f6; }
+    .choice-preview { border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.08); color: white; border-radius: 10px; min-height: 44px; cursor: pointer; font-size: 18px; }
+    .choice-help { grid-column: 1 / -1; margin-top: 0; }
+    .continue-reply { margin-top: 10px; min-height: 44px; background: #ea580c; color: white; border: 0; border-radius: 10px; padding: 10px 16px; font: inherit; cursor: pointer; }
+    [hidden] { display: none !important; }
+    .product-help summary { color: #9a3412; }
+    .product-help p { color: #334155; }
+    .vocab-tag { font-family: inherit; min-height: 44px; white-space: normal; text-align: left; }
+    .vocab-tag .pinyin, .vocab-tag .vietnamese { display: inline; }
+    button:focus-visible, summary:focus-visible { outline: 3px solid #38bdf8; outline-offset: 3px; }
+    @media (max-width: 480px) and (orientation: portrait) {
+      .map-landmark-pin { left: clamp(100px, var(--map-x), calc(100% - 100px)) !important; top: var(--mobile-y) !important; }
+      .landmark-bubble { min-height: 44px; }
+    }
+    @media (max-width: 768px) {
+      .dialogue-box-wrapper { width: calc(100% - 16px); bottom: max(8px, env(safe-area-inset-bottom)); padding: 12px; max-height: 58dvh; }
+      .hotspot-tag { animation: none; min-height: 44px; }
+      .npc-line { font-size: 18px; line-height: 1.6; }
+      .npc-vn { font-size: 14px; }
+      .choice-zh { font-size: 16px; }
+      .choice-py { font-size: 12px; }
+      .choice-vn { font-size: 14px; }
+      .npc-header .hud-btn { padding: 8px; font-size: 14px; }
+      .npc-name { font-size: 13px; }
+      .dialogue-box-wrapper.collapsed { padding: 6px 10px !important; }
+      .modal-card { overflow-wrap: anywhere; padding: 18px; }
+      .item-header { display: grid; grid-template-columns: 52px minmax(0,1fr); align-items: start; padding-right: 26px; }
+      .item-header .item-icon-box { width: 52px; height: 52px; }
+      .item-header > div:last-child { grid-column: 2; margin-left: 0 !important; text-align: left !important; display: flex; align-items: center; gap: 12px; }
+      .item-header h2 { font-size: 18px !important; }
+      .modal-card .modal-close-btn { top: 10px; right: 10px; }
+      .product-help { font-size: 14px; }
+    }
+    @media (max-height: 520px) and (orientation: landscape) {
+      .dialogue-box-wrapper { max-height: 64dvh; }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header class="game-hud">
+      <div class="hud-left">
+        <div class="hud-title"><span>🛍️</span><span class="hud-title-text">逛街大冒险</span></div>
+        <div class="hud-badge" onclick="openInventoryModal()"><span>🎒</span><span class="hud-badge-label">购物袋</span>(<span id="cartCount">0</span>)</div>
+        <div class="hud-badge"><span>💰</span><span class="hud-badge-label">余额:</span>￥<span id="budgetAmount">2000</span></div>
+      </div>
+      <div class="hud-right">
+        <button id="pinyinToggleBtn" class="hud-btn active" onclick="togglePinyin()">🔤 <span class="btn-text">拼音</span></button>
+        <button id="vnToggleBtn" class="hud-btn active" onclick="toggleVn()">🇻🇳 <span class="btn-text">越语</span></button>
+        <button class="hud-btn" onclick="openTopicModal()">🎲 <span class="btn-text">话题</span></button>
+        <button class="hud-btn" onclick="openQuestModal()">📜 <span class="btn-text">任务</span></button>
+        <button class="hud-btn hud-fullscreen-btn" onclick="toggleFullscreen()">⛶ <span class="btn-text">全屏</span></button>
+      </div>
+    </header>
+    <div id="toastNotice">🎉 成功将商品放入购物袋！</div>
+    <div id="screen-map" class="screen-view active">
+      <div class="map-pins-layer">
+        <div class="map-landmark-pin" style="top: 25%; left: 74%; --map-x: 74%; --mobile-y: 41%;" onclick="enterVenue('shangchang')">
+          <div class="pulse-effect"></div>
+          <div class="landmark-bubble"><span class="landmark-icon">🏬</span><div class="landmark-info"><span class="landmark-title">王府井·西单商场</span><span class="landmark-py">shāngchǎng · 名牌/精品</span><span class="landmark-vn">TTTM cao cấp</span></div></div>
+        </div>
+        <div class="map-landmark-pin" style="top: 36%; left: 24%; --map-x: 24%; --mobile-y: 51%;" onclick="enterVenue('chaoshi')">
+          <div class="pulse-effect"></div>
+          <div class="landmark-bubble"><span class="landmark-icon">🛒</span><div class="landmark-info"><span class="landmark-title">家润多生活超市</span><span class="landmark-py">chāoshì · 日用品/食品</span><span class="landmark-vn">Siêu thị tiện ích</span></div></div>
+        </div>
+        <div class="map-landmark-pin" style="top: 68%; left: 32%; --map-x: 32%; --mobile-y: 74%;" onclick="enterVenue('yeshi')">
+          <div class="pulse-effect"></div>
+          <div class="landmark-bubble"><span class="landmark-icon">🏮</span><div class="landmark-info"><span class="landmark-title">雅秀市场·夜市货摊</span><span class="landmark-py">yèshì & huòtān · 划算</span><span class="landmark-vn">Chợ đêm & sạp hàng</span></div></div>
+        </div>
+        <div class="map-landmark-pin" style="top: 72%; left: 78%; --map-x: 78%; --mobile-y: 88%;" onclick="enterVenue('shichang')">
+          <div class="pulse-effect"></div>
+          <div class="landmark-bubble"><span class="landmark-icon">🥬</span><div class="landmark-info"><span class="landmark-title">晨光生鲜早市</span><span class="landmark-py">zǎoshì & shìchǎng · 新鲜</span><span class="landmark-vn">Chợ sáng truyền thống</span></div></div>
+        </div>
+        <div class="map-landmark-pin" style="top: 22%; left: 45%; --map-x: 45%; --mobile-y: 31%;" onclick="enterVenue('dianzi')">
+          <div class="pulse-effect"></div>
+          <div class="landmark-bubble"><span class="landmark-icon">💻</span><div class="landmark-info"><span class="landmark-title">中关村·飞龙电子中心</span><span class="landmark-py">diànzǐ zhōngxīn · 科技</span><span class="landmark-vn">TT Điện tử công nghệ</span></div></div>
+        </div>
+        <div class="map-landmark-pin" style="top: 52%; left: 55%; --map-x: 55%; --mobile-y: 61%;" onclick="enterVenue('xiaomaibu')">
+          <div class="pulse-effect"></div>
+          <div class="landmark-bubble"><span class="landmark-icon">🏪</span><div class="landmark-info"><span class="landmark-title">街角便民小卖部</span><span class="landmark-py">xiǎomàibù · 学习用品/水</span><span class="landmark-vn">Tạp hóa nhỏ góc phố</span></div></div>
+        </div>
+        <div class="map-landmark-pin" style="top: 10%; left: 16%; --map-x: 16%; --mobile-y: 20%;" onclick="enterVenue('wangzhan')">
+          <div class="pulse-effect"></div>
+          <div class="landmark-bubble"><span class="landmark-icon">📱</span><div class="landmark-info"><span class="landmark-title">手机网购平台</span><span class="landmark-py">gòuwù wǎngzhàn · 评价/优惠</span><span class="landmark-vn">Sàn mua sắm online</span></div></div>
+        </div>
+      </div>
+    </div>
+    <div id="screen-venue" class="screen-view">
+      <button class="venue-back-btn" onclick="returnToMap()"><span>🚪</span><span>离开，回大地图</span></button>
+      <div class="venue-title-banner"><h2 id="currentVenueTitle">豪华商场</h2><p id="currentVenueSubtitle">王府井 / 西单 · 专卖名牌服装与高档用品</p></div>
+      <div id="venueHotspotsLayer"></div>
+      <div class="dialogue-box-wrapper" id="dialogueBox" aria-label="中文对话 · Hội thoại tiếng Trung">
+        <div class="npc-header">
+          <div class="npc-avatar" id="npcAvatar">👩‍💼</div>
+          <div class="npc-info"><div class="npc-name" id="npcName">商场导购员</div></div>
+          <button class="hud-btn voice-button" onclick="playNpcVoice()" aria-label="重播当前台词 · Nghe lại câu hiện tại">🔊</button>
+          <button class="hud-btn voice-button" id="speechRateBtn" onclick="toggleSpeechRate()" aria-label="切换慢速朗读 · Nghe chậm">1×</button>
+          <button class="hud-btn" id="dialogueToggleBtn" onclick="toggleDialogueBox()" aria-expanded="true">收起</button>
+        </div>
+        <div class="dialogue-content">
+          <div class="npc-line" id="npcLine" aria-live="polite"></div>
+          <div class="npc-vn vietnamese" id="npcLineVn" lang="vi"></div>
+          <details class="learner-help vietnamese" id="dialogueHelp"><summary>用法解释 · Cách dùng</summary><p id="npcExplanation" lang="vi"></p></details>
+          <button class="continue-reply" id="continueReplyBtn" onclick="continueNpcReply()" hidden>听对方回复 · Nghe trả lời</button>
+        </div>
+        <div class="choices-container" id="npcChoicesList"></div>
+      </div>
+    </div>
+    <div class="modal-overlay" id="productModal" onclick="closeModalOnOverlay(event, 'productModal')">
+      <div class="modal-card">
+        <button class="modal-close-btn" onclick="closeModal('productModal')">✕</button>
+        <div class="item-header">
+          <div class="item-icon-box" id="modalItemIcon">🧥</div>
+          <div><h2 style="font-size:20px; font-weight:800; color:#0f172a;" id="modalItemName">名牌羊毛大衣</h2><div class="pinyin" id="modalItemPinyin" style="font-size:13px;">míngpái yángmáo dàyī</div><div class="vietnamese" id="modalItemVn" style="font-size:13px;">Áo khoác dạ hàng hiệu</div></div>
+          <div style="margin-left:auto; text-align:right;"><div style="font-size:20px; font-weight:800; color:#ea580c;">￥<span id="modalItemPrice">680</span></div><button class="hud-btn" style="background:#f1f5f9; color:#334155; border:none; margin-top:4px;" onclick="playCurrentProductName()">🔊 发音</button></div>
+        </div>
+        <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:14px; padding:12px 14px; margin-bottom:12px;">
+          <div style="font-size:12px; font-weight:800; color:#ea580c; text-transform:uppercase;" id="modalItemCategory">📖 对应课文生词与特点:</div>
+          <div class="vocab-badge-group" id="modalItemTags"></div>
+        </div>
+        <div style="background:#fff7ed; border:1px solid #fed7aa; border-radius:14px; padding:12px 14px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-size:12px; font-weight:800; color:#c2410c;">💡 课文重点句型例句:</span><button class="hud-btn" style="background:transparent; color:#ea580c; border:none; padding:2px;" onclick="playCurrentProductSentence()">🔊</button></div>
+          <div class="pinyin" id="modalItemSentencePy" style="margin-top:4px; font-size:12px;">Zhè jiàn dàyī suīrán jiàgé jiàoguì...</div>
+          <div style="font-size:15px; font-weight:700; color:#9a3412; margin-top:2px;" id="modalItemSentence">这件大衣虽然价格较贵，但是做工特别精细，款式也很新颖。</div>
+          <div class="vietnamese" id="modalItemSentenceVn" style="margin-top:2px; font-size:12px;">Chiếc áo khoác này tuy giá khá đắt, nhưng đường may vô cùng tinh xảo...</div>
+        </div>
+        <details class="learner-help product-help vietnamese" id="productHelp"><summary>用法解释 · Cách dùng</summary><p id="productExplanation" lang="vi"></p></details>
+        <button class="buy-action-btn" id="modalBuyBtn" onclick="buyCurrentItem()"><span>🛒</span><span>买下放入购物袋 (￥<span id="modalBuyBtnPrice">680</span>)</span></button>
+      </div>
+    </div>
+    <div class="modal-overlay" id="inventoryModal" onclick="closeModalOnOverlay(event, 'inventoryModal')">
+      <div class="modal-card">
+        <button class="modal-close-btn" onclick="closeModal('inventoryModal')">✕</button>
+        <h2 style="font-size:20px; font-weight:800; display:flex; align-items:center; gap:8px;"><span>🎒</span><span>我的随身购物袋 (Túi mua sắm)</span></h2>
+        <p style="font-size:13px; color:#64748b; margin-top:4px;">今天逛街一共购买了 <strong id="invTotalCount">0</strong> 件商品，花费 ￥<strong id="invTotalSpent">0</strong>。</p>
+        <div class="inventory-list" id="inventoryList"><div style="text-align:center; padding:30px; color:#94a3b8; font-size:14px;">🛒 购物袋还是空的哦！快去各个店铺逛逛并点击商品购买吧！</div></div>
+      </div>
+    </div>
+    <div class="modal-overlay" id="questModal" onclick="closeModalOnOverlay(event, 'questModal')">
+      <div class="modal-card">
+        <button class="modal-close-btn" onclick="closeModal('questModal')">✕</button>
+        <h2 style="font-size:20px; font-weight:800; display:flex; align-items:center; gap:8px;"><span>📜</span><span>今日逛街采购任务单 (Nhiệm vụ mua sắm)</span></h2>
+        <p style="font-size:13px; color:#64748b; margin-top:4px;">完成下列采购与口语对练任务，点亮中文达人勋章！</p>
+        <div style="display:flex; flex-direction:column; gap:10px; margin-top:14px;">
+          <div class="inventory-item-card" id="questCard1"><span style="font-size:24px;">🏬</span><div style="flex:1;"><div style="font-size:14px; font-weight:800;">任务一：商场名牌与床上用品</div><div style="font-size:12px; color:#64748b;">去商场挑选一件【名牌】大衣或【床上用品】，体验【料子讲究】和【做工精细】。</div></div><span id="questStatus1" style="font-size:13px; font-weight:700; color:#ea580c;">未完成</span></div>
+          <div class="inventory-item-card" id="questCard2"><span style="font-size:24px;">🏮</span><div style="flex:1;"><div style="font-size:14px; font-weight:800;">任务二：夜市货摊体验划算小吃</div><div style="font-size:12px; color:#64748b;">去夜市品尝【货摊食品】，用【虽然……但是……】或【不如】对比货摊做工。</div></div><span id="questStatus2" style="font-size:13px; font-weight:700; color:#ea580c;">未完成</span></div>
+          <div class="inventory-item-card" id="questCard3"><span style="font-size:24px;">🛒</span><div style="flex:1;"><div style="font-size:14px; font-weight:800;">任务三：超市采购日用品与食品</div><div style="font-size:12px; color:#64748b;">去生活超市购买【日用品】与【食品】，享受折扣优惠。</div></div><span id="questStatus3" style="font-size:13px; font-weight:700; color:#ea580c;">未完成</span></div>
+          <div class="inventory-item-card" id="questCard4"><span style="font-size:24px;">💻</span><div style="flex:1;"><div style="font-size:14px; font-weight:800;">任务四：中关村探寻科技数码</div><div style="font-size:12px; color:#64748b;">去中关村飞龙电子中心查看笔记本电脑的用户【评价】与【科技】。</div></div><span id="questStatus4" style="font-size:13px; font-weight:700; color:#ea580c;">未完成</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay" id="topicModal" onclick="closeModalOnOverlay(event, 'topicModal')">
+      <div class="modal-card">
+        <button class="modal-close-btn" onclick="closeModal('topicModal')">✕</button>
+        <h2 style="font-size:20px; font-weight:800; display:flex; align-items:center; gap:8px;"><span>🎲</span><span>聊天破冰话题卡 (Chủ đề trò chuyện)</span></h2>
+        <div style="text-align:center; margin:16px 0;"><button class="buy-action-btn" style="margin:0 auto; max-width:280px; padding:10px 18px;" onclick="drawRandomTopic()"><span>✨ 随机换一个话题</span></button></div>
+        <div id="topicCardContent" style="background:#fff7ed; border:1px solid #fed7aa; border-radius:16px; padding:18px;"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const B64_IMAGES = __IMAGES_JSON__;
+    const VENUES_DATA = __VENUES_JSON__;
+    const MLX_AUDIO = __AUDIO_JSON__;
+
+    const speechPlayer = new Audio();
+    speechPlayer.preload = 'auto';
+    let currentAudioObj = null;
+    let finishCurrentAudio = null;
+    let activeDialogue = null;
+    let pendingReply = null;
+    let dialogueVersion = 0;
+
+    function stopAudioPlayback() {
+      if (currentAudioObj) currentAudioObj.pause();
+      if (finishCurrentAudio) finishCurrentAudio(false);
+      currentAudioObj = null;
+      finishCurrentAudio = null;
+    }
+
+    function playAudioClip(key) {
+      stopAudioPlayback();
+      if (!MLX_AUDIO[key]) {
+        showToast('这段音频暂不可用 · Chưa có âm thanh cho câu này');
+        return Promise.resolve(false);
+      }
+      return new Promise(resolve => {
+        const snd = speechPlayer;
+        snd.src = MLX_AUDIO[key];
+        let settled = false;
+        const finish = ok => {
+          if (settled) return;
+          settled = true;
+          snd.onended = null;
+          snd.onerror = null;
+          if (currentAudioObj === snd) {
+            currentAudioObj = null;
+            finishCurrentAudio = null;
+          }
+          resolve(ok);
+        };
+        currentAudioObj = snd;
+        finishCurrentAudio = finish;
+        snd.playbackRate = speechRate;
+        snd.preservesPitch = true;
+        snd.onended = () => finish(true);
+        snd.onerror = () => {
+          if (!settled) showToast('请点喇叭重试 · Nhấn loa để thử lại');
+          finish(false);
+        };
+        snd.play().catch(() => {
+          if (!settled) showToast('请点喇叭重试 · Nhấn loa để thử lại');
+          finish(false);
+        });
+      });
+    }
+
+    function playCurrentProductName() {
+      if (selectedItem) playAudioClip('prod_' + selectedItem.id);
+    }
+    function toggleSpeechRate() {
+      speechRate = speechRate === 1 ? 0.85 : 1;
+      document.getElementById('speechRateBtn').textContent = speechRate === 1 ? '1×' : '0.85×';
+      if (currentAudioObj) currentAudioObj.playbackRate = speechRate;
+    }
+    function playVocabWord(word) { playAudioClip('vocab_' + word); }
+    function playCurrentProductSentence() {
+      if (selectedItem) playAudioClip(selectedItem.audioKey);
+    }
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    let budget = 2000;
+    let inventory = [];
+    let currentVenue = null;
+    let selectedItem = null;
+    let showPinyin = true;
+    let showVn = true;
+    let speechRate = 1.0;
+    const quests = { q1: false, q2: false, q3: false, q4: false };
+    const topics = [
+      { zh: "在越南，你平时喜欢逛超市还是去传统市场？为什么？", py: "Zài Yuènán, nǐ píngshí xǐhuan guàng chāoshì háishì qù chuántǒng shìchǎng? Wèishénme?", vn: "Ở Việt Nam, bạn thường thích đi siêu thị hay đi chợ truyền thống? Tại sao?", pattern: "虽然传统市场……，但是超市……", vocab: "新鲜 (xīnxiān)、划算 (huásuàn)、日用品 (rìyòngpǐn)、不如 (bùrú)", ans: "“虽然传统市场的蔬菜便宜又新鲜，但是不如超市干净，而且超市日用品很齐全。”" },
+      { zh: "买衣服的时候，你觉得牌子重要，还是款式和料子更重要？", py: "Mǎi yīfu de shíhou, nǐ juéde páizi zhòngyào, háishì kuǎnshì hé liàozi gèng zhòngyào?", vn: "Khi mua quần áo, bạn thấy thương hiệu quan trọng, hay kiểu dáng và chất liệu quan trọng hơn?", pattern: "那要看买什么衣服了 / 虽然后者……但是……", vocab: "名牌 (míngpái)、料子讲究 (liàozi jiǎngjiu)、做工精细 (zuògōng jīngxì)、款式新颖 (kuǎnshì xīnyǐng)", ans: "“那要看买什么衣服了。如果是运动鞋我更看重牌子；如果是日常衣服，做工精细和料子讲究更重要。”" },
+      { zh: "如果朋友周末约你出去，你会提议先去哪里，然后再去哪里？", py: "Rúguǒ péngyou zhōumò yuē nǐ chūqù, nǐ huì tíyì xiān qù nǎlǐ, ránhòu zài qù nǎlǐ?", vn: "Nếu cuối tuần bạn bè hẹn bạn đi chơi, bạn sẽ đề xuất trước tiên đi đâu, sau đó đi đâu?", pattern: "周末我们先去……，然后再去……，好吗？/ 怎么样？", vocab: "逛 (guàng)、转转 (zhuànzhuan)、夜市 (yèshì)、商场 (shāngchǎng)、吃小吃", ans: "“周末我们先去商场看电影，然后再去夜市转转吃小吃，好吗？”" }
+    ];
+    function showToast(msg) {
+      const t = document.getElementById('toastNotice');
+      t.innerText = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2200);
+    }
+    function togglePinyin() {
+      showPinyin = !showPinyin;
+      document.body.classList.toggle('hide-pinyin', !showPinyin);
+      document.getElementById('pinyinToggleBtn').innerHTML = '🔤 <span class="btn-text">拼音: ' + (showPinyin ? '开' : '关') + '</span>';
+      document.getElementById('pinyinToggleBtn').classList.toggle('active', showPinyin);
+    }
+    function toggleVn() {
+      showVn = !showVn;
+      document.body.classList.toggle('hide-vn', !showVn);
+      document.getElementById('vnToggleBtn').innerHTML = '🇻🇳 <span class="btn-text">越语: ' + (showVn ? '开' : '关') + '</span>';
+      document.getElementById('vnToggleBtn').classList.toggle('active', showVn);
+    }
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        if (document.exitFullscreen) document.exitFullscreen();
+      }
+    }
+
+    let dialogueCollapsed = true;
+    function toggleDialogueBox() {
+      dialogueCollapsed = !dialogueCollapsed;
+      const box = document.getElementById("dialogueBox");
+      const btn = document.getElementById("dialogueToggleBtn");
+      if (box && btn) {
+        box.classList.toggle("collapsed", dialogueCollapsed);
+        btn.textContent = dialogueCollapsed ? "💬 对话" : "收起";
+        btn.setAttribute("aria-expanded", String(!dialogueCollapsed));
+        btn.style.background = dialogueCollapsed ? "rgba(234, 88, 12, 0.85)" : "rgba(234, 88, 12, 0.4)";
+      }
+    }
+
+    function enterVenue(venueId) {
+      const v = VENUES_DATA[venueId];
+      if (!v) return;
+      dialogueVersion++;
+      pendingReply = null;
+      currentVenue = v;
+      playAudioClip("sys_enter_" + venueId, "走，我们去" + v.name + "看看！");
+      const screenMap = document.getElementById('screen-map');
+      const screenVenue = document.getElementById('screen-venue');
+      screenMap.classList.remove('active');
+      screenVenue.style.backgroundImage = 'url(' + B64_IMAGES[v.bgKey] + ')';
+      screenVenue.classList.add('active');
+      document.getElementById('currentVenueTitle').innerText = v.name;
+      document.getElementById('currentVenueSubtitle').innerText = v.title;
+      renderVenueHotspots(v);
+      renderNpcDialogue(v);
+      dialogueCollapsed = false;
+      toggleDialogueBox();
+    }
+    function returnToMap() {
+      dialogueVersion++;
+      pendingReply = null;
+      activeDialogue = null;
+      currentVenue = null;
+      document.getElementById('screen-venue').classList.remove('active');
+      document.getElementById('screen-map').classList.add('active');
+      playAudioClip("sys_to_map", "回到城市地图");
+    }
+    function renderVenueHotspots(venue) {
+      const container = document.getElementById('venueHotspotsLayer');
+      container.innerHTML = venue.items.map(item => `
+        <div class="product-hotspot" style="top: ${item.pos.y}%; left: ${item.pos.x}%;" onclick="openProductModal('${item.id}')">
+          <div class="hotspot-tag">
+            <span class="hotspot-icon">${item.icon}</span>
+            <span class="hotspot-name">${item.name}</span>
+            <span class="hotspot-price">￥${item.price}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+    function showDialogueLine(line) {
+      activeDialogue = line;
+      document.getElementById('npcName').textContent = line.name;
+      document.getElementById('npcAvatar').textContent = line.avatar;
+      document.getElementById('npcLine').textContent = line.zh;
+      document.getElementById('npcLineVn').textContent = line.vn || '';
+      document.getElementById('npcExplanation').textContent = line.explanationVi || '';
+      document.getElementById('dialogueHelp').open = false;
+      document.getElementById('dialogueBox').scrollTop = 0;
+    }
+    function renderNpcDialogue(venue) {
+      const npc = venue.npc;
+      showDialogueLine({name:npc.name, avatar:npc.avatar, zh:npc.text,
+        vn:npc.vn, explanationVi:npc.explanationVi, audioKey:npc.audioKey});
+      document.getElementById('continueReplyBtn').hidden = true;
+      const choicesBox = document.getElementById('npcChoicesList');
+      choicesBox.innerHTML = npc.choices.map((c, idx) => `
+        <div class="choice-row">
+          <button class="choice-btn" onclick="selectNpcChoice(${idx})">
+            <span class="choice-zh">${escapeHtml(c.zh)}</span>
+            <span class="choice-py">${escapeHtml(c.py)}</span>
+            <span class="choice-vn" lang="vi">${escapeHtml(c.vn)}</span>
+          </button>
+          <button class="choice-preview" onclick="previewChoice(${idx})" aria-label="试听回复 ${idx+1} · Nghe mẫu">🔊</button>
+          <details class="learner-help choice-help vietnamese"><summary>回复提示 · Gợi ý trả lời</summary><p lang="vi">${escapeHtml(c.explanationVi)}</p></details>
+        </div>
+      `).join('');
+    }
+    function playNpcVoice() {
+      if (activeDialogue) playAudioClip(activeDialogue.audioKey);
+    }
+    function previewChoice(idx) {
+      const c = currentVenue?.npc.choices[idx];
+      if (c) playAudioClip(c.audioKey);
+    }
+    async function selectNpcChoice(idx) {
+      if (!currentVenue) return;
+      const c = currentVenue.npc.choices[idx];
+      if (!c) return;
+      const version = ++dialogueVersion;
+      pendingReply = {choice:c, venueId:currentVenue.id, version};
+      showDialogueLine({name:'你说 · Bạn nói', avatar:'💬', zh:c.zh,
+        vn:c.vn, explanationVi:c.explanationVi, audioKey:c.audioKey});
+      document.getElementById('continueReplyBtn').hidden = false;
+      const completed = await playAudioClip(c.audioKey);
+      if (completed && version === dialogueVersion && pendingReply) continueNpcReply();
+    }
+    function continueNpcReply() {
+      if (!pendingReply || currentVenue?.id !== pendingReply.venueId) return;
+      const c = pendingReply.choice;
+      pendingReply = null;
+      document.getElementById('continueReplyBtn').hidden = true;
+      showDialogueLine({name:currentVenue.npc.name, avatar:currentVenue.npc.avatar,
+        zh:c.reply, vn:c.replyVn, explanationVi:c.replyExplanationVi, audioKey:c.replyAudioKey});
+      playAudioClip(c.replyAudioKey);
+    }
+    function openProductModal(itemId) {
+      if (!currentVenue) return;
+      const item = currentVenue.items.find(x => x.id === itemId);
+      if (!item) return;
+      selectedItem = item;
+      document.getElementById('modalItemIcon').innerText = item.icon;
+      document.getElementById('modalItemName').innerText = item.name;
+      document.getElementById('modalItemPinyin').innerText = item.pinyin;
+      document.getElementById('modalItemVn').innerText = item.vn;
+      document.getElementById('modalItemPrice').innerText = item.price;
+      document.getElementById('modalBuyBtnPrice').innerText = item.price;
+      document.getElementById('modalItemCategory').innerText = "📖 " + item.vocabCategory + ":";
+      const tagsBox = document.getElementById('modalItemTags');
+      tagsBox.innerHTML = item.vocabTags.map(t => `
+        <button class="vocab-tag highlight" onclick="playVocabWord('${t.word}')">
+          ${escapeHtml(t.word)} <span class="pinyin">${escapeHtml(t.py)}</span><span class="vietnamese" lang="vi"> · ${escapeHtml(t.vn)}</span> 🔊
+        </button>
+      `).join('');
+      document.getElementById('modalItemSentence').innerText = item.sentence;
+      document.getElementById('modalItemSentencePy').innerText = item.sentencePy;
+      document.getElementById('modalItemSentenceVn').innerText = item.sentenceVn;
+      document.getElementById('productExplanation').textContent = item.explanationVi || '';
+      document.getElementById('productHelp').open = false;
+      openModal('productModal');
+      playAudioClip(selectedItem.audioKey, selectedItem.sentence);
+    }
+    function buyCurrentItem() {
+      if (!selectedItem) return;
+      if (budget < selectedItem.price) {
+        alert("零花钱不够啦！");
+        return;
+      }
+      budget -= selectedItem.price;
+      inventory.push(selectedItem);
+      document.getElementById('budgetAmount').innerText = budget;
+      document.getElementById('cartCount').innerText = inventory.length;
+      if (currentVenue.id === 'shangchang') quests.q1 = true;
+      if (currentVenue.id === 'yeshi') quests.q2 = true;
+      if (currentVenue.id === 'chaoshi') quests.q3 = true;
+      if (currentVenue.id === 'dianzi') quests.q4 = true;
+      updateQuestUI();
+      closeModal('productModal');
+      showToast("🎉 成功购买：" + selectedItem.name + "！已放入购物袋！");
+      playAudioClip("sys_buy_success", "买好了！已放入购物袋！");
+    }
+    function openInventoryModal() {
+      document.getElementById('invTotalCount').innerText = inventory.length;
+      const spent = 2000 - budget;
+      document.getElementById('invTotalSpent').innerText = spent;
+      const list = document.getElementById('inventoryList');
+      if (inventory.length === 0) {
+        list.innerHTML = '<div style="text-align:center; padding:30px; color:#94a3b8; font-size:14px;">🛒 购物袋还是空的哦！快去各个店铺逛逛并点击商品购买吧！</div>';
+      } else {
+        list.innerHTML = inventory.map(item => `
+          <div class="inventory-item-card">
+            <span style="font-size:28px;">${item.icon}</span>
+            <div style="flex:1;">
+              <div style="font-size:14px; font-weight:800;">${item.name}</div>
+              <div style="font-size:12px; color:#ea580c;">${item.pinyin} · ￥${item.price}</div>
+              <div style="font-size:11px; color:#64748b;">${item.vocabCategory}</div>
+            </div>
+            <button class="hud-btn" style="background:#ffedd5; color:#ea580c; border:none;" onclick="playAudioClip('prod_${item.id}')">🔊</button>
+          </div>
+        `).join('');
+      }
+      openModal('inventoryModal');
+    }
+    function updateQuestUI() {
+      if (quests.q1) { document.getElementById('questStatus1').innerText = "✅ 已完成"; document.getElementById('questStatus1').style.color = "#16a34a"; }
+      if (quests.q2) { document.getElementById('questStatus2').innerText = "✅ 已完成"; document.getElementById('questStatus2').style.color = "#16a34a"; }
+      if (quests.q3) { document.getElementById('questStatus3').innerText = "✅ 已完成"; document.getElementById('questStatus3').style.color = "#16a34a"; }
+      if (quests.q4) { document.getElementById('questStatus4').innerText = "✅ 已完成"; document.getElementById('questStatus4').style.color = "#16a34a"; }
+    }
+    function openQuestModal() {
+      updateQuestUI();
+      openModal('questModal');
+    }
+    function openTopicModal() {
+      drawRandomTopic();
+      openModal('topicModal');
+    }
+    function drawRandomTopic() {
+      const topicIndex = Math.floor(Math.random() * topics.length);
+      const t = topics[topicIndex];
+      const box = document.getElementById('topicCardContent');
+      box.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span style="font-size:12px; font-weight:800; color:#ea580c;">💬 讨论话题:</span>
+          <button class="hud-btn" style="background:transparent; color:#ea580c; border:none; padding:2px;" onclick="playAudioClip('topic_${topicIndex}')">🔊</button>
+        </div>
+        <div class="pinyin" style="font-size:13px; margin-top:4px;">${t.py}</div>
+        <div style="font-size:17px; font-weight:800; color:#9a3412; margin-top:2px;">${t.zh}</div>
+        <div class="vietnamese" style="font-size:13px; margin-top:2px;">${t.vn}</div>
+        <div style="background:white; border-radius:12px; padding:12px; margin-top:12px; border:1px solid #fed7aa;">
+          <div style="font-size:12px; font-weight:800; color:#ea580c;">💡 句型提示: ${t.pattern}</div>
+          <div style="font-size:12px; color:#475569; margin-top:3px;">词汇: ${t.vocab}</div>
+          <div style="font-size:13px; color:#0f172a; margin-top:4px; font-style:italic;">参考: ${t.ans}</div>
+        </div>
+      `;
+      playAudioClip('topic_' + topicIndex);
+    }
+    function openModal(id) { document.getElementById(id).classList.add('active'); }
+    function closeModal(id) { stopAudioPlayback(); document.getElementById(id).classList.remove('active'); }
+    function closeModalOnOverlay(e, id) { if (e.target.id === id) closeModal(id); }
+    document.addEventListener('visibilitychange', () => { if (document.hidden) stopAudioPlayback(); });
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('screen-map').style.backgroundImage = 'url(' + B64_IMAGES['map'] + ')';
+    });
+  </script>
+</body>
+</html>

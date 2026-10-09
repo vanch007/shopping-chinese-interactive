@@ -3,3 +3,11 @@
 *.json
 !game_data_rich.json
 template*.html
+/work/
+/output/
+!template_game.html
+!compile_final_app.py
+!scripts/*.py
+!scripts/*.js
+/.playwright-cli/
+/assets/audio/conversation_demo.mp3
