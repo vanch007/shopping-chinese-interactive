@@ -16,7 +16,9 @@
       "vn": "hàng hóa",
       "exampleZh": "看看这些商品。",
       "exampleVi": "Xem những món hàng này.",
-      "audioText": "商品，看看这些商品。"
+      "audioText": "商品，看看这些商品。",
+      "en": "goods, products",
+      "exampleEn": "Look at these goods."
     },
     {
       "word": "名牌",
@@ -24,7 +26,9 @@
       "vn": "hàng hiệu",
       "exampleZh": "这是名牌吗？",
       "exampleVi": "Đây là hàng hiệu à?",
-      "audioText": "名牌，这是名牌吗？"
+      "audioText": "名牌，这是名牌吗？",
+      "en": "famous brand",
+      "exampleEn": "Is this a famous brand?"
     },
     {
       "word": "款式",
@@ -32,7 +36,9 @@
       "vn": "kiểu dáng",
       "exampleZh": "不同的款式。",
       "exampleVi": "Các kiểu dáng khác nhau.",
-      "audioText": "款式，不同的款式。"
+      "audioText": "款式，不同的款式。",
+      "en": "style, design",
+      "exampleEn": "Different styles."
     },
     {
       "word": "新颖",
@@ -40,7 +46,9 @@
       "vn": "mới mẻ",
       "exampleZh": "款式很新颖。",
       "exampleVi": "Kiểu dáng rất mới.",
-      "audioText": "新颖，款式很新颖。"
+      "audioText": "新颖，款式很新颖。",
+      "en": "novel, modern",
+      "exampleEn": "The style is very modern."
     },
     {
       "word": "料子",
@@ -48,7 +56,9 @@
       "vn": "chất liệu",
       "exampleZh": "摸摸料子。",
       "exampleVi": "Sờ thử chất vải.",
-      "audioText": "料子，摸摸料子。"
+      "audioText": "料子，摸摸料子。",
+      "en": "fabric, material",
+      "exampleEn": "Feel the fabric."
     },
     {
       "word": "讲究",
@@ -56,7 +66,9 @@
       "vn": "chú trọng, tinh tế",
       "exampleZh": "料子很讲究。",
       "exampleVi": "Chất vải được chọn kỹ.",
-      "audioText": "讲究，料子很讲究。"
+      "audioText": "讲究，料子很讲究。",
+      "en": "refined, high-quality",
+      "exampleEn": "The material is very refined."
     },
     {
       "word": "做工",
@@ -64,7 +76,9 @@
       "vn": "đường may",
       "exampleZh": "看看做工。",
       "exampleVi": "Xem đường may.",
-      "audioText": "做工，看看做工。"
+      "audioText": "做工，看看做工。",
+      "en": "craftsmanship",
+      "exampleEn": "Check the craftsmanship."
     },
     {
       "word": "精细",
@@ -72,7 +86,9 @@
       "vn": "tinh xảo",
       "exampleZh": "做工很精细。",
       "exampleVi": "Được làm rất tỉ mỉ.",
-      "audioText": "精细，做工很精细。"
+      "audioText": "精细，做工很精细。",
+      "en": "exquisite, fine",
+      "exampleEn": "The craftsmanship is very fine."
     },
     {
       "word": "床上用品",
@@ -80,7 +96,9 @@
       "vn": "vật dụng trên giường",
       "exampleZh": "纯棉床上用品。",
       "exampleVi": "Bộ chăn ga cotton.",
-      "audioText": "床上用品，纯棉床上用品。"
+      "audioText": "床上用品，纯棉床上用品。",
+      "en": "bedding products",
+      "exampleEn": "Pure cotton bedding set."
     },
     {
       "word": "用品",
@@ -88,7 +106,9 @@
       "vn": "đồ dùng",
       "exampleZh": "学习用品。",
       "exampleVi": "Đồ dùng học tập.",
-      "audioText": "用品，学习用品。"
+      "audioText": "用品，学习用品。",
+      "en": "articles, supplies",
+      "exampleEn": "School supplies."
     },
     {
       "word": "质量",
@@ -96,7 +116,9 @@
       "vn": "chất lượng",
       "exampleZh": "质量很好。",
       "exampleVi": "Chất lượng rất tốt.",
-      "audioText": "质量，质量很好。"
+      "audioText": "质量，质量很好。",
+      "en": "quality",
+      "exampleEn": "The quality is very good."
     },
     {
       "word": "可靠",
@@ -104,7 +126,9 @@
       "vn": "uy tín, đáng tin",
       "exampleZh": "质量很可靠。",
       "exampleVi": "Chất lượng đáng tin cậy.",
-      "audioText": "可靠，质量很可靠。"
+      "audioText": "可靠，质量很可靠。",
+      "en": "reliable, dependable",
+      "exampleEn": "The quality is reliable."
     },
     {
       "word": "体育用品",
@@ -112,7 +136,9 @@
       "vn": "đồ thể thao",
       "exampleZh": "买体育用品。",
       "exampleVi": "Mua đồ dùng thể thao.",
-      "audioText": "体育用品，买体育用品。"
+      "audioText": "体育用品，买体育用品。",
+      "en": "sports goods",
+      "exampleEn": "Buy sports equipment."
     },
     {
       "word": "体育",
@@ -120,7 +146,9 @@
       "vn": "thể dục, thể thao",
       "exampleZh": "我喜欢体育运动。",
       "exampleVi": "Tôi thích hoạt động thể thao.",
-      "audioText": "体育，我喜欢体育运动。"
+      "audioText": "体育，我喜欢体育运动。",
+      "en": "sports, athletic",
+      "exampleEn": "I like sports and athletics."
     },
     {
       "word": "牌子",
@@ -128,7 +156,9 @@
       "vn": "thương hiệu",
       "exampleZh": "这是什么牌子？",
       "exampleVi": "Đây là thương hiệu gì?",
-      "audioText": "牌子，这是什么牌子？"
+      "audioText": "牌子，这是什么牌子？",
+      "en": "brand",
+      "exampleEn": "What brand is this?"
     },
     {
       "word": "生活用品",
@@ -136,7 +166,9 @@
       "vn": "đồ dùng sinh hoạt",
       "exampleZh": "生活用品在这边。",
       "exampleVi": "Đồ dùng sinh hoạt ở bên này.",
-      "audioText": "生活用品，生活用品在这边。"
+      "audioText": "生活用品，生活用品在这边。",
+      "en": "daily living essentials",
+      "exampleEn": "Living essentials are over here."
     },
     {
       "word": "日用品",
@@ -144,7 +176,9 @@
       "vn": "đồ dùng hằng ngày",
       "exampleZh": "买点日用品。",
       "exampleVi": "Mua một ít đồ dùng hằng ngày.",
-      "audioText": "日用品，买点日用品。"
+      "audioText": "日用品，买点日用品。",
+      "en": "daily necessities",
+      "exampleEn": "Buy some daily necessities."
     },
     {
       "word": "生活",
@@ -152,7 +186,9 @@
       "vn": "cuộc sống",
       "exampleZh": "日常生活。",
       "exampleVi": "Cuộc sống hằng ngày.",
-      "audioText": "生活，日常生活。"
+      "audioText": "生活，日常生活。",
+      "en": "life, living",
+      "exampleEn": "Daily life."
     },
     {
       "word": "优惠",
@@ -160,7 +196,9 @@
       "vn": "ưu đãi",
       "exampleZh": "今天有优惠。",
       "exampleVi": "Hôm nay có ưu đãi.",
-      "audioText": "优惠，今天有优惠。"
+      "audioText": "优惠，今天有优惠。",
+      "en": "discount, promotion",
+      "exampleEn": "There is a discount today."
     },
     {
       "word": "划算",
@@ -168,7 +206,9 @@
       "vn": "tiết kiệm, hời",
       "exampleZh": "这样买很划算。",
       "exampleVi": "Mua như vậy rất hời.",
-      "audioText": "划算，这样买很划算。"
+      "audioText": "划算，这样买很划算。",
+      "en": "worthwhile, good deal",
+      "exampleEn": "It is a great deal to buy it this way."
     },
     {
       "word": "食品",
@@ -176,7 +216,9 @@
       "vn": "thực phẩm, đồ ăn",
       "exampleZh": "新鲜食品。",
       "exampleVi": "Thực phẩm tươi.",
-      "audioText": "食品，新鲜食品。"
+      "audioText": "食品，新鲜食品。",
+      "en": "food, groceries",
+      "exampleEn": "Fresh food products."
     },
     {
       "word": "家用电器",
@@ -184,7 +226,9 @@
       "vn": "đồ điện gia dụng",
       "exampleZh": "家用电器很方便。",
       "exampleVi": "Đồ điện gia dụng rất tiện.",
-      "audioText": "家用电器，家用电器很方便。"
+      "audioText": "家用电器，家用电器很方便。",
+      "en": "home appliances",
+      "exampleEn": "Home appliances are very convenient."
     },
     {
       "word": "价格",
@@ -192,7 +236,9 @@
       "vn": "giá cả",
       "exampleZh": "比较一下价格。",
       "exampleVi": "So sánh giá thử.",
-      "audioText": "价格，比较一下价格。"
+      "audioText": "价格，比较一下价格。",
+      "en": "price",
+      "exampleEn": "Compare the prices."
     },
     {
       "word": "夜市",
@@ -200,7 +246,9 @@
       "vn": "chợ đêm",
       "exampleZh": "晚上逛夜市。",
       "exampleVi": "Buổi tối đi dạo chợ đêm.",
-      "audioText": "夜市，晚上逛夜市。"
+      "audioText": "夜市，晚上逛夜市。",
+      "en": "night market",
+      "exampleEn": "Stroll through the night market in the evening."
     },
     {
       "word": "货摊",
@@ -208,7 +256,9 @@
       "vn": "sạp hàng",
       "exampleZh": "货摊上的饰品。",
       "exampleVi": "Đồ trang sức trên sạp hàng.",
-      "audioText": "货摊，货摊上的饰品。"
+      "audioText": "货摊，货摊上的饰品。",
+      "en": "stall, booth",
+      "exampleEn": "Accessories on the stall."
     },
     {
       "word": "不如",
@@ -216,7 +266,9 @@
       "vn": "không bằng",
       "exampleZh": "这件不如那件好。",
       "exampleVi": "Chiếc này không tốt bằng chiếc kia.",
-      "audioText": "不如，这件不如那件好。"
+      "audioText": "不如，这件不如那件好。",
+      "en": "not as good as",
+      "exampleEn": "This one is not as good as that one."
     },
     {
       "word": "一般",
@@ -224,7 +276,9 @@
       "vn": "bình thường",
       "exampleZh": "做工一般。",
       "exampleVi": "Đường may bình thường.",
-      "audioText": "一般，做工一般。"
+      "audioText": "一般，做工一般。",
+      "en": "ordinary, average",
+      "exampleEn": "The craftsmanship is average."
     },
     {
       "word": "逛",
@@ -232,7 +286,9 @@
       "vn": "dạo phố",
       "exampleZh": "逛，逛商场。",
       "exampleVi": "Đi dạo, đi dạo trung tâm thương mại.",
-      "audioText": "逛，逛，逛商场。"
+      "audioText": "逛，逛，逛商场。",
+      "en": "stroll, browse",
+      "exampleEn": "Stroll, stroll in the mall."
     },
     {
       "word": "转",
@@ -240,7 +296,9 @@
       "vn": "đi dạo một vòng",
       "exampleZh": "去市场转转。",
       "exampleVi": "Đi dạo chợ một vòng.",
-      "audioText": "转，去市场转转。"
+      "audioText": "转，去市场转转。",
+      "en": "walk around",
+      "exampleEn": "Take a walk around the market."
     },
     {
       "word": "电子",
@@ -248,7 +306,9 @@
       "vn": "điện tử",
       "exampleZh": "电子产品。",
       "exampleVi": "Sản phẩm điện tử.",
-      "audioText": "电子，电子产品。"
+      "audioText": "电子，电子产品。",
+      "en": "electronics",
+      "exampleEn": "Electronic products."
     },
     {
       "word": "科技",
@@ -256,7 +316,9 @@
       "vn": "công nghệ",
       "exampleZh": "科技产品。",
       "exampleVi": "Sản phẩm công nghệ.",
-      "audioText": "科技，科技产品。"
+      "audioText": "科技，科技产品。",
+      "en": "technology",
+      "exampleEn": "Technology products."
     },
     {
       "word": "评价",
@@ -264,7 +326,9 @@
       "vn": "đánh giá",
       "exampleZh": "看看买家的评价。",
       "exampleVi": "Xem đánh giá của người mua.",
-      "audioText": "评价，看看买家的评价。"
+      "audioText": "评价，看看买家的评价。",
+      "en": "review, evaluation",
+      "exampleEn": "Check buyer reviews."
     },
     {
       "word": "专门",
@@ -272,7 +336,9 @@
       "vn": "chuyên",
       "exampleZh": "专门来看电脑。",
       "exampleVi": "Đến riêng để xem máy tính.",
-      "audioText": "专门，专门来看电脑。"
+      "audioText": "专门，专门来看电脑。",
+      "en": "specially, specifically",
+      "exampleEn": "Came specifically to check laptops."
     },
     {
       "word": "早市",
@@ -280,7 +346,9 @@
       "vn": "chợ sáng",
       "exampleZh": "早市里的青菜。",
       "exampleVi": "Rau xanh ở chợ sáng.",
-      "audioText": "早市，早市里的青菜。"
+      "audioText": "早市，早市里的青菜。",
+      "en": "morning market",
+      "exampleEn": "Vegetables in the morning market."
     },
     {
       "word": "市场",
@@ -288,7 +356,9 @@
       "vn": "chợ",
       "exampleZh": "市场里买菜。",
       "exampleVi": "Mua rau ở chợ.",
-      "audioText": "市场，市场里买菜。"
+      "audioText": "市场，市场里买菜。",
+      "en": "market",
+      "exampleEn": "Buy groceries at the market."
     },
     {
       "word": "学习用品",
@@ -296,7 +366,9 @@
       "vn": "đồ dùng học tập",
       "exampleZh": "学习用品很齐全。",
       "exampleVi": "Đồ dùng học tập rất đầy đủ.",
-      "audioText": "学习用品，学习用品很齐全。"
+      "audioText": "学习用品，学习用品很齐全。",
+      "en": "stationery, study supplies",
+      "exampleEn": "Study supplies are well-stocked."
     },
     {
       "word": "小卖部",
@@ -304,7 +376,9 @@
       "vn": "quầy bán hàng",
       "exampleZh": "小卖部在街角。",
       "exampleVi": "Tiệm tạp hóa ở góc phố.",
-      "audioText": "小卖部，小卖部在街角。"
+      "audioText": "小卖部，小卖部在街角。",
+      "en": "corner store, kiosk",
+      "exampleEn": "The corner shop is at the street corner."
     },
     {
       "word": "网站",
@@ -312,7 +386,9 @@
       "vn": "trang web",
       "exampleZh": "购物网站。",
       "exampleVi": "Trang web mua sắm.",
-      "audioText": "网站，购物网站。"
+      "audioText": "网站，购物网站。",
+      "en": "website",
+      "exampleEn": "Shopping website."
     },
     {
       "word": "王府井",
@@ -320,7 +396,9 @@
       "vn": "Vương Phủ Tỉnh",
       "exampleZh": "王府井的商场。",
       "exampleVi": "Trung tâm thương mại ở Vương Phủ Tỉnh.",
-      "audioText": "王府井，王府井的商场。"
+      "audioText": "王府井，王府井的商场。",
+      "en": "Wangfujing (place)",
+      "exampleEn": "Malls in Wangfujing."
     },
     {
       "word": "购物",
@@ -328,7 +406,9 @@
       "vn": "mua sắm",
       "exampleZh": "一起去购物。",
       "exampleVi": "Cùng đi mua sắm.",
-      "audioText": "购物，一起去购物。"
+      "audioText": "购物，一起去购物。",
+      "en": "shopping",
+      "exampleEn": "Go shopping together."
     },
     {
       "word": "雅秀市场",
@@ -336,7 +416,9 @@
       "vn": "Chợ Nhã Tú",
       "exampleZh": "雅秀市场的货摊。",
       "exampleVi": "Sạp hàng ở Chợ Nhã Tú.",
-      "audioText": "雅秀市场，雅秀市场的货摊。"
+      "audioText": "雅秀市场，雅秀市场的货摊。",
+      "en": "Yaxiu Market",
+      "exampleEn": "Stalls in Yaxiu Market."
     },
     {
       "word": "场所",
@@ -344,7 +426,9 @@
       "vn": "nơi, địa điểm",
       "exampleZh": "购物场所。",
       "exampleVi": "Địa điểm mua sắm.",
-      "audioText": "场所，购物场所。"
+      "audioText": "场所，购物场所。",
+      "en": "place, venue",
+      "exampleEn": "Shopping venues."
     },
     {
       "word": "飞龙电子中心",
@@ -352,7 +436,9 @@
       "vn": "Trung tâm điện tử Phi Long",
       "exampleZh": "去飞龙电子中心。",
       "exampleVi": "Đến Trung tâm điện tử Phi Long.",
-      "audioText": "飞龙电子中心，去飞龙电子中心。"
+      "audioText": "飞龙电子中心，去飞龙电子中心。",
+      "en": "Feilong Electronics Center",
+      "exampleEn": "Go to Feilong Electronics Center."
     },
     {
       "word": "超市",
@@ -360,7 +446,9 @@
       "vn": "siêu thị",
       "exampleZh": "在超市买东西。",
       "exampleVi": "Mua đồ ở siêu thị.",
-      "audioText": "超市，在超市买东西。"
+      "audioText": "超市，在超市买东西。",
+      "en": "supermarket",
+      "exampleEn": "Buy things at the supermarket."
     },
     {
       "word": "商场",
@@ -368,7 +456,9 @@
       "vn": "trung tâm thương mại",
       "exampleZh": "去商场逛逛。",
       "exampleVi": "Đến trung tâm thương mại dạo một chút.",
-      "audioText": "商场，去商场逛逛。"
+      "audioText": "商场，去商场逛逛。",
+      "en": "shopping mall",
+      "exampleEn": "Take a walk in the shopping mall."
     },
     {
       "word": "中关村",
@@ -376,7 +466,9 @@
       "vn": "Trung Quan Thôn",
       "exampleZh": "我们去中关村看看电脑。",
       "exampleVi": "Chúng mình đến Trung Quan Thôn xem máy tính nhé.",
-      "audioText": "中关村，我们去中关村看看电脑。"
+      "audioText": "中关村，我们去中关村看看电脑。",
+      "en": "Zhongguancun (place)",
+      "exampleEn": "Let us check out laptops in Zhongguancun."
     },
     {
       "word": "特点",
@@ -384,7 +476,9 @@
       "vn": "đặc điểm",
       "exampleZh": "有什么特点？",
       "exampleVi": "Có đặc điểm gì?",
-      "audioText": "特点，有什么特点？"
+      "audioText": "特点，有什么特点？",
+      "en": "characteristic, feature",
+      "exampleEn": "What are the main features?"
     },
     {
       "word": "西单",
@@ -392,7 +486,9 @@
       "vn": "Tây Đơn",
       "exampleZh": "去西单逛街。",
       "exampleVi": "Đến Tây Đơn dạo phố.",
-      "audioText": "西单，去西单逛街。"
+      "audioText": "西单，去西单逛街。",
+      "en": "Xidan (place)",
+      "exampleEn": "Go shopping in Xidan."
     }
   ],
   "topics": [
@@ -400,19 +496,22 @@
       "zh": "在越南，你平时喜欢逛超市还是去传统市场？为什么？",
       "py": "zài yuè nán ， nǐ píng shí xǐ huān guàng chāo shì hái shì qù chuán tǒng shì chǎng ？ wèi shén me ？",
       "vn": "Ở Việt Nam, bạn thường thích đi siêu thị hay đi chợ truyền thống? Vì sao?",
-      "audioKey": "topic_0"
+      "audioKey": "topic_0",
+      "en": "In Vietnam, do you usually prefer shopping at supermarkets or traditional markets? Why?"
     },
     {
       "zh": "买衣服时，你觉得牌子重要，还是款式和料子更重要？",
       "py": "mǎi yī fú shí ， nǐ jué de pái zi zhòng yào ， hái shì kuǎn shì hé liào zi gèng zhòng yào ？",
       "vn": "Khi mua quần áo, bạn thấy thương hiệu quan trọng, hay kiểu dáng và chất vải quan trọng hơn?",
-      "audioKey": "topic_1"
+      "audioKey": "topic_1",
+      "en": "When buying clothes, do you think brand is more important, or style and fabric?"
     },
     {
       "zh": "我们周末先去商场，然后再逛夜市，怎么样？",
       "py": "wǒ men zhōu mò xiān qù shāng chǎng ， rán hòu zài guàng yè shì ， zěn me yàng ？",
       "vn": "Cuối tuần chúng mình đến trung tâm thương mại trước rồi dạo chợ đêm, thế nào?",
-      "audioKey": "topic_2"
+      "audioKey": "topic_2",
+      "en": "How about we go to the mall first this weekend, and then visit the night market?"
     }
   ],
   "mapPos": {
