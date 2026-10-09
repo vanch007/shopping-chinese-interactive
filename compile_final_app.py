@@ -1,91 +1,63 @@
-# -*- coding: utf-8 -*-
-import os
-import json
+"""Build the offline, single-file mobile shopping story."""
 import base64
 import io
+import json
+from pathlib import Path
 from PIL import Image
 
-base_dir = os.path.dirname(os.path.abspath(__file__))
-template_path = os.path.join(base_dir, "template_game.html")
-data_path = os.path.join(base_dir, "game_data_rich.json")
-audio_dir = os.path.join(base_dir, "assets", "audio")
-img_dir = os.path.join(base_dir, "assets", "images")
-output_path = os.path.join(base_dir, "index.html")
+ROOT = Path(__file__).resolve().parent
 
-print("1. Loading template, data, and audio...")
-with open(template_path, "r", encoding="utf-8") as tf:
-    tpl = tf.read()
 
-with open(data_path, "r", encoding="utf-8") as df:
-    venues = json.load(df)
+def encode(path, mime):
+    return 'data:' + mime + ';base64,' + base64.b64encode(path.read_bytes()).decode('ascii')
 
-for v_id, v in venues.items():
-    v["bgKey"] = v_id
 
-mlx_audio = {}
-for fname in sorted(os.listdir(audio_dir)):
-    if fname.endswith(".mp3") and fname != "conversation_demo.mp3":
-        with open(os.path.join(audio_dir, fname), "rb") as af:
-            mlx_audio[fname[:-4]] = "data:audio/mpeg;base64," + base64.b64encode(af.read()).decode("ascii")
+def script_json(value):
+    return json.dumps(value, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 
-print(f"Loaded {len(mlx_audio)} audio clips.")
 
-required_audio = {"sys_to_map", "sys_buy_success"}
-for v in venues.values():
-    required_audio.add("sys_enter_" + v["id"])
-    required_audio.add(v["npc"]["audioKey"])
-    for field in ("vn", "explanationVi"):
-        if not v["npc"].get(field):
-            raise ValueError(f"Missing NPC {field} in {v['id']}")
-    for choice in v["npc"]["choices"]:
-        required_audio.update((choice["audioKey"], choice["replyAudioKey"]))
-        for field in ("vn", "explanationVi", "replyVn", "replyExplanationVi"):
-            if not choice.get(field):
-                raise ValueError(f"Missing {field} in {v['id']}")
-    for item in v["items"]:
-        if not item.get("explanationVi"):
-            raise ValueError(f"Missing product explanation in {item['id']}")
-        required_audio.update(("prod_" + item["id"], item["audioKey"]))
-        required_audio.update("vocab_" + tag["word"] for tag in item["vocabTags"])
-required_audio.update("topic_" + str(i) for i in range(3))
-missing_audio = required_audio - mlx_audio.keys()
-if missing_audio:
-    raise ValueError(f"Missing embedded speech: {sorted(missing_audio)}")
-
-print("2. Compressing images...")
-image_map = {
-    "map": "shopping_map_bg.png",
-    "shangchang": "shangchang.png",
-    "yeshi": "yeshi.png",
-    "chaoshi": "chaoshi.png",
-    "dianzi": "dianzi.png",
-    "shichang": "shichang.png",
-    "xiaomaibu": "xiaomaibu.png",
-    "wangzhan": "wangzhan.png"
-}
-
-b64_dict = {}
-for key, fname in image_map.items():
-    p = os.path.join(img_dir, fname)
-    if not os.path.isfile(p):
-        raise FileNotFoundError(p)
-    if os.path.exists(p):
-        im = Image.open(p)
-        if im.width > 1200:
-            ratio = 1200.0 / im.width
-            im = im.resize((1200, int(im.height * ratio)), Image.Resampling.LANCZOS)
+def build():
+    venues = json.loads((ROOT / 'game_data_rich.json').read_text())
+    story = json.loads((ROOT / 'story_data.json').read_text())
+    required = {'sys_story', 'sys_finish', 'sys_to_map', 'sys_buy_success'}
+    required.update(t['audioKey'] for t in story['topics'])
+    required.update('vocab_' + t['word'] for t in story['vocab'])
+    for key, venue in venues.items():
+        required.update(('sys_enter_' + key, venue['npc']['audioKey']))
+        for field in ('vn', 'textPy', 'explanationVi'):
+            assert venue['npc'].get(field), (key, field)
+        for choice in venue['npc']['choices']:
+            required.update((choice['audioKey'], choice['replyAudioKey']))
+            assert choice['focusItem'] in {i['id'] for i in venue['items']}
+            for field in ('vn', 'py', 'explanationVi', 'replyVn', 'replyPy', 'replyExplanationVi'):
+                assert choice.get(field), (key, field)
+        for item in venue['items']:
+            required.update(('prod_' + item['id'], item['audioKey']))
+            required.update('vocab_' + tag['word'] for tag in item['vocabTags'])
+            assert item.get('explanationVi'), item['id']
+    missing = [key for key in required if not (ROOT / 'assets/audio' / (key + '.mp3')).is_file()]
+    if missing:
+        raise ValueError('Missing generated audio: ' + ', '.join(sorted(missing)))
+    audio = {key: encode(ROOT / 'assets/audio' / (key + '.mp3'), 'audio/mpeg') for key in sorted(required)}
+    images = {}
+    for key in ['map', *venues]:
+        image = Image.open(ROOT / 'assets/images/story-v2' / (key + '.png')).convert('RGB')
+        assert image.height > image.width, key
+        if image.width > 960:
+            image = image.resize((960, round(image.height * 960 / image.width)), Image.Resampling.LANCZOS)
         buf = io.BytesIO()
-        im.convert("RGB").save(buf, format="JPEG", quality=78, optimize=True)
-        raw_bytes = buf.getvalue()
-        b64_dict[key] = "data:image/jpeg;base64," + base64.b64encode(raw_bytes).decode("ascii")
+        image.save(buf, format='JPEG', quality=79, optimize=True)
+        images[key] = 'data:image/jpeg;base64,' + base64.b64encode(buf.getvalue()).decode('ascii')
+    source = (ROOT / 'template_game.html').read_text()
+    for placeholder, value in [('__VENUES_JSON__', venues), ('__STORY_JSON__', story),
+                               ('__AUDIO_JSON__', audio), ('__IMAGES_JSON__', images)]:
+        assert placeholder in source
+        source = source.replace(placeholder, script_json(value))
+    assert '__STORY_JSON__' not in source
+    (ROOT / 'index.html').write_text(source)
+    print(f'Built v{story["version"]}: {len(venues)} scenes, {len(audio)} embedded audio clips, '
+          f'{len(images)} images; {len(source.encode()) / 1024 / 1024:.2f} MiB. No external runtime assets.')
 
-print("3. Replacing placeholders...")
-final_html = tpl.replace("__IMAGES_JSON__", json.dumps(b64_dict, ensure_ascii=False))
-final_html = final_html.replace("__VENUES_JSON__", json.dumps(venues, ensure_ascii=False))
-final_html = final_html.replace("__AUDIO_JSON__", json.dumps(mlx_audio, ensure_ascii=False))
 
-with open(output_path, "w", encoding="utf-8") as out:
-    out.write(final_html)
-
-size_mb = os.path.getsize(output_path) / (1024 * 1024)
-print(f"4. Success! Generated clean standalone index.html: {size_mb:.2f} MB")
+if __name__ == '__main__':
+    build()

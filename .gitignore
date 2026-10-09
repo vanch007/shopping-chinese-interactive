@@ -2,6 +2,7 @@
 *.py
 *.json
 !game_data_rich.json
+!story_data.json
 template*.html
 /work/
 /output/

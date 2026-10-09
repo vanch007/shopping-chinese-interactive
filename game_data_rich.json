@@ -11,14 +11,14 @@
     "items": [
       {
         "id": "item_shangchang_1",
-        "name": "名牌羊毛大衣",
-        "pinyin": "míngpái yángmáo dàyī",
-        "vn": "Áo khoác dạ hàng hiệu",
+        "name": "羊毛大衣",
+        "pinyin": "yáng máo dà yī",
+        "vn": "Áo khoác len",
         "icon": "🧥",
         "price": 680,
         "pos": {
           "x": 25,
-          "y": 40
+          "y": 34
         },
         "vocabCategory": "商品特点 · 质量与款式",
         "vocabTags": [
@@ -63,22 +63,22 @@
             "vn": "tinh xảo"
           }
         ],
-        "sentence": "这件名牌大衣虽然价格较贵，但是料子非常讲究，做工特别精细，款式也很新颖。",
-        "sentencePy": "Zhè jiàn míngpái dàyī suīrán jiàgé jiàoguì, dànshì liàozi fēicháng jiǎngjiu, zuògōng tèbié jīngxì, kuǎnshì yě hěn xīnyǐng.",
-        "sentenceVn": "Chiếc áo khoác hàng hiệu này tuy giá khá đắt, nhưng chất liệu rất tinh tế, đường may vô cùng tinh xảo, kiểu dáng cũng rất mới mẻ.",
+        "sentence": "这件大衣虽然贵，但是做工很精细。",
+        "sentencePy": "zhè jiàn dà yī suī rán guì ， dàn shì zuò gōng hěn jīng xì 。",
+        "sentenceVn": "Chiếc áo này tuy đắt nhưng được may rất tỉ mỉ.",
         "audioKey": "sent_shangchang_coat",
         "explanationVi": "“名牌” = thương hiệu nổi tiếng; “牌子” = thương hiệu nói chung. Với chiếc áo này, hãy chỉ vào vải để nói “料子”, chỉ vào đường may để nói “做工精细”."
       },
       {
         "id": "item_shangchang_2",
-        "name": "高档纯棉床上用品",
-        "pinyin": "gāodàng chúnmián chuángshang yòngpǐn",
-        "vn": "Vật dụng trên giường cao cấp (Chăn ga gối)",
+        "name": "纯棉床上用品",
+        "pinyin": "chún mián chuáng shàng yòng pǐn",
+        "vn": "Bộ chăn ga cotton",
         "icon": "🛏️",
         "price": 320,
         "pos": {
-          "x": 75,
-          "y": 38
+          "x": 24,
+          "y": 68
         },
         "vocabCategory": "商品种类 · 床上用品",
         "vocabTags": [
@@ -103,22 +103,22 @@
             "vn": "uy tín, đáng tin"
           }
         ],
-        "sentence": "商场的床上用品是纯棉料子，质量非常可靠，让人买得安心。",
-        "sentencePy": "Shāngchǎng de chuángshang yòngpǐn shì chúnmián liàozi, zhìliàng fēicháng kěkào, ràng rén mǎi de ānxīn.",
-        "sentenceVn": "Đồ dùng phòng ngủ ở trung tâm thương mại là chất liệu cotton, chất lượng vô cùng đáng tin, mua rất an tâm.",
+        "sentence": "这套床上用品的料子讲究，质量很可靠。",
+        "sentencePy": "zhè tào chuáng shàng yòng pǐn de liào zi jiǎng jiū ， zhì liàng hěn kě kào 。",
+        "sentenceVn": "Bộ chăn ga này dùng chất vải được chọn kỹ, chất lượng đáng tin cậy.",
         "audioKey": "sent_shangchang_bed",
         "explanationVi": "“床上用品” là đồ dùng trên giường như ga, chăn và vỏ gối. “纯棉” = cotton nguyên chất; “料子” nói về chất liệu vải."
       },
       {
         "id": "item_shangchang_3",
-        "name": "专业体育运动鞋",
-        "pinyin": "zhuānyè tǐyù yùndòngxié",
-        "vn": "Giày thể thao chuyên nghiệp (Đồ thể thao)",
+        "name": "运动鞋",
+        "pinyin": "yùn dòng xié",
+        "vn": "Giày thể thao",
         "icon": "👟",
         "price": 450,
         "pos": {
-          "x": 50,
-          "y": 48
+          "x": 71,
+          "y": 76
         },
         "vocabCategory": "商品种类 · 体育用品",
         "vocabTags": [
@@ -143,59 +143,99 @@
             "vn": "kiểu dáng"
           }
         ],
-        "sentence": "这双运动鞋是知名牌子的体育用品，款式新颖，透气减震。",
-        "sentencePy": "Zhè shuāng yùndòngxié shì zhīmíng páizi de tǐyù yòngpǐn, kuǎnshì xīnyǐng, tòuqì jiǎnzhèn.",
-        "sentenceVn": "Đôi giày này là đồ thể thao của thương hiệu nổi tiếng, kiểu dáng mới mẻ, thoáng khí êm chân.",
+        "sentence": "买运动鞋时，牌子虽然重要，但是舒服更重要。",
+        "sentencePy": "mǎi yùn dòng xié shí ， pái zi suī rán zhòng yào ， dàn shì shū fú gèng zhòng yào 。",
+        "sentenceVn": "Khi mua giày thể thao, thương hiệu tuy quan trọng nhưng sự thoải mái còn quan trọng hơn.",
         "audioKey": "sent_shangchang_shoes",
         "explanationVi": "“体育用品” = đồ dùng thể thao; đôi giày là ví dụ cụ thể. “款式” nói về kiểu dáng, “质量” nói về chất lượng — đây là hai mặt khác nhau."
       }
     ],
     "npc": {
-      "name": "商场高级导购员",
+      "name": "小林 · 商场导购",
       "avatar": "👩‍💼",
-      "text": "您好，欢迎光临！您想看看衣服，还是床上用品？这件大衣款式新颖，您可以摸摸料子。",
+      "text": "你好，欢迎光临！想看看大衣、床上用品，还是运动鞋？你可以先比较一下料子和做工。",
       "choices": [
         {
-          "zh": "这件大衣虽然贵，但是做工很精细。",
-          "py": "Zhè jiàn dàyī suīrán guì, dànshì zuògōng hěn jīngxì.",
-          "vn": "Chiếc áo khoác này tuy đắt nhưng được may rất tỉ mỉ.",
-          "explanationVi": "Nêu hai mặt của một món hàng: “虽然 A，但是 B” = tuy A nhưng B. “做工精细” nói về độ tỉ mỉ khi làm hoặc may sản phẩm.",
-          "reply": "这件大衣的做工比较精细。您可以看看袖口，也可以试穿一下。",
-          "replyVn": "Chiếc áo này được may khá tỉ mỉ. Bạn có thể xem phần cổ tay áo hoặc mặc thử.",
-          "replyExplanationVi": "“可以……也可以……” đưa ra hai việc khách đều có thể làm. “试穿一下” = mặc thử một chút.",
+          "zh": "这件大衣多少钱？做工怎么样？",
+          "py": "zhè jiàn dà yī duō shǎo qián ？ zuò gōng zěn me yàng ？",
+          "vn": "Chiếc áo khoác này bao nhiêu tiền? Đường may thế nào?",
+          "explanationVi": "“多少钱？” hỏi giá; “做工怎么样？” hỏi cách làm hoặc đường may.",
+          "reply": "这件大衣六百八十元。虽然价格有点贵，但是做工很精细。",
+          "replyVn": "Chiếc áo này giá 680 tệ. Tuy hơi đắt nhưng được may rất tỉ mỉ.",
+          "replyExplanationVi": "“虽然……但是……” = tuy…nhưng…; “精细” = tỉ mỉ.",
           "audioKey": "choice_shangchang_0",
           "replyAudioKey": "reply_shangchang_0",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "zhè jiàn dà yī liù bǎi bā shí yuán 。 suī rán jià gé yóu diǎn guì ， dàn shì zuò gōng hěn jīng xì 。",
+          "focusItem": "item_shangchang_1",
+          "nextVenue": null
         },
         {
-          "zh": "这件的料子不如那件好，我想再看看。",
-          "py": "Zhè jiàn de liàozi bùrú nà jiàn hǎo, wǒ xiǎng zài kànkan.",
-          "vn": "Chất vải của chiếc này không tốt bằng chiếc kia, tôi muốn xem thêm.",
-          "explanationVi": "“A 不如 B 好” = A không tốt bằng B. “再看看” là cách nói nhẹ nhàng khi chưa muốn mua ngay.",
-          "reply": "挑衣服时，可以比较这两件的料子和做工。贵的不一定最适合您。",
-          "replyVn": "Khi chọn quần áo, bạn có thể so chất vải và đường may của hai chiếc này. Chiếc đắt hơn chưa chắc hợp với bạn nhất.",
-          "replyExplanationVi": "“不一定” = chưa chắc; không khẳng định rằng giá cao luôn đồng nghĩa với phù hợp. “适合您” = phù hợp với bạn.",
+          "zh": "这套床上用品的质量可靠吗？",
+          "py": "zhè tào chuáng shàng yòng pǐn de zhì liàng kě kào ma ？",
+          "vn": "Bộ chăn ga này có chất lượng đáng tin cậy không?",
+          "explanationVi": "“这套” dùng cho một bộ; “质量” = chất lượng, “可靠” = đáng tin cậy.",
+          "reply": "这套床上用品是纯棉的，质量很可靠。你可以摸摸料子。",
+          "replyVn": "Bộ chăn ga này làm bằng vải cotton, chất lượng đáng tin cậy. Bạn có thể sờ thử chất vải.",
+          "replyExplanationVi": "“摸摸” là sờ thử một chút; động từ lặp giúp lời mời nhẹ nhàng hơn.",
           "audioKey": "choice_shangchang_1",
           "replyAudioKey": "reply_shangchang_1",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "zhè tào chuáng shàng yòng pǐn shì chún mián de ， zhì liàng hěn kě kào 。 nǐ ké yǐ mō mō liào zi 。",
+          "focusItem": "item_shangchang_2",
+          "nextVenue": null
         },
         {
-          "zh": "我们先去市场转转，然后再逛商场，好吗？",
-          "py": "Wǒmen xiān qù shìchǎng zhuànzhuan, ránhòu zài guàng shāngchǎng, hǎo ma?",
-          "vn": "Chúng mình đi dạo chợ trước rồi ghé trung tâm thương mại, được không?",
-          "explanationVi": "“先……然后再……” sắp xếp thứ tự hoạt động. “好吗？” xin ý kiến người nghe; “转转” đọc zhuànzhuan, nghĩa là đi dạo một vòng.",
-          "reply": "好啊！先去市场转转，再来商场比较一下，慢慢选。",
-          "replyVn": "Được chứ! Cứ đi dạo chợ trước, rồi đến trung tâm thương mại so sánh và thong thả chọn.",
-          "replyExplanationVi": "“比较一下” = so sánh thử. “慢慢选” giúp khách cảm thấy không bị thúc giục.",
+          "zh": "这双运动鞋是名牌吗？有优惠吗？",
+          "py": "zhè shuāng yùn dòng xié shì míng pái ma ？ yǒu yōu huì ma ？",
+          "vn": "Đôi giày thể thao này là hàng hiệu à? Có ưu đãi không?",
+          "explanationVi": "“这双” dùng cho một đôi; “名牌” là thương hiệu nổi tiếng.",
+          "reply": "这双鞋四百五十元。牌子虽然普通，但是很适合平时运动。",
+          "replyVn": "Đôi giày này giá 450 tệ. Thương hiệu tuy bình thường nhưng rất hợp để tập thể thao hằng ngày.",
+          "replyExplanationVi": "“牌子” = thương hiệu; có thương hiệu không nhất thiết là “名牌”.",
           "audioKey": "choice_shangchang_2",
           "replyAudioKey": "reply_shangchang_2",
-          "replyEmotion": "welcome"
+          "replyEmotion": "welcome",
+          "replyPy": "zhè shuāng xié sì bǎi wǔ shí yuán 。 pái zi suī rán pǔ tōng ， dàn shì hěn shì hé píng shí yùn dòng 。",
+          "focusItem": "item_shangchang_3",
+          "nextVenue": null
         }
       ],
-      "vn": "Xin chào, chào mừng bạn! Bạn muốn xem quần áo hay chăn ga? Chiếc áo khoác này có kiểu dáng mới, bạn có thể sờ thử chất vải.",
-      "explanationVi": "“您” là cách xưng hô lịch sự với khách. “还是” đưa ra hai lựa chọn trong câu hỏi. “料子” ở đây là chất vải; “摸摸” nghĩa là sờ thử, giọng nhẹ nhàng.",
+      "vn": "Xin chào, mời bạn vào! Bạn muốn xem áo khoác, chăn ga hay giày thể thao? Bạn có thể so sánh chất vải và đường may trước.",
+      "explanationVi": "Nhấn vào một câu để trả lời. Có thể nghe mẫu trước, rồi tự nói lại bằng tiếng Trung.",
       "audioKey": "npc_shangchang",
-      "emotion": "welcome"
+      "emotion": "welcome",
+      "textPy": "ní hǎo ， huān yíng guāng lín ！ xiǎng kàn kàn dà yī 、 chuáng shàng yòng pǐn ， hái shì yùn dòng xié ？ nǐ ké yǐ xiān bǐ jiào yī xià liào zi hé zuò gōng 。"
+    },
+    "scene": {
+      "shortName": "商场",
+      "vn": "Trung tâm thương mại",
+      "person": "小林",
+      "role": "商场导购",
+      "roleVi": "Nhân viên bán hàng",
+      "chapter": "午后 · 逛商场",
+      "npcPos": {
+        "x": 80,
+        "y": 30
+      },
+      "artFile": "story-v2/shangchang.png",
+      "vocabTags": [
+        {
+          "word": "商场",
+          "py": "shāng chǎng",
+          "vn": "trung tâm thương mại"
+        },
+        {
+          "word": "王府井",
+          "py": "wáng fǔ jǐng",
+          "vn": "Vương Phủ Tỉnh"
+        },
+        {
+          "word": "西单",
+          "py": "xī dān",
+          "vn": "Tây Đơn"
+        }
+      ]
     }
   },
   "chaoshi": {
@@ -210,14 +250,14 @@
     "items": [
       {
         "id": "item_chaoshi_1",
-        "name": "家庭生活日用品组合",
-        "pinyin": "jiātíng shēnghuó rìyòngpǐn zǔhé",
-        "vn": "Combo đồ dùng sinh hoạt / Đồ dùng hằng ngày",
+        "name": "洗护日用品",
+        "pinyin": "xǐ hù rì yòng pǐn",
+        "vn": "Đồ dùng vệ sinh hằng ngày",
         "icon": "🧴",
         "price": 65,
         "pos": {
-          "x": 22,
-          "y": 40
+          "x": 25,
+          "y": 34
         },
         "vocabCategory": "商品种类 · 生活用品/日用品",
         "vocabTags": [
@@ -252,22 +292,22 @@
             "vn": "tiết kiệm, hời"
           }
         ],
-        "sentence": "超市里的生活日用品正在做优惠活动，买一套非常划算。",
-        "sentencePy": "Chāoshì lǐ de shēnghuó rìyòngpǐn zhèngzài zuò yōuhuì huódòng, mǎi yí tào fēicháng huásuàn.",
-        "sentenceVn": "Đồ dùng sinh hoạt hàng ngày trong siêu thị đang có chương trình ưu đãi, mua một bộ rất hời.",
+        "sentence": "这套日用品有优惠，买一套很划算。",
+        "sentencePy": "zhè tào rì yòng pǐn yǒu yōu huì ， mǎi yī tào hěn huá suàn 。",
+        "sentenceVn": "Bộ đồ dùng hằng ngày này có ưu đãi, mua cả bộ rất hời.",
         "audioKey": "sent_chaoshi_daily",
         "explanationVi": "“日用品” = đồ dùng hằng ngày. “优惠” là ưu đãi của cửa hàng; “划算” là nhận xét của người mua rằng món hàng đáng tiền."
       },
       {
         "id": "item_chaoshi_2",
-        "name": "鲜牛奶与新鲜食品",
-        "pinyin": "xiān niúnǎi yǔ xīnxiān shípǐn",
-        "vn": "Sữa tươi & Thực phẩm tươi",
+        "name": "鲜牛奶",
+        "pinyin": "xiān niú nǎi",
+        "vn": "Sữa tươi",
         "icon": "🥛",
         "price": 38,
         "pos": {
-          "x": 80,
-          "y": 44
+          "x": 26,
+          "y": 63
         },
         "vocabCategory": "商品种类 · 食品",
         "vocabTags": [
@@ -287,22 +327,22 @@
             "vn": "uy tín, đáng tin"
           }
         ],
-        "sentence": "超市冷柜的食品天天检验，质量可靠，让人吃得安心。",
-        "sentencePy": "Chāoshì lěngguì de shípǐn tiāntiān jiǎnyàn, zhìliàng kěkào, ràng rén chī de ānxīn.",
-        "sentenceVn": "Thực phẩm quầy lạnh trong siêu thị được kiểm định hằng ngày, chất lượng uy tín, ăn uống an tâm.",
+        "sentence": "买食品时，要看看价格，也要看看质量。",
+        "sentencePy": "mǎi shí pǐn shí ， yào kàn kàn jià gé ， yě yào kàn kàn zhì liàng 。",
+        "sentenceVn": "Khi mua thực phẩm, cần xem giá và cả chất lượng.",
         "audioKey": "sent_chaoshi_food",
         "explanationVi": "“食品” = thực phẩm; sữa là một loại thực phẩm. “质量可靠” = chất lượng đáng tin cậy; khi mua cần xem cả nhãn và hạn sử dụng."
       },
       {
         "id": "item_chaoshi_3",
-        "name": "家用电器多功能电热锅",
-        "pinyin": "jiāyòng diànqì duōgōngnéng diànrèguō",
-        "vn": "Đồ điện gia dụng nồi điện đa năng",
+        "name": "电热锅",
+        "pinyin": "diàn rè guō",
+        "vn": "Nồi điện",
         "icon": "🍳",
         "price": 120,
         "pos": {
-          "x": 52,
-          "y": 40
+          "x": 69,
+          "y": 68
         },
         "vocabCategory": "商品种类 · 家用电器",
         "vocabTags": [
@@ -320,61 +360,96 @@
             "word": "质量",
             "py": "zhìliàng",
             "vn": "chất lượng"
+          },
+          {
+            "word": "特点",
+            "py": "tè diǎn",
+            "vn": "đặc điểm"
           }
         ],
-        "sentence": "超市二楼专卖各种家用电器，价格优惠，质量有保证。",
-        "sentencePy": "Chāoshì èrlóu zhuānmài gèzhǒng jiāyòng diànqì, jiàgé yōuhuì, zhìliàng yǒu bǎozhèng.",
-        "sentenceVn": "Tầng 2 siêu thị chuyên bán các loại đồ điện gia dụng, giá cả ưu đãi, chất lượng có bảo hành.",
+        "sentence": "这个电热锅是家用电器，可以煮饭，也可以煮面。",
+        "sentencePy": "zhè ge diàn rè guō shì jiā yòng diàn qì ， ké yǐ zhǔ fàn ， yě ké yǐ zhǔ miàn 。",
+        "sentenceVn": "Nồi điện này là đồ điện gia dụng, có thể nấu cơm hoặc mì.",
         "audioKey": "sent_chaoshi_pot",
         "explanationVi": "“家用电器” = thiết bị điện gia dụng; ở đây là nồi điện. Hỏi “有什么优惠？” để biết ưu đãi, không chỉ hỏi giá niêm yết."
       }
     ],
     "npc": {
-      "name": "超市值班服务员",
+      "name": "阿明 · 超市店员",
       "avatar": "🧑‍🍳",
-      "text": "欢迎光临！日用品区今天有优惠。您想先买日用品，还是看看食品？",
+      "text": "你好！日用品今天有优惠。你想买日用品，还是看看食品？",
       "choices": [
         {
-          "zh": "小卖部的商品虽然少，但是买东西很方便。",
-          "py": "Xiǎomàibù de shāngpǐn suīrán shǎo, dànshì mǎi dōngxi hěn fāngbiàn.",
-          "vn": "Tiệm tạp hóa tuy ít hàng nhưng mua đồ rất tiện.",
-          "explanationVi": "“虽然……但是……” nêu một hạn chế rồi nói ưu điểm. “商品” là hàng hóa nói chung; “东西” thường dùng hơn trong hội thoại.",
-          "reply": "是啊！急用的东西可以在小卖部买，需要买得多，就来超市看看。",
-          "replyVn": "Đúng vậy! Đồ cần gấp có thể mua ở tiệm tạp hóa; nếu cần mua nhiều thì ghé siêu thị xem.",
-          "replyExplanationVi": "“急用” = cần dùng ngay. “需要……就……” nêu tình huống và cách xử lý phù hợp.",
+          "zh": "我想买日用品，今天有优惠吗？",
+          "py": "wǒ xiǎng mǎi rì yòng pǐn ， jīn tiān yǒu yōu huì ma ？",
+          "vn": "Tôi muốn mua đồ dùng hằng ngày, hôm nay có ưu đãi không?",
+          "explanationVi": "“日用品” = đồ dùng hằng ngày; “有优惠吗？” hỏi chương trình ưu đãi.",
+          "reply": "有，这套日用品六十五元，今天是优惠价，买一套很划算。",
+          "replyVn": "Có, bộ đồ dùng này giá 65 tệ, hôm nay là giá ưu đãi; mua cả bộ rất hời.",
+          "replyExplanationVi": "“优惠” là ưu đãi của cửa hàng; “划算” là nhận xét rằng mua được hời.",
           "audioKey": "choice_chaoshi_0",
           "replyAudioKey": "reply_chaoshi_0",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "yǒu ， zhè tào rì yòng pǐn liù shí wǔ yuán ， jīn tiān shì yōu huì jià ， mǎi yī tào hěn huá suàn 。",
+          "focusItem": "item_chaoshi_1",
+          "nextVenue": null
         },
         {
-          "zh": "我想看看这瓶牛奶的价格和保质期。",
-          "py": "Wǒ xiǎng kànkan zhè píng niúnǎi de jiàgé hé bǎozhìqī.",
-          "vn": "Tôi muốn xem giá và hạn sử dụng của chai sữa này.",
-          "explanationVi": "“我想……” diễn đạt nhu cầu một cách lịch sự. “价格” = giá; “保质期” = thời hạn bảo quản/sử dụng, là từ hỗ trợ thêm cho tình huống.",
-          "reply": "可以，价格在标签上。买食品时，也要看看包装上的保质期。",
-          "replyVn": "Được chứ, giá ở trên nhãn. Khi mua thực phẩm, bạn cũng nên xem hạn sử dụng trên bao bì.",
-          "replyExplanationVi": "“在……上” chỉ vị trí: trên nhãn, trên bao bì. “也要” bổ sung điều cần chú ý.",
+          "zh": "这瓶牛奶多少钱？质量可靠吗？",
+          "py": "zhè píng niú nǎi duō shǎo qián ？ zhì liàng kě kào ma ？",
+          "vn": "Chai sữa này bao nhiêu tiền? Chất lượng có đáng tin cậy không?",
+          "explanationVi": "“这瓶” dùng cho chai; “可靠” ở đây hỏi độ tin cậy của chất lượng.",
+          "reply": "一瓶鲜牛奶三十八元。买食品时，要看看价格，也要看看保质期。",
+          "replyVn": "Một chai sữa tươi giá 38 tệ. Khi mua thực phẩm, nên xem giá và hạn sử dụng.",
+          "replyExplanationVi": "“也要” = cũng cần; “保质期” = hạn sử dụng, từ bổ sung trong tình huống.",
           "audioKey": "choice_chaoshi_1",
           "replyAudioKey": "reply_chaoshi_1",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "yī píng xiān niú nǎi sān shí bā yuán 。 mǎi shí pǐn shí ， yào kàn kàn jià gé ， yě yào kàn kàn bǎo zhì qī 。",
+          "focusItem": "item_chaoshi_2",
+          "nextVenue": null
         },
         {
-          "zh": "我们先买日用品，然后再选食品，行吗？",
-          "py": "Wǒmen xiān mǎi rìyòngpǐn, ránhòu zài xuǎn shípǐn, xíng ma?",
-          "vn": "Chúng mình mua đồ dùng hằng ngày trước rồi chọn thực phẩm, được không?",
-          "explanationVi": "“行吗？” đọc xíng ma, nghĩa là “được không?”, dùng để hỏi xem đề xuất có ổn không. Không đọc 行 thành háng trong câu này.",
-          "reply": "行，日用品在这边，食品在前面。我带您过去看看。",
-          "replyVn": "Được, đồ dùng ở bên này, thực phẩm ở phía trước. Tôi dẫn bạn qua xem.",
-          "replyExplanationVi": "“这边” = bên này; “前面” = phía trước. “带您过去” = dẫn bạn qua đó.",
+          "zh": "这个电热锅有什么特点？",
+          "py": "zhè ge diàn rè guō yǒu shén me tè diǎn ？",
+          "vn": "Nồi điện này có đặc điểm gì?",
+          "explanationVi": "“有什么特点？” hỏi đặc điểm của sản phẩm.",
+          "reply": "这个电热锅一百二十元，可以煮饭，也可以煮面，是很方便的家用电器。",
+          "replyVn": "Nồi điện này giá 120 tệ, nấu cơm hoặc mì đều được; đây là một đồ điện gia dụng tiện lợi.",
+          "replyExplanationVi": "“可以……也可以……” nêu hai công dụng; “家用电器” = đồ điện gia dụng.",
           "audioKey": "choice_chaoshi_2",
           "replyAudioKey": "reply_chaoshi_2",
-          "replyEmotion": "welcome"
+          "replyEmotion": "welcome",
+          "replyPy": "zhè ge diàn rè guō yì bǎi èr shí yuán ， ké yǐ zhǔ fàn ， yě ké yǐ zhǔ miàn ， shì hěn fāng biàn de jiā yòng diàn qì 。",
+          "focusItem": "item_chaoshi_3",
+          "nextVenue": null
         }
       ],
-      "vn": "Chào mừng bạn! Khu đồ dùng hằng ngày hôm nay có ưu đãi. Bạn muốn mua đồ dùng trước hay xem thực phẩm?",
-      "explanationVi": "“日用品” là đồ dùng hằng ngày như xà phòng, giấy vệ sinh. “食品” là thực phẩm. “有优惠” = có ưu đãi.",
+      "vn": "Xin chào! Đồ dùng hằng ngày hôm nay có ưu đãi. Bạn muốn mua đồ dùng hay xem thực phẩm?",
+      "explanationVi": "Nhấn vào một câu để trả lời. Có thể nghe mẫu trước, rồi tự nói lại bằng tiếng Trung.",
       "audioKey": "npc_chaoshi",
-      "emotion": "welcome"
+      "emotion": "welcome",
+      "textPy": "ní hǎo ！ rì yòng pǐn jīn tiān yǒu yōu huì 。 nǐ xiǎng mǎi rì yòng pǐn ， hái shì kàn kàn shí pǐn ？"
+    },
+    "scene": {
+      "shortName": "超市",
+      "vn": "Siêu thị",
+      "person": "阿明",
+      "role": "超市店员",
+      "roleVi": "Nhân viên siêu thị",
+      "chapter": "白天 · 买日用品",
+      "npcPos": {
+        "x": 80,
+        "y": 30
+      },
+      "artFile": "story-v2/chaoshi.png",
+      "vocabTags": [
+        {
+          "word": "超市",
+          "py": "chāo shì",
+          "vn": "siêu thị"
+        }
+      ]
     }
   },
   "yeshi": {
@@ -389,14 +464,14 @@
     "items": [
       {
         "id": "item_yeshi_1",
-        "name": "夜市货摊特色食品小吃",
-        "pinyin": "yèshì huòtān tèsè shípǐn xiǎochī",
-        "vn": "Đồ ăn vặt đặc sản sạp hàng chợ đêm",
+        "name": "烤串小吃",
+        "pinyin": "kǎo chuàn xiǎo chī",
+        "vn": "Xiên nướng",
         "icon": "🍢",
         "price": 25,
         "pos": {
-          "x": 26,
-          "y": 45
+          "x": 21,
+          "y": 70
         },
         "vocabCategory": "商品种类 · 食品与货摊",
         "vocabTags": [
@@ -421,22 +496,22 @@
             "vn": "tiết kiệm, hời"
           }
         ],
-        "sentence": "夜市路边货摊上的特色食品香味扑鼻，吃起来很过瘾，价格也特别划算。",
-        "sentencePy": "Yèshì lùbiān huòtān shang de tèsè shípǐn xiāngwèi pūbí, chī qǐlái hěn guòyǐn, jiàgé yě tèbié huásuàn.",
-        "sentenceVn": "Món ăn đặc sản ở sạp hàng ven đường chợ đêm thơm nức mũi, ăn rất đã, giá cả lại đặc biệt hời.",
+        "sentence": "我们先吃小吃，然后再逛夜市，好吗？",
+        "sentencePy": "wǒ men xiān chī xiǎo chī ， rán hòu zài guàng yè shì ， hǎo ma ？",
+        "sentenceVn": "Chúng mình ăn chút đồ ăn vặt trước rồi dạo chợ đêm, được không?",
         "audioKey": "sent_yeshi_food",
         "explanationVi": "“夜市” là địa điểm, “货摊” là sạp hàng, “食品” là loại sản phẩm. Đồ ăn vặt này giúp dùng cả ba từ trong một tình huống."
       },
       {
         "id": "item_yeshi_2",
-        "name": "货摊平价潮流衣服",
-        "pinyin": "huòtān píngjià cháoliú yīfu",
-        "vn": "Quần áo thời trang giá bình dân sạp hàng",
+        "name": "连帽卫衣",
+        "pinyin": "lián mào wèi yī",
+        "vn": "Áo hoodie",
         "icon": "👕",
         "price": 48,
         "pos": {
-          "x": 74,
-          "y": 44
+          "x": 24,
+          "y": 36
         },
         "vocabCategory": "商品特点 · 款式与做工",
         "vocabTags": [
@@ -471,22 +546,22 @@
             "vn": "bình thường"
           }
         ],
-        "sentence": "货摊上的衣服款式虽然挺新颖，但是做工不如商场的精细，料子也比较一般。",
-        "sentencePy": "Huòtān shang de yīfu kuǎnshì suīrán tǐng xīnyǐng, dànshì zuògōng bùrú shāngchǎng de jīngxì, liàozi yě bǐjiào yībān.",
-        "sentenceVn": "Quần áo ở sạp hàng kiểu dáng tuy khá mới mẻ, nhưng đường may không tinh xảo bằng TTTM, chất liệu cũng bình thường.",
+        "sentence": "这件卫衣的做工虽然一般，但是价格很划算。",
+        "sentencePy": "zhè jiàn wèi yī de zuò gōng suī rán yì bān ， dàn shì jià gé hěn huá suàn 。",
+        "sentenceVn": "Đường may của chiếc hoodie này tuy bình thường nhưng giá rất hợp lý.",
         "audioKey": "sent_yeshi_hoodie",
         "explanationVi": "“虽然……但是……” diễn tả hai mặt; “不如” = không bằng. Khi so áo, hãy nói rõ đang so kiểu dáng, chất vải hay đường may."
       },
       {
         "id": "item_yeshi_3",
-        "name": "货摊手工小饰品",
-        "pinyin": "huòtān shǒugōng xiǎo shìpǐn",
-        "vn": "Đồ trang sức / Đồ thủ công nhỏ sạp hàng",
+        "name": "手工饰品",
+        "pinyin": "shǒu gōng shì pǐn",
+        "vn": "Đồ trang sức thủ công",
         "icon": "🎎",
         "price": 30,
         "pos": {
-          "x": 50,
-          "y": 38
+          "x": 73,
+          "y": 71
         },
         "vocabCategory": "购物行为 · 优惠与转转",
         "vocabTags": [
@@ -511,59 +586,99 @@
             "vn": "hợp lý, hời"
           }
         ],
-        "sentence": "在夜市里转转，买几个手工艺品，跟老板讲讲价还能拿到优惠。",
-        "sentencePy": "Zài yèshì lǐ zhuànzhuan, mǎi jǐ ge shǒugōngyìpǐn, gēn lǎobǎn jiǎngjiangjià hái néng nádào yōuhuì.",
-        "sentenceVn": "Đi dạo một vòng chợ đêm, mua vài món thủ công mỹ nghệ, mặc cả với chủ quán còn được ưu đãi.",
+        "sentence": "夜市的货摊上有不同款式的手工饰品。",
+        "sentencePy": "yè shì de huò tān shàng yǒu bù tóng kuǎn shì de shǒu gōng shì pǐn 。",
+        "sentenceVn": "Các sạp hàng ở chợ đêm có đồ trang sức thủ công với nhiều kiểu dáng.",
         "audioKey": "sent_yeshi_trinket",
         "explanationVi": "“逛逛、转转” đều có thể nói việc đi dạo xem hàng. “转” ở đây đọc zhuàn. “优惠” chỉ ưu đãi; “划算” là đáng tiền."
       }
     ],
     "npc": {
-      "name": "热情夜市摊主大叔",
+      "name": "老周 · 夜市摊主",
       "avatar": "👨‍🍳",
-      "text": "晚上好，来逛夜市呀！这边有小吃，那边有衣服。你想先看看什么？",
+      "text": "晚上好，来逛夜市呀！有刚烤好的小吃，也有卫衣和手工饰品。你想先看看什么？",
       "choices": [
         {
-          "zh": "老板，这件衣服的质量怎么样？",
-          "py": "Lǎobǎn, zhè jiàn yīfu de zhìliàng zěnmeyàng?",
-          "vn": "Anh/chị chủ ơi, chất lượng chiếc áo này thế nào?",
-          "explanationVi": "“老板” là cách gọi người bán hàng, không nhất thiết phải biết họ có phải chủ cửa hàng không. “怎么样？” hỏi nhận xét về chất lượng.",
-          "reply": "您可以先看看做工，摸摸料子。觉得合适，再决定买不买。",
-          "replyVn": "Bạn cứ xem đường may, sờ thử chất vải. Thấy phù hợp rồi hãy quyết định có mua hay không.",
-          "replyExplanationVi": "“买不买” là dạng câu hỏi khẳng định–phủ định: có mua hay không. “先……再……” đặt việc kiểm tra trước quyết định.",
+          "zh": "老板，这件卫衣的料子怎么样？",
+          "py": "lǎo bǎn ， zhè jiàn wèi yī de liào zi zěn me yàng ？",
+          "vn": "Anh ơi, chất vải của chiếc hoodie này thế nào?",
+          "explanationVi": "“老板” là cách gọi người bán; “料子” = chất vải.",
+          "reply": "你可以摸摸料子。做工虽然一般，但是四十八元，价格很划算。",
+          "replyVn": "Bạn có thể sờ thử chất vải. Đường may tuy bình thường nhưng giá 48 tệ, rất hợp lý.",
+          "replyExplanationVi": "“一般” = bình thường; “虽然……但是……” = tuy…nhưng…",
           "audioKey": "choice_yeshi_0",
           "replyAudioKey": "reply_yeshi_0",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "nǐ ké yǐ mō mō liào zi 。 zuò gōng suī rán yì bān ， dàn shì sì shí bā yuán ， jià gé hěn huá suàn 。",
+          "focusItem": "item_yeshi_2",
+          "nextVenue": null
         },
         {
-          "zh": "这件卫衣还有优惠吗？",
-          "py": "Zhè jiàn wèiyī hái yǒu yōuhuì ma?",
-          "vn": "Chiếc áo nỉ này còn ưu đãi thêm không?",
-          "explanationVi": "Hỏi giá mềm hơn bằng “还有优惠吗？” khá lịch sự. “还” ở đây nghĩa là còn/thêm; “卫衣” = áo nỉ kiểu sweatshirt hoặc hoodie.",
-          "reply": "今天这件四十八元，已经是优惠价了。您可以摸摸料子，再考虑一下。",
-          "replyVn": "Hôm nay chiếc này 48 tệ, đã là giá ưu đãi rồi. Bạn cứ sờ thử chất vải rồi cân nhắc thêm.",
-          "replyExplanationVi": "“已经……了” = đã…rồi. Người bán từ chối giảm thêm một cách nhẹ nhàng; “考虑一下” = cân nhắc một chút.",
+          "zh": "烤串多少钱？我们先吃点小吃，好吗？",
+          "py": "kǎo chuàn duō shǎo qián ？ wǒ men xiān chī diǎn xiǎo chī ， hǎo ma ？",
+          "vn": "Xiên nướng bao nhiêu tiền? Chúng mình ăn chút đồ ăn vặt trước, được không?",
+          "explanationVi": "“一份” = một phần; “先……好吗？” đề xuất làm việc gì trước.",
+          "reply": "一份烤串二十五元。刚烤好的，小心烫。吃完再逛逛夜市。",
+          "replyVn": "Một phần đồ xiên nướng giá 25 tệ. Vừa nướng xong, cẩn thận nóng. Ăn xong rồi dạo chợ đêm nhé.",
+          "replyExplanationVi": "“吃完再……” = ăn xong rồi mới…; “逛” là đi dạo và xem hàng.",
           "audioKey": "choice_yeshi_1",
           "replyAudioKey": "reply_yeshi_1",
-          "replyEmotion": "negotiate"
+          "replyEmotion": "negotiate",
+          "replyPy": "yī fèn kǎo chuàn èr shí wǔ yuán 。 gāng kǎo hǎo de ， xiǎo xīn tàng 。 chī wán zài guàng guàng yè shì 。",
+          "focusItem": "item_yeshi_1",
+          "nextVenue": null
         },
         {
-          "zh": "我们先吃点小吃，然后再逛其他货摊，好吗？",
-          "py": "Wǒmen xiān chī diǎn xiǎochī, ránhòu zài guàng qítā huòtān, hǎo ma?",
-          "vn": "Chúng mình ăn chút đồ ăn vặt trước rồi xem các sạp khác, được không?",
-          "explanationVi": "“点” trong “吃点” = một ít. “货摊” = sạp hàng. Đây là lời rủ bạn đồng hành, không phải yêu cầu người bán đi cùng.",
-          "reply": "好嘞！烤串刚做好，小心烫。您慢慢逛，有需要再来找我。",
-          "replyVn": "Được nhé! Xiên nướng vừa làm xong, cẩn thận nóng. Bạn cứ thong thả đi dạo, cần gì thì quay lại tìm tôi.",
-          "replyExplanationVi": "“好嘞” là cách đáp vui vẻ, thân mật. “刚” = vừa mới; “小心烫” = cẩn thận nóng.",
+          "zh": "这个手工饰品还有优惠吗？",
+          "py": "zhè ge shǒu gōng shì pǐn hái yǒu yōu huì ma ？",
+          "vn": "Món trang sức thủ công này còn có ưu đãi không?",
+          "explanationVi": "“还有优惠吗？” dùng để hỏi có giảm giá thêm không.",
+          "reply": "这份饰品三十元，已经是优惠价了。你喜欢哪个款式？",
+          "replyVn": "Món trang sức này giá 30 tệ, đã là giá ưu đãi rồi. Bạn thích kiểu nào?",
+          "replyExplanationVi": "“款式” = kiểu dáng; “已经……了” = đã…rồi.",
           "audioKey": "choice_yeshi_2",
           "replyAudioKey": "reply_yeshi_2",
-          "replyEmotion": "lively"
+          "replyEmotion": "lively",
+          "replyPy": "zhè fèn shì pǐn sān shí yuán ， yǐ jīng shì yōu huì jià le 。 nǐ xǐ huān nǎ ge kuǎn shì ？",
+          "focusItem": "item_yeshi_3",
+          "nextVenue": null
         }
       ],
-      "vn": "Chào buổi tối, bạn đi dạo chợ đêm à! Bên này có đồ ăn vặt, bên kia có quần áo. Bạn muốn xem gì trước?",
-      "explanationVi": "“夜市” = chợ đêm; “逛” là đi dạo và xem hàng. “呀” làm lời chào thân mật hơn, thường không cần dịch riêng.",
+      "vn": "Chào buổi tối, bạn đi dạo chợ đêm à! Có đồ ăn vừa nướng xong, áo hoodie và đồ trang sức thủ công. Bạn muốn xem gì trước?",
+      "explanationVi": "Nhấn vào một câu để trả lời. Có thể nghe mẫu trước, rồi tự nói lại bằng tiếng Trung.",
       "audioKey": "npc_yeshi",
-      "emotion": "lively"
+      "emotion": "lively",
+      "textPy": "wǎn shàng hǎo ， lái guàng yè shì ya ！ yǒu gāng kǎo hǎo de xiǎo chī ， yě yǒu wèi yī hé shǒu gōng shì pǐn 。 nǐ xiǎng xiān kàn kàn shén me ？"
+    },
+    "scene": {
+      "shortName": "夜市",
+      "vn": "Chợ đêm",
+      "person": "老周",
+      "role": "夜市摊主",
+      "roleVi": "Người bán ở chợ đêm",
+      "chapter": "傍晚 · 逛货摊",
+      "npcPos": {
+        "x": 80,
+        "y": 30
+      },
+      "artFile": "story-v2/yeshi.png",
+      "vocabTags": [
+        {
+          "word": "夜市",
+          "py": "yèshì",
+          "vn": "chợ đêm"
+        },
+        {
+          "word": "货摊",
+          "py": "huòtān",
+          "vn": "sạp hàng"
+        },
+        {
+          "word": "雅秀市场",
+          "py": "yǎ xiù shì chǎng",
+          "vn": "Chợ Nhã Tú"
+        }
+      ]
     }
   },
   "dianzi": {
@@ -578,14 +693,14 @@
     "items": [
       {
         "id": "item_dianzi_1",
-        "name": "高性能数码笔记本电脑",
-        "pinyin": "gāoxìngnéng shùmǎ bǐjìběn diànnǎo",
-        "vn": "Máy tính xách tay kỹ thuật số hiệu năng cao",
+        "name": "笔记本电脑",
+        "pinyin": "bǐ jì běn diàn nǎo",
+        "vn": "Máy tính xách tay",
         "icon": "💻",
         "price": 950,
         "pos": {
-          "x": 28,
-          "y": 42
+          "x": 29,
+          "y": 39
         },
         "vocabCategory": "商品种类 · 电子与科技",
         "vocabTags": [
@@ -615,22 +730,22 @@
             "vn": "mới mẻ"
           }
         ],
-        "sentence": "这款电脑采用最新科技芯片，网上的评价非常好，款式也很新颖轻便。",
-        "sentencePy": "Zhè kuǎn diànnǎo cǎiyòng zuìxīn kējì xīnpiàn, wǎngshang de píngjià fēicháng hǎo, kuǎnshì yě hěn xīnyǐng qīngbiàn.",
-        "sentenceVn": "Dòng máy tính này dùng chip công nghệ mới nhất, đánh giá trên mạng rất tốt, kiểu dáng cũng mới mẻ gọn nhẹ.",
+        "sentence": "买电子产品前，先看看网站上的评价。",
+        "sentencePy": "mǎi diàn zi chǎn pǐn qián ， xiān kàn kàn wǎng zhàn shàng de píng jià 。",
+        "sentenceVn": "Trước khi mua đồ điện tử, hãy xem đánh giá trên trang web.",
         "audioKey": "sent_dianzi_laptop",
         "explanationVi": "“科技” = khoa học công nghệ; “评价” = đánh giá. Khi nói về máy tính, có thể hỏi về chức năng rồi xem đánh giá, không chỉ dựa vào mẫu mã."
       },
       {
         "id": "item_dianzi_2",
-        "name": "5G 旗舰智能手机",
-        "pinyin": "5G qíjiàn zhìnéng shǒujī",
-        "vn": "Điện thoại thông minh 5G flagship",
+        "name": "智能手机",
+        "pinyin": "zhì néng shǒu jī",
+        "vn": "Điện thoại thông minh",
         "icon": "📱",
         "price": 780,
         "pos": {
-          "x": 72,
-          "y": 40
+          "x": 23,
+          "y": 68
         },
         "vocabCategory": "商品种类 · 电子与名牌",
         "vocabTags": [
@@ -655,30 +770,25 @@
             "vn": "hàng hiệu"
           }
         ],
-        "sentence": "飞龙电子中心专门批发各种知名牌子的电子数码科技产品。",
-        "sentencePy": "Fēilóng diànzǐ zhōngxīn zhuānmén pīfā gèzhǒng zhīmíng páizi de diànzǐ shùmǎ kējì chǎnpǐn.",
-        "sentenceVn": "Trung tâm điện tử Phi Long chuyên phân phối sỉ các sản phẩm công nghệ kỹ thuật số thương hiệu nổi tiếng.",
+        "sentence": "这款手机的科技功能很新颖，质量也很可靠。",
+        "sentencePy": "zhè kuǎn shǒu jī de kē jì gōng néng hěn xīn yǐng ， zhì liàng yě hěn kě kào 。",
+        "sentenceVn": "Chức năng công nghệ của mẫu điện thoại này rất mới, chất lượng cũng đáng tin cậy.",
         "audioKey": "sent_dianzi_phone",
         "explanationVi": "“电子产品” = sản phẩm điện tử; “专门” trong “专门卖……” = chuyên bán. “牌子” là thương hiệu, không nhất thiết là thương hiệu nổi tiếng."
       },
       {
         "id": "item_dianzi_3",
-        "name": "无线降噪运动耳机与家用电器",
-        "pinyin": "wúxiàn jiàngzào yùndòng ěrjī yǔ jiāyòng diànqì",
-        "vn": "Tai nghe chống ồn & thiết bị điện tử gia dụng",
+        "name": "无线耳机",
+        "pinyin": "wú xiàn ěr jī",
+        "vn": "Tai nghe không dây",
         "icon": "🎧",
         "price": 160,
         "pos": {
-          "x": 50,
-          "y": 50
+          "x": 72,
+          "y": 69
         },
         "vocabCategory": "商品种类 · 家用电器/电子配件",
         "vocabTags": [
-          {
-            "word": "家用电器",
-            "py": "jiāyòng diànqì",
-            "vn": "đồ điện gia dụng"
-          },
           {
             "word": "电子",
             "py": "diànzǐ",
@@ -695,59 +805,104 @@
             "vn": "uy tín, đáng tin"
           }
         ],
-        "sentence": "这里的电子配件和小型家用电器质量可靠，还有学生优惠。",
-        "sentencePy": "Zhèlǐ de diànzǐ pèijiàn hé xiǎoxíng jiāyòng diànqì zhìliàng kěkào, hái yǒu xuésheng yōuhuì.",
-        "sentenceVn": "Phụ kiện điện tử và đồ điện gia dụng nhỏ ở đây chất lượng đáng tin, lại có ưu đãi cho học sinh sinh viên.",
+        "sentence": "我们先试试耳机，然后再决定买不买，怎么样？",
+        "sentencePy": "wǒ men xiān shì shì ěr jī ， rán hòu zài jué dìng mǎi bù mǎi ， zěn me yàng ？",
+        "sentenceVn": "Chúng mình thử tai nghe trước rồi quyết định có mua hay không, thế nào?",
         "audioKey": "sent_dianzi_headphone",
         "explanationVi": "“可靠” = đáng tin cậy, thường đi với “质量”. Tai nghe là đồ điện tử; “家用电器” thường chỉ thiết bị dùng trong gia đình như nồi điện hoặc tủ lạnh."
       }
     ],
     "npc": {
-      "name": "中关村数码顾问",
+      "name": "小陈 · 数码顾问",
       "avatar": "👨‍💻",
-      "text": "你好，欢迎来到中关村飞龙电子中心！我们专门卖电子产品。你想看电脑、手机，还是耳机？",
+      "text": "你好，欢迎来到中关村飞龙电子中心！我们专门卖电子产品。想看电脑、手机，还是耳机？",
       "choices": [
         {
-          "zh": "买电脑前，我想先看看网站上的评价。",
-          "py": "Mǎi diànnǎo qián, wǒ xiǎng xiān kànkan wǎngzhàn shang de píngjià.",
-          "vn": "Trước khi mua máy tính, tôi muốn xem đánh giá trên trang web trước.",
-          "explanationVi": "“……前” = trước khi…; “网站上的评价” = đánh giá trên trang web. “我想先……” nói rõ việc mình muốn làm trước.",
-          "reply": "好，您可以看看其他买家的评价，也可以在这里试用一下。",
-          "replyVn": "Được, bạn có thể xem đánh giá của người mua khác và cũng có thể dùng thử tại đây.",
-          "replyExplanationVi": "“其他买家” = những người mua khác. “试用” là dùng thử; khác với “试穿” là mặc thử quần áo.",
+          "zh": "买电脑前，我想比较一下功能和价格。",
+          "py": "mǎi diàn nǎo qián ， wǒ xiǎng bǐ jiào yī xià gōng néng hé jià gé 。",
+          "vn": "Trước khi mua máy tính, tôi muốn so sánh chức năng và giá cả.",
+          "explanationVi": "“……前” = trước khi…; “比较一下” = so sánh một chút.",
+          "reply": "这台电脑九百五十元。你可以看看功能，再试用一下，选适合自己的。",
+          "replyVn": "Máy tính này giá 950 tệ. Bạn có thể xem chức năng, dùng thử rồi chọn chiếc phù hợp với mình.",
+          "replyExplanationVi": "“试用” = dùng thử; “适合自己” = phù hợp với bản thân.",
           "audioKey": "choice_dianzi_0",
           "replyAudioKey": "reply_dianzi_0",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "zhè tái diàn nǎo jiǔ bǎi wǔ shí yuán 。 nǐ ké yǐ kàn kàn gōng néng ， zài shì yòng yī xià ， xuǎn shì hé zì jǐ de 。",
+          "focusItem": "item_dianzi_1",
+          "nextVenue": null
         },
         {
-          "zh": "这两款电脑的功能和质量有什么不同？",
-          "py": "Zhè liǎng kuǎn diànnǎo de gōngnéng hé zhìliàng yǒu shénme bùtóng?",
-          "vn": "Hai mẫu máy tính này khác nhau thế nào về chức năng và chất lượng?",
-          "explanationVi": "“款” là lượng từ cho mẫu/kiểu sản phẩm. “有什么不同？” = có gì khác nhau? Hỏi theo nhu cầu thay vì chỉ dựa vào thương hiệu.",
-          "reply": "可以把这两款放在一起比较，看看功能和质量，再选适合自己的。",
-          "replyVn": "Bạn có thể đặt hai mẫu cạnh nhau để so sánh chức năng và chất lượng, rồi chọn mẫu phù hợp với mình.",
-          "replyExplanationVi": "“把……放在一起” = đặt…cạnh nhau. “适合自己的” lược bỏ danh từ “电脑”: chiếc máy phù hợp với mình.",
+          "zh": "这款手机的牌子和质量怎么样？",
+          "py": "zhè kuǎn shǒu jī de pái zi hé zhì liàng zěn me yàng ？",
+          "vn": "Thương hiệu và chất lượng của mẫu điện thoại này thế nào?",
+          "explanationVi": "“这款” nói về một mẫu sản phẩm; “牌子” = thương hiệu.",
+          "reply": "这款手机七百八十元，质量比较可靠。你可以先看网站上的评价。",
+          "replyVn": "Mẫu điện thoại này giá 780 tệ, chất lượng khá đáng tin cậy. Bạn có thể xem đánh giá trên trang web trước.",
+          "replyExplanationVi": "“评价” = đánh giá; “先看” = xem trước rồi mới quyết định.",
           "audioKey": "choice_dianzi_1",
           "replyAudioKey": "reply_dianzi_1",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "zhè kuǎn shǒu jī qī bǎi bā shí yuán ， zhì liàng bǐ jiào kě kào 。 nǐ ké yǐ xiān kàn wǎng zhàn shàng de píng jià 。",
+          "focusItem": "item_dianzi_2",
+          "nextVenue": null
         },
         {
-          "zh": "我们先看看电脑，然后再试试耳机，怎么样？",
-          "py": "Wǒmen xiān kànkan diànnǎo, ránhòu zài shìshi ěrjī, zěnmeyàng?",
-          "vn": "Chúng mình xem máy tính trước rồi thử tai nghe, bạn thấy sao?",
-          "explanationVi": "“怎么样？” ở cuối lời đề nghị = “bạn thấy sao?”. “看看、试试” làm hành động nhẹ nhàng và tự nhiên hơn.",
-          "reply": "没问题，您慢慢体验。有不清楚的地方，随时问我。",
-          "replyVn": "Không vấn đề gì, bạn cứ thong thả trải nghiệm. Có chỗ nào chưa rõ thì cứ hỏi tôi.",
-          "replyExplanationVi": "“没问题” = không vấn đề gì. “随时问我” = cứ hỏi tôi bất cứ lúc nào.",
+          "zh": "我们先试试耳机，然后再决定，怎么样？",
+          "py": "wǒ men xiān shì shì ěr jī ， rán hòu zài jué dìng ， zěn me yàng ？",
+          "vn": "Chúng mình thử tai nghe trước, rồi mới quyết định, thế nào?",
+          "explanationVi": "“先……然后再……” = trước tiên…sau đó…; “怎么样？” hỏi ý kiến về đề xuất.",
+          "reply": "没问题。这副耳机一百六十元。你慢慢体验，有问题随时问我。",
+          "replyVn": "Được thôi. Bộ tai nghe này giá 160 tệ. Bạn cứ thong thả trải nghiệm, có thắc mắc thì hỏi tôi bất cứ lúc nào.",
+          "replyExplanationVi": "“这副” dùng cho một bộ; “随时问我” = hỏi tôi bất cứ lúc nào.",
           "audioKey": "choice_dianzi_2",
           "replyAudioKey": "reply_dianzi_2",
-          "replyEmotion": "welcome"
+          "replyEmotion": "welcome",
+          "replyPy": "méi wèn tí 。 zhè fù ěr jī yì bǎi liù shí yuán 。 nǐ màn màn tǐ yàn ， yǒu wèn tí suí shí wèn wǒ 。",
+          "focusItem": "item_dianzi_3",
+          "nextVenue": null
         }
       ],
-      "vn": "Xin chào, chào mừng bạn đến Trung tâm điện tử Phi Long ở Trung Quan Thôn! Chúng tôi chuyên bán sản phẩm điện tử. Bạn muốn xem máy tính, điện thoại hay tai nghe?",
-      "explanationVi": "“专门卖” = chuyên bán. “电子” = điện tử. “中关村” và “飞龙电子中心” là tên riêng trong bài học.",
+      "vn": "Xin chào, chào mừng bạn đến Trung tâm điện tử Phi Long ở Trung Quan Thôn! Chúng tôi chuyên bán đồ điện tử. Bạn muốn xem máy tính, điện thoại hay tai nghe?",
+      "explanationVi": "Nhấn vào một câu để trả lời. Có thể nghe mẫu trước, rồi tự nói lại bằng tiếng Trung.",
       "audioKey": "npc_dianzi",
-      "emotion": "welcome"
+      "emotion": "welcome",
+      "textPy": "ní hǎo ， huān yíng lái dào zhōng guān cūn fēi lóng diàn zi zhōng xīn ！ wǒ men zhuān mén mài diàn zi chǎn pǐn 。 xiǎng kàn diàn nǎo 、 shǒu jī ， hái shì ěr jī ？"
+    },
+    "scene": {
+      "shortName": "电子中心",
+      "vn": "Cửa hàng điện tử",
+      "person": "小陈",
+      "role": "数码顾问",
+      "roleVi": "Nhân viên tư vấn điện tử",
+      "chapter": "午后 · 试试科技",
+      "npcPos": {
+        "x": 80,
+        "y": 30
+      },
+      "artFile": "story-v2/dianzi.png",
+      "vocabTags": [
+        {
+          "word": "中关村",
+          "py": "zhōng guān cūn",
+          "vn": "Trung Quan Thôn"
+        },
+        {
+          "word": "飞龙电子中心",
+          "py": "fēi lóng diàn zi zhōng xīn",
+          "vn": "Trung tâm điện tử Phi Long"
+        },
+        {
+          "word": "电子",
+          "py": "diànzǐ",
+          "vn": "điện tử"
+        },
+        {
+          "word": "科技",
+          "py": "kējì",
+          "vn": "công nghệ"
+        }
+      ]
     }
   },
   "shichang": {
@@ -762,14 +917,14 @@
     "items": [
       {
         "id": "item_shichang_1",
-        "name": "早市新鲜脆嫩青菜食品",
-        "pinyin": "zǎoshì xīnxiān cuìnèn qīngcài shípǐn",
-        "vn": "Rau xanh tươi ngon chợ sáng (Thực phẩm)",
+        "name": "新鲜青菜",
+        "pinyin": "xīn xiān qīng cài",
+        "vn": "Rau xanh tươi",
         "icon": "🥬",
         "price": 15,
         "pos": {
-          "x": 25,
-          "y": 44
+          "x": 23,
+          "y": 43
         },
         "vocabCategory": "商品种类 · 早市食品",
         "vocabTags": [
@@ -794,22 +949,22 @@
             "vn": "cuộc sống, sinh hoạt"
           }
         ],
-        "sentence": "早市上的蔬菜不仅新鲜，而且价格比超市还便宜呢！",
-        "sentencePy": "Zǎoshì shang de shūcài bùjǐn xīnxiān, érqiě jiàgé bǐ chāoshì hái piányi ne!",
-        "sentenceVn": "Rau củ ở chợ sáng không những tươi mà giá cả còn rẻ hơn cả siêu thị nữa đấy!",
+        "sentence": "早市的青菜虽然包装简单，但是很新鲜。",
+        "sentencePy": "zǎo shì de qīng cài suī rán bāo zhuāng jiǎn dān ， dàn shì hěn xīn xiān 。",
+        "sentenceVn": "Rau xanh ở chợ sáng tuy đóng gói đơn giản nhưng rất tươi.",
         "audioKey": "sent_shichang_veg",
         "explanationVi": "“早市” = chợ sáng, “市场” = chợ nói chung. “不仅……而且……” = không những…mà còn…; đây là mẫu câu bổ sung cho ví dụ này."
       },
       {
         "id": "item_shichang_2",
-        "name": "早市甘甜多汁的水果食品",
-        "pinyin": "zǎoshì gāntián duōzhī de shuǐguǒ shípǐn",
-        "vn": "Trái cây ngọt mọng nước chợ sáng",
+        "name": "新鲜水果",
+        "pinyin": "xīn xiān shuǐ guǒ",
+        "vn": "Trái cây tươi",
         "icon": "🍎",
         "price": 28,
         "pos": {
-          "x": 75,
-          "y": 45
+          "x": 23,
+          "y": 69
         },
         "vocabCategory": "商品种类 · 市场生鲜食品",
         "vocabTags": [
@@ -834,22 +989,22 @@
             "vn": "không bằng"
           }
         ],
-        "sentence": "超市里的包装虽然整齐，但新鲜程度不如早市的好。",
-        "sentencePy": "Chāoshì lǐ de bāozhuāng suīrán zhěngqí, dàn xīnxiān chéngdù bùrú zǎoshì de hǎo.",
-        "sentenceVn": "Đóng gói trong siêu thị tuy gọn gàng, nhưng độ tươi không bằng ở chợ sáng.",
+        "sentence": "这份水果不如那份便宜，但是看起来更新鲜。",
+        "sentencePy": "zhè fèn shuǐ guǒ bù rú nà fèn pián yi ， dàn shì kàn qǐ lái gēng xīn xiān 。",
+        "sentenceVn": "Phần trái cây này không rẻ bằng phần kia nhưng trông tươi hơn.",
         "audioKey": "sent_shichang_fruit",
         "explanationVi": "“不如” chỉ sự so sánh cụ thể giữa hai món hàng. “新鲜” nói độ tươi, “包装” nói bao bì; không nên coi bao bì đẹp là bằng chứng chắc chắn về độ tươi."
       },
       {
         "id": "item_shichang_3",
-        "name": "传统手工热包子早餐",
-        "pinyin": "chuántǒng shǒugōng rè bāozi zǎocān",
-        "vn": "Bánh bao nóng làm thủ công bữa sáng",
+        "name": "热包子",
+        "pinyin": "rè bāo zi",
+        "vn": "Bánh bao nóng",
         "icon": "🥟",
         "price": 12,
         "pos": {
-          "x": 50,
-          "y": 38
+          "x": 70,
+          "y": 70
         },
         "vocabCategory": "商品种类 · 传统早餐食品",
         "vocabTags": [
@@ -869,59 +1024,94 @@
             "vn": "tiết kiệm, hời"
           }
         ],
-        "sentence": "清晨去早市买刚出锅的热包子，暖胃又划算。",
-        "sentencePy": "Qīngchén qù zǎoshì mǎi gāng chūguō de rè bāozi, nuǎnwèi yòu huásuàn.",
-        "sentenceVn": "Sáng sớm đi chợ sáng mua bánh bao nóng vừa ra lò, ấm bụng lại rất hời.",
+        "sentence": "我们先买早餐，然后再去商场转转，行吗？",
+        "sentencePy": "wǒ men xiān mǎi zǎo cān ， rán hòu zài qù shāng chǎng zhuán zhuǎn ， xíng ma ？",
+        "sentenceVn": "Chúng mình mua đồ ăn sáng trước rồi đến trung tâm thương mại dạo một vòng, được không?",
         "audioKey": "sent_shichang_breakfast",
         "explanationVi": "“刚出锅” = vừa lấy ra khỏi nồi; “划算” = đáng tiền. “早餐” là bữa sáng, còn “食品” là nhóm thực phẩm nói chung."
       }
     ],
     "npc": {
-      "name": "卖菜热情阿姨",
+      "name": "陈阿姨 · 早市摊主",
       "avatar": "👵",
       "text": "早上好，来逛早市呀！今天有青菜、水果和热包子。你想买点什么？",
       "choices": [
         {
           "zh": "这些青菜很新鲜，价格是多少？",
-          "py": "Zhèxiē qīngcài hěn xīnxiān, jiàgé shì duōshao?",
-          "vn": "Rau xanh này tươi quá, giá bao nhiêu?",
-          "explanationVi": "“这些” = những…này. “价格是多少？” hỏi giá; trong khẩu ngữ cũng có thể hỏi “多少钱？”.",
-          "reply": "这份青菜十五元。您看看，叶子很新鲜，今天做菜正合适。",
-          "replyVn": "Phần rau này 15 tệ. Bạn xem, lá còn rất tươi, đem nấu hôm nay là vừa hợp.",
-          "replyExplanationVi": "“这份” = phần này; giá tính cho một phần, không tự hiểu là một cân. “正合适” = vừa hợp.",
+          "py": "zhè xiē qīng cài hěn xīn xiān ， jià gé shì duō shǎo ？",
+          "vn": "Rau xanh này rất tươi, giá bao nhiêu?",
+          "explanationVi": "“这些” dùng cho nhiều vật; “价格是多少？” cũng là cách hỏi giá.",
+          "reply": "这份青菜十五元。你看看，叶子很新鲜，今天做菜正合适。",
+          "replyVn": "Phần rau xanh này giá 15 tệ. Bạn xem này, lá rất tươi, mang về nấu hôm nay rất hợp.",
+          "replyExplanationVi": "“正合适” = vừa phù hợp; “食品” = thực phẩm, gồm rau và các đồ ăn khác.",
           "audioKey": "choice_shichang_0",
           "replyAudioKey": "reply_shichang_0",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "zhè fèn qīng cài shí wǔ yuán 。 nǐ kàn kàn ， yè zi hěn xīn xiān ， jīn tiān zuò cài zhèng hé shì 。",
+          "focusItem": "item_shichang_1",
+          "nextVenue": null
         },
         {
           "zh": "这份水果虽然贵一点，但是看起来更新鲜。",
-          "py": "Zhè fèn shuǐguǒ suīrán guì yìdiǎn, dànshì kàn qǐlái gèng xīnxiān.",
+          "py": "zhè fèn shuǐ guǒ suī rán guì yì diǎn ， dàn shì kàn qǐ lái gēng xīn xiān 。",
           "vn": "Phần trái cây này tuy đắt hơn một chút nhưng trông tươi hơn.",
-          "explanationVi": "“贵一点” = đắt hơn một chút; “看起来” = trông có vẻ. Đây là nhận xét về món hàng đang xem.",
-          "reply": "您可以比较一下。这份水果二十八元，喜欢的话就带一份。",
-          "replyVn": "Bạn cứ so sánh thử. Phần trái cây này 28 tệ, nếu thích thì lấy một phần.",
-          "replyExplanationVi": "“喜欢的话” = nếu thích. “带一份” trong lúc mua hàng nghĩa là lấy/mua một phần mang theo.",
+          "explanationVi": "“虽然……但是……” = tuy…nhưng…; “更” = hơn.",
+          "reply": "你可以比较一下。这份水果二十八元，喜欢的话就带一份。",
+          "replyVn": "Bạn có thể so sánh thử. Phần trái cây này giá 28 tệ, nếu thích thì lấy một phần nhé.",
+          "replyExplanationVi": "“喜欢的话” = nếu thích; “一份” là một phần trái cây.",
           "audioKey": "choice_shichang_1",
           "replyAudioKey": "reply_shichang_1",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "nǐ ké yǐ bǐ jiào yī xià 。 zhè fèn shuǐ guǒ èr shí bā yuán ， xǐ huān de huà jiù dài yī fèn 。",
+          "focusItem": "item_shichang_2",
+          "nextVenue": null
         },
         {
           "zh": "我们先买早餐，然后再去商场，行吗？",
-          "py": "Wǒmen xiān mǎi zǎocān, ránhòu zài qù shāngchǎng, xíng ma?",
-          "vn": "Chúng mình mua đồ ăn sáng trước rồi đến trung tâm thương mại, được không?",
-          "explanationVi": "“先……然后再……” nói thứ tự. “行吗？” hỏi sự đồng ý; có thể thay bằng “好吗？”.",
-          "reply": "行啊，包子还是热的。吃完早餐，再慢慢逛街。",
-          "replyVn": "Được chứ, bánh bao vẫn còn nóng. Ăn sáng xong rồi thong thả đi dạo phố.",
-          "replyExplanationVi": "“还是热的” ở đây = vẫn còn nóng, không phải câu hỏi lựa chọn. “吃完” = ăn xong.",
+          "py": "wǒ men xiān mǎi zǎo cān ， rán hòu zài qù shāng chǎng ， xíng ma ？",
+          "vn": "Chúng mình mua đồ ăn sáng trước, sau đó đến trung tâm thương mại, được không?",
+          "explanationVi": "“先……然后再……” sắp xếp thứ tự; “行吗？” hỏi được hay không.",
+          "reply": "行啊，包子还是热的，一份十二元。吃完早餐，再去商场转转。",
+          "replyVn": "Được chứ, bánh bao còn nóng, một phần giá 12 tệ. Ăn sáng xong rồi đến trung tâm thương mại dạo một vòng.",
+          "replyExplanationVi": "“转转” = đi dạo một vòng; ở đây “转” đọc zhuàn.",
           "audioKey": "choice_shichang_2",
           "replyAudioKey": "reply_shichang_2",
-          "replyEmotion": "welcome"
+          "replyEmotion": "welcome",
+          "replyPy": "xíng a ， bāo zi hái shì rè de ， yī fèn shí èr yuán 。 chī wán zǎo cān ， zài qù shāng chǎng zhuán zhuǎn 。",
+          "focusItem": "item_shichang_3",
+          "nextVenue": "shangchang"
         }
       ],
       "vn": "Chào buổi sáng, bạn đi chợ sáng à! Hôm nay có rau xanh, trái cây và bánh bao nóng. Bạn muốn mua gì?",
-      "explanationVi": "“早市” = chợ sáng; “早上好” là lời chào. “买点什么？” là câu hỏi thường nghe khi người bán bắt chuyện.",
+      "explanationVi": "Nhấn vào một câu để trả lời. Có thể nghe mẫu trước, rồi tự nói lại bằng tiếng Trung.",
       "audioKey": "npc_shichang",
-      "emotion": "welcome"
+      "emotion": "welcome",
+      "textPy": "zǎo shàng hǎo ， lái guàng zǎo shì ya ！ jīn tiān yǒu qīng cài 、 shuǐ guǒ hé rè bāo zi 。 nǐ xiǎng mǎi diǎn shén me ？"
+    },
+    "scene": {
+      "shortName": "早市",
+      "vn": "Chợ sáng",
+      "person": "陈阿姨",
+      "role": "早市摊主",
+      "roleVi": "Cô bán hàng ở chợ sáng",
+      "chapter": "早上 · 挑点新鲜的",
+      "npcPos": {
+        "x": 80,
+        "y": 30
+      },
+      "artFile": "story-v2/shichang.png",
+      "vocabTags": [
+        {
+          "word": "早市",
+          "py": "zǎoshì",
+          "vn": "chợ sáng"
+        },
+        {
+          "word": "市场",
+          "py": "shìchǎng",
+          "vn": "chợ"
+        }
+      ]
     }
   },
   "xiaomaibu": {
@@ -936,14 +1126,14 @@
     "items": [
       {
         "id": "item_xiaomaibu_1",
-        "name": "笔记本与圆珠笔学习用品",
-        "pinyin": "bǐjìběn yǔ yuánzhūbǐ xuéxí yòngpǐn",
-        "vn": "Cuốn vở & bút bi đồ dùng học tập",
+        "name": "本子和圆珠笔",
+        "pinyin": "běn zi hé yuán zhū bǐ",
+        "vn": "Vở và bút bi",
         "icon": "📓",
         "price": 10,
         "pos": {
-          "x": 72,
-          "y": 42
+          "x": 25,
+          "y": 34
         },
         "vocabCategory": "商品种类 · 学习用品",
         "vocabTags": [
@@ -963,22 +1153,22 @@
             "vn": "quầy bán hàng, tạp hóa"
           }
         ],
-        "sentence": "学校门口的小卖部准备了各种笔记本和圆珠笔等学习用品。",
-        "sentencePy": "Xuéxiào ménkǒu de xiǎomàibù zhǔnbèi le gèzhǒng bǐjìběn hé yuánzhūbǐ děng xuéxí yòngpǐn.",
-        "sentenceVn": "Quầy tạp hóa trước cổng trường chuẩn bị rất nhiều cuốn vở và bút bi cùng các đồ dùng học tập.",
+        "sentence": "小卖部也有学习用品，买本子和笔很方便。",
+        "sentencePy": "xiǎo mài bù yě yǒu xué xí yòng pǐn ， mǎi běn zi hé bǐ hěn fāng biàn 。",
+        "sentenceVn": "Tiệm tạp hóa cũng có đồ dùng học tập, mua vở và bút rất tiện.",
         "audioKey": "sent_xiaomaibu_stationery",
         "explanationVi": "“本子、笔” là các đồ vật cụ thể thuộc nhóm “学习用品”. “用品” = đồ dùng; hãy thêm mục đích sử dụng như “学习” hoặc “体育”."
       },
       {
         "id": "item_xiaomaibu_2",
-        "name": "冰镇解渴矿泉水生活用品",
-        "pinyin": "bīngzhèn jiěkě kuàngquánshuǐ shēnghuó yòngpǐn",
-        "vn": "Nước khoáng lạnh giải khát đồ dùng sinh hoạt",
+        "name": "矿泉水",
+        "pinyin": "kuàng quán shuǐ",
+        "vn": "Nước khoáng",
         "icon": "🥤",
         "price": 3,
         "pos": {
-          "x": 26,
-          "y": 42
+          "x": 24,
+          "y": 66
         },
         "vocabCategory": "商品种类 · 生活用品",
         "vocabTags": [
@@ -998,22 +1188,23 @@
             "vn": "không bằng"
           }
         ],
-        "sentence": "小卖部的商品种类虽然不如超市齐全，但是下楼买瓶水特别方便。",
-        "sentencePy": "Xiǎomàibù de shāngpǐn zhǒnglèi suīrán bùrú chāoshì qíquán, dànshì xiàlóu mǎi píng shuǐ tèbié fāngbiàn.",
-        "sentenceVn": "Chủng loại hàng ở tiệm tạp hóa tuy không đầy đủ bằng siêu thị, nhưng xuống lầu mua chai nước rất tiện.",
+        "sentence": "我们先买两瓶水，然后再去逛街，好吗？",
+        "sentencePy": "wǒ men xiān mǎi liǎng píng shuǐ ， rán hòu zài qù guàng jiē ， hǎo ma ？",
+        "sentenceVn": "Chúng mình mua hai chai nước trước rồi đi dạo phố, được không?",
         "audioKey": "sent_xiaomaibu_water",
-        "explanationVi": "Chai nước là đồ uống. “生活” nói về sinh hoạt; “生活用品” thường gợi đồ dùng hằng ngày. Ở đây hãy tập câu “买一瓶水”, không ghi nhớ nước như ví dụ chuẩn của “日用品”."
+        "explanationVi": "Chai nước là đồ uống. “生活” nói về sinh hoạt; “生活用品” thường gợi đồ dùng hằng ngày. Ở đây hãy tập câu “买一瓶水”, không ghi nhớ nước như ví dụ chuẩn của “日用品”.",
+        "buyQuantity": 2
       },
       {
         "id": "item_xiaomaibu_3",
-        "name": "香脆袋装小零食食品",
-        "pinyin": "xiāngcuì dàizhuāng xiǎo língshí shípǐn",
-        "vn": "Gói đồ ăn vặt giòn thơm (Thực phẩm)",
+        "name": "袋装零食",
+        "pinyin": "dài zhuāng líng shí",
+        "vn": "Đồ ăn vặt đóng túi",
         "icon": "🍪",
         "price": 6,
         "pos": {
-          "x": 48,
-          "y": 35
+          "x": 63,
+          "y": 70
         },
         "vocabCategory": "商品种类 · 食品",
         "vocabTags": [
@@ -1033,59 +1224,89 @@
             "vn": "tiết kiệm, hợp lý"
           }
         ],
-        "sentence": "小卖部里的零食食品物美价廉，买几包特别划算。",
-        "sentencePy": "Xiǎomàibù lǐ de língshí shípǐn wùměijiàlián, mǎi jǐ bāo tèbié huásuàn.",
-        "sentenceVn": "Đồ ăn vặt ở tiệm tạp hóa vừa ngon vừa rẻ, mua vài gói rất hời.",
+        "sentence": "小卖部的食品不如超市多，但是买起来很方便。",
+        "sentencePy": "xiǎo mài bù de shí pǐn bù rú chāo shì duō ， dàn shì mǎi qǐ lái hěn fāng biàn 。",
+        "sentenceVn": "Thực phẩm ở tiệm tạp hóa không nhiều bằng siêu thị nhưng mua rất tiện.",
         "audioKey": "sent_xiaomaibu_snack",
         "explanationVi": "“食品” là tên nhóm; món cụ thể ở đây là đồ ăn vặt đóng gói. “物美价廉” = hàng tốt, giá rẻ, là cách nói bổ sung ngoài từ trọng tâm."
       }
     ],
     "npc": {
-      "name": "慈祥小卖部爷爷",
-      "avatar": "👴",
+      "name": "王奶奶 · 小卖部店主",
+      "avatar": "👵",
       "text": "欢迎来小卖部！这里有水、零食，也有笔和本子。你想买什么？",
       "choices": [
         {
-          "zh": "这里的商品虽然不多，但是买东西很方便。",
-          "py": "Zhèlǐ de shāngpǐn suīrán bù duō, dànshì mǎi dōngxi hěn fāngbiàn.",
-          "vn": "Ở đây tuy không nhiều hàng nhưng mua đồ rất tiện.",
-          "explanationVi": "“不多” = không nhiều. Dùng “虽然……但是……” để nêu một hạn chế rồi bổ sung ưu điểm.",
-          "reply": "是啊，附近的邻居常来。缺一支笔，买一瓶水，都很方便。",
-          "replyVn": "Đúng vậy, hàng xóm gần đây thường ghé. Cần một cây bút hay mua một chai nước đều rất tiện.",
-          "replyExplanationVi": "“支” dùng cho bút; “瓶” dùng cho chai. “都” gộp cả hai việc vừa nhắc đến.",
+          "zh": "这套学习用品十元，很划算。",
+          "py": "zhè tào xué xí yòng pǐn shí yuán ， hěn huá suàn 。",
+          "vn": "Bộ đồ dùng học tập này giá 10 tệ, rất hời.",
+          "explanationVi": "“这套” = bộ này; “学习用品” = đồ dùng học tập.",
+          "reply": "对，里面有本子和圆珠笔。做工虽然一般，但是平时学习够用了。",
+          "replyVn": "Đúng rồi, bên trong có vở và bút bi. Tuy được làm khá bình thường nhưng dùng học hằng ngày là đủ.",
+          "replyExplanationVi": "“够用了” = đủ để dùng; “一般” = bình thường.",
           "audioKey": "choice_xiaomaibu_0",
           "replyAudioKey": "reply_xiaomaibu_0",
-          "replyEmotion": "explain"
-        },
-        {
-          "zh": "这套学习用品十元，很划算。",
-          "py": "Zhè tào xuéxí yòngpǐn shí yuán, hěn huásuàn.",
-          "vn": "Bộ đồ dùng học tập này 10 tệ, đáng tiền thật.",
-          "explanationVi": "“套” là lượng từ cho một bộ. “划算” = đáng tiền/có lợi khi mua, không chỉ đơn giản là giá rẻ.",
-          "reply": "对，里面有本子和笔。您看看是不是自己需要的。",
-          "replyVn": "Đúng rồi, bên trong có vở và bút. Bạn xem có đúng những thứ mình cần không.",
-          "replyExplanationVi": "“是不是” = có phải…không. “自己需要的” lược bỏ “东西”: những thứ mình cần.",
-          "audioKey": "choice_xiaomaibu_1",
-          "replyAudioKey": "reply_xiaomaibu_1",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "duì ， lǐ miàn yǒu běn zi hé yuán zhū bǐ 。 zuò gōng suī rán yì bān ， dàn shì píng shí xué xí gòu yòng le 。",
+          "focusItem": "item_xiaomaibu_1",
+          "nextVenue": null
         },
         {
           "zh": "我们先买两瓶水，然后再去逛街，好吗？",
-          "py": "Wǒmen xiān mǎi liǎng píng shuǐ, ránhòu zài qù guàngjiē, hǎo ma?",
+          "py": "wǒ men xiān mǎi liǎng píng shuǐ ， rán hòu zài qù guàng jiē ， hǎo ma ？",
           "vn": "Chúng mình mua hai chai nước trước rồi đi dạo phố, được không?",
-          "explanationVi": "Nói “两瓶水”, thường không nói “二瓶水”. “逛街” = đi dạo phố, xem hàng hoặc mua sắm.",
-          "reply": "好嘞，水在这边。慢慢选，祝你们逛得开心！",
-          "replyVn": "Được nhé, nước ở bên này. Cứ thong thả chọn, chúc các bạn đi chơi vui!",
-          "replyExplanationVi": "“祝你们……” dùng để chúc. “逛得开心” = đi dạo vui vẻ, “得” nối hành động với trạng thái.",
+          "explanationVi": "“两瓶水” = hai chai nước; “先……然后再……” nói về thứ tự.",
+          "reply": "好嘞，一瓶水三元，两瓶六元。水在这边，拿好再慢慢逛。",
+          "replyVn": "Được nhé, một chai nước 3 tệ, hai chai 6 tệ. Nước ở bên này, cầm lấy rồi thong thả đi dạo.",
+          "replyExplanationVi": "“好嘞” là lời đáp thân mật; “拿好” = cầm cho chắc.",
+          "audioKey": "choice_xiaomaibu_1",
+          "replyAudioKey": "reply_xiaomaibu_1",
+          "replyEmotion": "explain",
+          "replyPy": "hǎo lei ， yī píng shuǐ sān yuán ， liǎng píng liù yuán 。 shuǐ zài zhè biān ， ná hǎo zài màn màn guàng 。",
+          "focusItem": "item_xiaomaibu_2",
+          "nextVenue": null
+        },
+        {
+          "zh": "这里的零食不如超市多，但是买起来很方便。",
+          "py": "zhè lǐ de líng shí bù rú chāo shì duō ， dàn shì mǎi qǐ lái hěn fāng biàn 。",
+          "vn": "Đồ ăn vặt ở đây không nhiều bằng siêu thị nhưng mua rất tiện.",
+          "explanationVi": "“A 不如 B 多” = A không nhiều bằng B; “买起来” = khi mua.",
+          "reply": "是啊，这袋零食六元。小卖部虽然小，但是日常用品很齐全。",
+          "replyVn": "Đúng vậy, túi đồ ăn vặt này giá 6 tệ. Tiệm tuy nhỏ nhưng có đủ đồ dùng thường ngày.",
+          "replyExplanationVi": "“齐全” = đầy đủ; câu này nói về đồ dùng thường ngày trong tiệm.",
           "audioKey": "choice_xiaomaibu_2",
           "replyAudioKey": "reply_xiaomaibu_2",
-          "replyEmotion": "lively"
+          "replyEmotion": "lively",
+          "replyPy": "shì a ， zhè dài líng shí liù yuán 。 xiǎo mài bù suī rán xiǎo ， dàn shì rì cháng yòng pǐn hěn qí quán 。",
+          "focusItem": "item_xiaomaibu_3",
+          "nextVenue": null
         }
       ],
       "vn": "Chào mừng bạn đến tiệm tạp hóa! Ở đây có nước, đồ ăn vặt, bút và vở. Bạn muốn mua gì?",
-      "explanationVi": "“小卖部” = quầy hoặc tiệm tạp hóa nhỏ. “也有” = cũng có; “你想买什么？” dùng để hỏi bạn muốn mua món gì.",
+      "explanationVi": "Nhấn vào một câu để trả lời. Có thể nghe mẫu trước, rồi tự nói lại bằng tiếng Trung.",
       "audioKey": "npc_xiaomaibu",
-      "emotion": "welcome"
+      "emotion": "welcome",
+      "textPy": "huān yíng lái xiǎo mài bù ！ zhè lǐ yǒu shuǐ 、 líng shí ， yě yǒu bǐ hé běn zi 。 nǐ xiǎng mǎi shén me ？"
+    },
+    "scene": {
+      "shortName": "小卖部",
+      "vn": "Tiệm tạp hóa",
+      "person": "王奶奶",
+      "role": "小卖部店主",
+      "roleVi": "Bà chủ tiệm tạp hóa",
+      "chapter": "街角 · 买点随身物品",
+      "npcPos": {
+        "x": 80,
+        "y": 30
+      },
+      "artFile": "story-v2/xiaomaibu.png",
+      "vocabTags": [
+        {
+          "word": "小卖部",
+          "py": "xiǎomàibù",
+          "vn": "quầy bán hàng"
+        }
+      ]
     }
   },
   "wangzhan": {
@@ -1100,14 +1321,14 @@
     "items": [
       {
         "id": "item_wangzhan_1",
-        "name": "网站满减大额优惠券",
-        "pinyin": "wǎngzhàn mǎnjiǎn dà’é yōuhuìquàn",
-        "vn": "Phiếu giảm giá ưu đãi lớn trên trang web",
+        "name": "购物优惠券",
+        "pinyin": "gòu wù yōu huì quàn",
+        "vn": "Phiếu ưu đãi mua sắm",
         "icon": "🎟️",
-        "price": 50,
+        "price": 0,
         "pos": {
-          "x": 28,
-          "y": 38
+          "x": 30,
+          "y": 36
         },
         "vocabCategory": "购物方式 · 网站与优惠",
         "vocabTags": [
@@ -1132,22 +1353,23 @@
             "vn": "tiết kiệm, hời"
           }
         ],
-        "sentence": "在购物网站上买东西经常有满减优惠活动，折算下来价格非常划算。",
-        "sentencePy": "Zài gòuwù wǎngzhàn shang mǎi dōngxi jīngcháng yǒu mǎnjiǎn yōuhuì huódòng, zhésuàn xiàlái jiàgé fēicháng huásuàn.",
-        "sentenceVn": "Mua sắm trên trang web thường có ưu đãi giảm giá, tính ra giá cả rất hời.",
+        "sentence": "先领取优惠券，再买商品，这样更划算。",
+        "sentencePy": "xiān lǐng qǔ yōu huì quàn ， zài mǎi shāng pǐn ， zhè yàng gèng huá suàn 。",
+        "sentenceVn": "Nhận phiếu ưu đãi trước rồi mua hàng, như vậy sẽ hời hơn.",
         "audioKey": "sent_wangzhan_deal",
-        "explanationVi": "“满减” = được giảm tiền khi đơn hàng đạt một mức quy định. Phiếu ưu đãi có điều kiện sử dụng; “划算” cần xét số tiền thực trả."
+        "explanationVi": "“优惠券” = phiếu ưu đãi. Nhận miễn phí, dùng một lần cho hàng trực tuyến, giảm 25 tệ.",
+        "kind": "coupon"
       },
       {
         "id": "item_wangzhan_2",
-        "name": "带图评价精选热门商品",
-        "pinyin": "dàitú píngjià jīngxuǎn rèmén shāngpǐn",
-        "vn": "Hàng hóa tuyển chọn đánh giá tốt kèm ảnh thật",
-        "icon": "⭐",
+        "name": "帆布包",
+        "pinyin": "fān bù bāo",
+        "vn": "Túi vải",
+        "icon": "👜",
         "price": 120,
         "pos": {
-          "x": 72,
-          "y": 38
+          "x": 25,
+          "y": 65
         },
         "vocabCategory": "商品特点 · 评价与质量",
         "vocabTags": [
@@ -1182,22 +1404,22 @@
             "vn": "uy tín, đáng tin"
           }
         ],
-        "sentence": "在网站上买商品时，一定要专门看看其他买家的真实评价，质量才可靠。",
-        "sentencePy": "Zài wǎngzhàn shang mǎi shāngpǐn shí, yídìng yào zhuānmén kànkan qítā mǎijiā de zhēnshí píngjià, zhìliàng cái kěkào.",
-        "sentenceVn": "Khi mua hàng trên trang web, nhất định phải chuyên xem đánh giá thật của người mua khác thì chất lượng mới đáng tin.",
+        "sentence": "买帆布包前，我想专门看看质量和做工的评价。",
+        "sentencePy": "mǎi fān bù bāo qián ， wǒ xiǎng zhuān mén kàn kàn zhì liàng hé zuò gōng de píng jià 。",
+        "sentenceVn": "Trước khi mua túi vải, tôi muốn xem riêng đánh giá về chất lượng và đường may.",
         "audioKey": "sent_wangzhan_review",
-        "explanationVi": "“评价” = đánh giá của người mua; “专门看看” = dành thời gian xem kỹ. Đánh giá cung cấp thông tin tham khảo, không tự bảo đảm “质量可靠”."
+        "explanationVi": "“评价” = đánh giá của người mua; “专门看看” = dành riêng thời gian để xem. Hãy xem cả chất lượng và đường may của túi."
       },
       {
         "id": "item_wangzhan_3",
-        "name": "送货上门极速快递包裹",
-        "pinyin": "sònghuò shàngmén jísù kuàidì bāoguǒ",
-        "vn": "Gói hàng chuyển phát nhanh giao tận cửa",
-        "icon": "📦",
-        "price": 80,
+        "name": "网购运动鞋",
+        "pinyin": "wǎng gòu yùn dòng xié",
+        "vn": "Giày thể thao bán trực tuyến",
+        "icon": "👟",
+        "price": 260,
         "pos": {
-          "x": 50,
-          "y": 50
+          "x": 70,
+          "y": 70
         },
         "vocabCategory": "购物体验 · 网站对比",
         "vocabTags": [
@@ -1217,59 +1439,95 @@
             "vn": "cuộc sống"
           }
         ],
-        "sentence": "在网站上购物虽然送货到家很方便，但是体验不如去商场亲自试穿。",
-        "sentencePy": "Zài wǎngzhàn shang gòuwù suīrán sònghuò dàojiā hěn fāngbiàn, dànshì tǐyàn bùrú qù shāngchǎng qīnzì shìchuān.",
-        "sentenceVn": "Mua sắm trên web tuy giao tận nhà rất tiện, nhưng trải nghiệm không bằng đích thân ra TTTM thử đồ.",
+        "sentence": "网上买鞋虽然方便，但是不如试穿以后再买放心。",
+        "sentencePy": "wǎng shàng mǎi xié suī rán fāng biàn ， dàn shì bù rú shì chuān yǐ hòu zài mǎi fàng xīn 。",
+        "sentenceVn": "Mua giày trên mạng tuy tiện nhưng không yên tâm bằng thử rồi mới mua.",
         "audioKey": "sent_wangzhan_express",
-        "explanationVi": "“送货到家” = giao hàng tận nhà; “亲自试穿” = đích thân mặc thử. Dùng “虽然……但是……” để nêu sự tiện lợi và điều còn băn khoăn."
+        "explanationVi": "“送货到家” = giao hàng tận nhà; “亲自试穿” = đích thân mặc thử. Dùng “虽然……但是……” để nêu sự tiện lợi và điều còn băn khoăn.",
+        "kind": "product"
       }
     ],
     "npc": {
-      "name": "智能网购小助手",
-      "avatar": "🤖",
-      "text": "欢迎来到购物网站！您可以先看商品，再比较价格和评价。需要我帮您找什么？",
+      "name": "小安 · 网购助手",
+      "avatar": "👩",
+      "text": "欢迎来到购物网站！先看商品，再比较价格和评价。今天可以免费领取一张优惠券。",
       "choices": [
         {
-          "zh": "网购虽然方便，但是不如试穿以后再买放心。",
-          "py": "Wǎnggòu suīrán fāngbiàn, dànshì bùrú shìchuān yǐhòu zài mǎi fàngxīn.",
-          "vn": "Mua online tuy tiện nhưng không yên tâm bằng mặc thử rồi mới mua.",
-          "explanationVi": "“不如……放心” so sánh mức độ yên tâm. “以后再……” = sau khi…rồi mới…; đây là cảm nhận của người mua.",
-          "reply": "可以理解。买衣服时，您可以看看尺寸表和买家的照片，再做决定。",
-          "replyVn": "Tôi hiểu. Khi mua quần áo, bạn có thể xem bảng kích cỡ và ảnh của người mua rồi quyết định.",
-          "replyExplanationVi": "“可以理解” = có thể hiểu được/tôi hiểu. “做决定” = đưa ra quyết định.",
+          "zh": "这张优惠券怎么用？买东西更划算吗？",
+          "py": "zhè zhāng yōu huì quàn zěn me yòng ？ mǎi dōng xī gèng huá suàn ma ？",
+          "vn": "Phiếu ưu đãi này dùng thế nào? Mua hàng có hời hơn không?",
+          "explanationVi": "“这张” dùng cho tờ hoặc phiếu; “怎么用？” hỏi cách sử dụng.",
+          "reply": "先领取优惠券，再选商品。这张券可以省二十五元，你可以比较一下价格。",
+          "replyVn": "Nhận phiếu ưu đãi trước rồi chọn hàng. Phiếu này giúp tiết kiệm 25 tệ; bạn có thể so sánh giá thử.",
+          "replyExplanationVi": "“省” = tiết kiệm; trong trò chơi phiếu dùng một lần cho hàng ở cửa hàng trực tuyến.",
           "audioKey": "choice_wangzhan_0",
           "replyAudioKey": "reply_wangzhan_0",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "xiān lǐng qǔ yōu huì quàn ， zài xuǎn shāng pǐn 。 zhè zhāng quàn ké yǐ shěng èr shí wǔ yuán ， nǐ ké yǐ bǐ jiào yī xià jià gé 。",
+          "focusItem": "item_wangzhan_1",
+          "nextVenue": null
         },
         {
-          "zh": "我想专门看看买家的评价，再决定买不买。",
-          "py": "Wǒ xiǎng zhuānmén kànkan mǎijiā de píngjià, zài juédìng mǎi bu mǎi.",
-          "vn": "Tôi muốn dành thời gian xem kỹ đánh giá của người mua rồi mới quyết định có mua không.",
-          "explanationVi": "“专门” ở đây chỉ việc chủ động dành riêng sự chú ý, không dịch cứng thành “chuyên”. “买不买” = có mua hay không.",
-          "reply": "好的，建议您看看大家对质量和做工的评价，也留意有没有照片。",
-          "replyVn": "Được, bạn nên xem mọi người đánh giá chất lượng và cách gia công thế nào, đồng thời chú ý có ảnh hay không.",
-          "replyExplanationVi": "“建议您……” = khuyên/đề nghị bạn…; “留意” = chú ý. Xem đánh giá là để tham khảo, không tự bảo đảm chất lượng.",
+          "zh": "我想专门看看这个帆布包的评价。",
+          "py": "wǒ xiǎng zhuān mén kàn kàn zhè ge fān bù bāo de píng jià 。",
+          "vn": "Tôi muốn xem riêng đánh giá về chiếc túi vải này.",
+          "explanationVi": "“专门” = dành riêng/chuyên; “评价” = đánh giá.",
+          "reply": "好的，你可以看看买家对质量和做工的评价，也留意他们上传的照片。",
+          "replyVn": "Được, bạn có thể xem đánh giá của người mua về chất lượng và đường may, cũng nên chú ý ảnh họ đăng.",
+          "replyExplanationVi": "“买家” = người mua; ảnh của người mua giúp hiểu sản phẩm hơn.",
           "audioKey": "choice_wangzhan_1",
           "replyAudioKey": "reply_wangzhan_1",
-          "replyEmotion": "explain"
+          "replyEmotion": "explain",
+          "replyPy": "hǎo de ， nǐ ké yǐ kàn kàn mǎi jiā duì zhì liàng hé zuò gōng de píng jià ， yě liú yì tā men shàng chuán de zhào piān 。",
+          "focusItem": "item_wangzhan_2",
+          "nextVenue": null
         },
         {
-          "zh": "我们先比较网上的价格，然后再去商场，怎么样？",
-          "py": "Wǒmen xiān bǐjiào wǎngshàng de jiàgé, ránhòu zài qù shāngchǎng, zěnmeyàng?",
-          "vn": "Chúng mình so giá trên mạng trước rồi đến trung tâm thương mại, bạn thấy sao?",
-          "explanationVi": "“网上的价格” = giá trên mạng. “怎么样？” ở đây xin ý kiến về kế hoạch, khác với hỏi chất lượng một món hàng.",
-          "reply": "好主意！记下商品的款式和价格，到商场以后再比较。",
-          "replyVn": "Ý hay đấy! Ghi lại mẫu mã và giá sản phẩm, rồi đến trung tâm thương mại so sánh tiếp.",
-          "replyExplanationVi": "“记下” = ghi lại; “到……以后” = sau khi đến…; nhớ so cùng mẫu sản phẩm để so giá có ý nghĩa.",
+          "zh": "网上的运动鞋不如试穿以后再买放心。",
+          "py": "wǎng shàng de yùn dòng xié bù rú shì chuān yǐ hòu zài mǎi fàng xīn 。",
+          "vn": "Mua giày thể thao trên mạng không yên tâm bằng thử rồi mới mua.",
+          "explanationVi": "“不如” = không bằng; “试穿以后” = sau khi thử.",
+          "reply": "可以理解。你可以先在网站上比较价格，然后去商场试穿，怎么样？",
+          "replyVn": "Tôi hiểu. Bạn có thể so sánh giá trên trang web trước rồi đến trung tâm thương mại thử giày, thế nào?",
+          "replyExplanationVi": "“先……然后……” nói thứ tự; “怎么样？” hỏi ý kiến.",
           "audioKey": "choice_wangzhan_2",
           "replyAudioKey": "reply_wangzhan_2",
-          "replyEmotion": "welcome"
+          "replyEmotion": "welcome",
+          "replyPy": "ké yǐ lǐ jiě 。 nǐ ké yǐ xiān zài wǎng zhàn shàng bǐ jiào jià gé ， rán hòu qù shāng chǎng shì chuān ， zěn me yàng ？",
+          "focusItem": "item_wangzhan_3",
+          "nextVenue": "shangchang"
         }
       ],
-      "vn": "Chào mừng bạn đến trang mua sắm! Bạn có thể xem sản phẩm trước, rồi so sánh giá và đánh giá. Bạn cần tôi tìm giúp gì?",
-      "explanationVi": "“网站” = trang web; “评价” = đánh giá. “帮您找” = tìm giúp bạn. “先……再……” chỉ thứ tự thao tác.",
+      "vn": "Chào mừng bạn đến trang web mua sắm! Hãy xem hàng rồi so sánh giá và đánh giá. Hôm nay bạn có thể nhận miễn phí một phiếu ưu đãi.",
+      "explanationVi": "Nhấn vào một câu để trả lời. Có thể nghe mẫu trước, rồi tự nói lại bằng tiếng Trung.",
       "audioKey": "npc_wangzhan",
-      "emotion": "welcome"
+      "emotion": "welcome",
+      "textPy": "huān yíng lái dào gòu wù wǎng zhàn ！ xiān kàn shāng pǐn ， zài bǐ jiào jià gé hé píng jià 。 jīn tiān ké yǐ miǎn fèi lǐng qǔ yī zhāng yōu huì quàn 。"
+    },
+    "scene": {
+      "shortName": "网上小店",
+      "vn": "Cửa hàng trực tuyến",
+      "person": "小安",
+      "role": "网购助手",
+      "roleVi": "Trợ lý mua sắm trực tuyến",
+      "chapter": "随时 · 比较价格",
+      "npcPos": {
+        "x": 80,
+        "y": 30
+      },
+      "artFile": "story-v2/wangzhan.png",
+      "vocabTags": [
+        {
+          "word": "网站",
+          "py": "wǎngzhàn",
+          "vn": "trang web"
+        },
+        {
+          "word": "购物",
+          "py": "gòu wù",
+          "vn": "mua sắm"
+        }
+      ]
     }
   }
 }
